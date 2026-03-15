@@ -360,7 +360,7 @@ export default function Home() {
                   </h4>
 
                   {/* Recommendation */}
-                  <p className="text-foreground/80 text-sm leading-relaxed italic">
+                  <p className="text-foreground/80 text-sm leading-relaxed">
                     「{testimonial.recommendation}」
                   </p>
                 </div>
