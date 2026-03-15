@@ -91,7 +91,7 @@ export default function Home() {
               {CATEGORIES.map((category) => (
                 <Link key={category.id} href={`/shop?category=${category.id}`} className="group block">
                     <div className="card-wellness p-5 md:p-8 text-center h-full flex flex-col items-center">
-                      <div className="text-4xl md:text-6xl font-bold text-primary mb-3" style={{ fontFamily: 'Noto Sans TC, sans-serif', lineHeight: 1 }}>{category.icon}</div>
+                      <div className="text-4xl md:text-5xl mb-3" style={{ lineHeight: 1 }}>{category.icon}</div>
                       <h3 className="font-display font-bold text-base md:text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
                         {category.name}
                       </h3>
