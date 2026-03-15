@@ -37,7 +37,7 @@ export default function About() {
                 </p>
                 <div className="mt-8">
                   <img
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/未命名設計_db1a2749.png"
+                    src="/brand-story.jpg"
                     alt="郝營養 營養教練"
                     className="w-3/4 sm:w-full max-w-md rounded-lg shadow-lg"
                   />

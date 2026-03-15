@@ -255,7 +255,7 @@ export default function Home() {
               {/* Image */}
               <div className="flex justify-center">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663273703167/kkRacwWE5jkhKNceaD4eta/hao-nutrition-lifestyle-ip-JQtmvLmeBvDr55f4tJDmVo.webp"
+                  src="/brand-story.jpg"
                   alt="郝營養 - 生活主導權"
                   className="w-3/4 sm:w-full max-w-md h-auto rounded-2xl shadow-lg"
                 />
