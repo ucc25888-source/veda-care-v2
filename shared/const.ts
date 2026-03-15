@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
     name: "EAA 完美互補植物蛋白 (盒裝)",
     category: "plant-nutrition",
     price: 990,
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/螢幕擷取畫面2026-03-10164841_df4dc1db.png",
+    image: "/eaa-box.png",
     description: "含有完整 EAA 胺基酸的植物性蛋白粉 (全素可食)。高優質均衡蛋白質、高優質纖維。📦 15包裝隨身精準防禦 / 便捷簡易補給。台灣製造。",
     benefits: [
       "高PER蛋白質效率化",

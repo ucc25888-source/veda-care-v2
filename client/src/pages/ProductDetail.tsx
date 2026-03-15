@@ -58,11 +58,11 @@ export default function ProductDetail() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Product Image */}
-              <div className="flex items-center justify-center bg-muted rounded-lg overflow-hidden h-64 sm:h-96 md:h-[500px]">
+              <div className="flex items-center justify-center bg-[#f8f7f5] rounded-xl overflow-hidden h-64 sm:h-96 md:h-[500px] p-4 md:p-8">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
 

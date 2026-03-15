@@ -31,11 +31,11 @@ export default function ProductCard({ product }: ProductCardProps) {
     <Link href={`/product/${product.id}`} className="group block">
         <div className="card-wellness overflow-hidden">
           {/* Product Image */}
-          <div className="relative overflow-hidden bg-muted h-64 md:h-72">
+          <div className="relative overflow-hidden bg-[#f8f7f5] h-64 md:h-72 flex items-center justify-center p-4">
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
             />
             {product.featured && (
               <div className="absolute top-3 right-3 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">

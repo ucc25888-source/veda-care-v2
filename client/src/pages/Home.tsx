@@ -166,9 +166,9 @@ export default function Home() {
               <div className="flex justify-center">
                 <div className="w-3/4 sm:w-full max-w-sm">
                   <img
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/螢幕擷取畫面2026-03-10164841_df4dc1db.png"
+                    src="/eaa-box.png"
                     alt="EAA 完美互補植物蛋白"
-                    className="w-full h-auto"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               </div>
