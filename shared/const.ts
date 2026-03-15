@@ -98,7 +98,7 @@ export const PRODUCTS: Product[] = [
     name: "GOOD JOINT 敏捷素",
     category: "plant-nutrition",
     price: 1200,
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/TPB1007_68856_df7e2432.png",
+    image: "/good-joint.png",
     description: "新一代高階胜肽補給，蘊含 50+ 植萃機能胜肽、珍貴三胜肽，並揉合穩健基底所需的礦物質與維生素 K2。小分子胜肽結構帶來極致順暢的吸收體驗，專為追求「流暢行動力」與「頂尖運動狀態」的您精準打造。台灣嚴謹製造，支持您的每一個躍動瞬間。",
     benefits: [
       "50+ 健康功能性胜肽",
