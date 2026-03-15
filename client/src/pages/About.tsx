@@ -17,7 +17,7 @@ export default function About() {
                 <h1 className="text-2xl md:text-5xl font-display font-bold text-foreground mb-4">
                   關於 VEDA CARE | 郝營養
                 </h1>
-                <p className="text-xl font-semibold text-primary mb-6">
+                <p className="text-base md:text-xl font-semibold text-primary mb-6">
                   20 年生命科學智慧：只為幫您找回生活的主導權
                 </p>
                 <p className="text-lg text-foreground/70 mb-10 md:mb-12 italic">
@@ -78,7 +78,7 @@ export default function About() {
         {/* Contact Section */}
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-accent/5 border-t border-border">
           <div className="container max-w-2xl text-center">
-            <h3 className="text-2xl font-display font-bold text-foreground mb-4">
+            <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">
               有任何疑問嗎？
             </h3>
             <p className="text-lg text-foreground/70 mb-6">
@@ -102,7 +102,7 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               {BRAND_PHILOSOPHY.pillars.map((pillar, index) => (
-                <div key={pillar.title} className={`card-wellness p-8 ${index === 3 ? 'md:col-start-2' : ''}`}>
+                <div key={pillar.title} className={`card-wellness p-5 md:p-8 ${index === 3 ? 'md:col-start-2' : ''}`}>
                   <h3 className="font-display font-bold text-lg md:text-2xl text-foreground mb-3">
                     {pillar.title}
                   </h3>

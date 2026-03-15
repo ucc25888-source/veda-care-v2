@@ -23,10 +23,10 @@ export default function Cart() {
         <Header />
         <main className="flex-1 container py-16 text-center">
           <ShoppingBag className="w-16 h-16 mx-auto text-foreground/30 mb-4" />
-          <h1 className="text-3xl font-display font-bold text-foreground mb-2">
+          <h1 className="text-xl md:text-3xl font-display font-bold text-foreground mb-2">
             您的購物車是空的
           </h1>
-          <p className="text-lg text-foreground/60 mb-8">
+          <p className="text-base md:text-lg text-foreground/60 mb-8">
             探索我們的精選保健食品紀念，開始您的健康旅程。
           </p>
           <Link href="/shop" className="btn-primary inline-block">
@@ -46,7 +46,7 @@ export default function Cart() {
         {/* Page Header */}
         <section className="py-12 md:py-16 bg-gradient-to-b from-primary/5 to-background border-b border-border">
           <div className="container">
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+            <h1 className="text-2xl md:text-5xl font-display font-bold text-foreground">
               購物車
             </h1>
           </div>
@@ -201,17 +201,17 @@ export default function Cart() {
           <div className="container max-w-3xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <p className="text-2xl font-bold text-primary mb-2">免運費</p>
+                <p className="text-lg md:text-2xl font-bold text-primary mb-2">免運費</p>
                 <p className="text-sm text-foreground/60">滿 NT$1000 以上</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-primary mb-2">30 天退貨</p>
+                <p className="text-lg md:text-2xl font-bold text-primary mb-2">30 天退貨</p>
                 <p className="text-sm text-foreground/60">
                   滿意度保證
                 </p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-primary mb-2">安全結帳</p>
+                <p className="text-lg md:text-2xl font-bold text-primary mb-2">安全結帳</p>
                 <p className="text-sm text-foreground/60">
                   您的隱私受保護
                 </p>

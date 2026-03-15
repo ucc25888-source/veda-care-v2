@@ -54,9 +54,9 @@ export default function Home() {
         </section>
 
         {/* Brand Introduction Section */}
-        <section className="py-20 md:py-32 bg-gradient-to-b from-background via-orange-50/20 to-background">
+        <section className="py-10 md:py-32 bg-gradient-to-b from-background via-orange-50/20 to-background">
           <div className="container max-w-3xl">
-            <div className="text-center mb-16 md:mb-20">
+            <div className="text-center mb-8 md:mb-20">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png" alt="VEDA CARE" className="h-24 w-auto mx-auto mb-6" />
               <h2 className="text-xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4">
                 <span className="block">歡迎來到</span>
@@ -69,7 +69,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
               {BRAND_PHILOSOPHY.pillars.map((pillar, index) => (
-                <div key={pillar.title} className={`card-wellness p-8 text-center ${index === 3 ? 'md:col-start-2' : ''}`}>
+                <div key={pillar.title} className={`card-wellness p-5 md:p-8 text-center ${index === 3 ? 'md:col-start-2' : ''}`}>
                   <h3 className="font-display font-bold text-lg text-foreground mb-2">
                     {pillar.title}
                   </h3>
@@ -83,7 +83,7 @@ export default function Home() {
         </section>
 
         {/* Wellness Categories Section */}
-        <section className="py-20 md:py-32">
+        <section className="py-10 md:py-32">
           <div className="container">
             <h2 className="text-xl md:text-4xl font-display font-bold text-foreground mb-10 md:mb-20 text-center">
               精準對策
@@ -92,9 +92,9 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {CATEGORIES.map((category) => (
                 <Link key={category.id} href={`/shop?category=${category.id}`} className="group block">
-                    <div className="card-wellness p-8 text-center h-full">
-                      <div className="text-5xl mb-4">{category.icon}</div>
-                      <h3 className="font-display font-bold text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
+                    <div className="card-wellness p-5 md:p-8 text-center h-full">
+                      <div className="text-3xl md:text-5xl mb-2 md:mb-4">{category.icon}</div>
+                      <h3 className="font-display font-bold text-base md:text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
                         {category.name}
                       </h3>
                       <p className="text-sm text-foreground/60">
@@ -108,14 +108,14 @@ export default function Home() {
         </section>
 
         {/* Featured Products Carousel */}
-        <section className="py-20 md:py-32 bg-gradient-to-b from-background via-green-50/20 to-background">
+        <section className="py-10 md:py-32 bg-gradient-to-b from-background via-green-50/20 to-background">
           <div className="container">
             <ProductCarousel products={featuredProducts} title="精選產品" />
           </div>
         </section>
 
         {/* EAA Product Section */}
-        <section className="py-20 md:py-28 bg-gradient-to-r from-emerald-50/30 via-background to-emerald-50/30 relative overflow-hidden">
+        <section className="py-10 md:py-28 bg-gradient-to-r from-emerald-50/30 via-background to-emerald-50/30 relative overflow-hidden">
           <div className="container max-w-4xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Product Content */}
@@ -179,7 +179,7 @@ export default function Home() {
 
 
         {/* Agility Product Section */}
-        <section className="py-20 md:py-28 bg-gradient-to-r from-amber-50/30 via-background to-amber-50/30 relative overflow-hidden">
+        <section className="py-10 md:py-28 bg-gradient-to-r from-amber-50/30 via-background to-amber-50/30 relative overflow-hidden">
           <div className="container max-w-4xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Product Image */}
@@ -233,7 +233,7 @@ export default function Home() {
         </section>
 
         {/* Life Autonomy Section - Hao Nutrition */}
-        <section className="py-20 md:py-28 bg-gradient-to-b from-background via-orange-50/10 to-background">
+        <section className="py-10 md:py-28 bg-gradient-to-b from-background via-orange-50/10 to-background">
           <div className="container max-w-5xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Content */}
@@ -266,13 +266,13 @@ export default function Home() {
         </section>
 
         {/* VEDA Advisor Section - Enhanced */}
-        <section className="py-20 md:py-28 bg-gradient-to-br from-primary via-primary/95 to-primary/85 relative overflow-hidden">
+        <section className="py-10 md:py-28 bg-gradient-to-br from-primary via-primary/95 to-primary/85 relative overflow-hidden">
           {/* Background decorative elements */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-accent/15 rounded-full -mr-48 -mt-48 blur-3xl" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/15 rounded-full -ml-48 -mb-48 blur-3xl" />
           
           <div className="container max-w-4xl text-center relative z-10">
-            <div className="mb-6 text-6xl md:text-7xl animate-bounce">💬</div>
+            <div className="mb-6 text-3xl md:text-7xl animate-bounce">💬</div>
             
             <h2 className="font-display font-bold text-2xl md:text-5xl lg:text-6xl text-white mb-4 leading-tight text-center">
               減法保養對話
@@ -281,7 +281,7 @@ export default function Home() {
               由團隊為您精準找出問題，避免盲目堆疊購買
             </p>
             
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/30 p-8 md:p-10 mb-10 text-center">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/30 p-5 md:p-10 mb-8 md:mb-10 text-center">
               <p className="text-lg md:text-xl text-white/90 mb-4">
                 無需複雜的線上支付流程
               </p>
@@ -290,21 +290,21 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-16 md:mb-20">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
-                <div className="text-4xl mb-4">🎁</div>
-                <h3 className="font-bold text-white mb-2 text-lg">新好友禮物</h3>
-                <p className="text-white/80 text-sm">加入即贈送《生活微調術》</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-8 md:mb-20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20 hover:bg-white/15 transition-all">
+                <div className="text-2xl md:text-4xl mb-2 md:mb-4">🎁</div>
+                <h3 className="font-bold text-white mb-1 md:mb-2 text-base md:text-lg">新好友禮物</h3>
+                <p className="text-white/80 text-xs md:text-sm">加入即贈送《生活微調術》</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
-                <div className="text-4xl mb-4">🚚</div>
-                <h3 className="font-bold text-white mb-2 text-lg">滿三千免運</h3>
-                <p className="text-white/80 text-sm">支持宅配、貨到付款（限台灣）</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20 hover:bg-white/15 transition-all">
+                <div className="text-2xl md:text-4xl mb-2 md:mb-4">🚚</div>
+                <h3 className="font-bold text-white mb-1 md:mb-2 text-base md:text-lg">滿三千免運</h3>
+                <p className="text-white/80 text-xs md:text-sm">支持宅配、貨到付款（限台灣）</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
-                <div className="text-4xl mb-4">💬</div>
-                <h3 className="font-bold text-white mb-2 text-lg">即時諮詢</h3>
-                <p className="text-white/80 text-sm">隨時提問，獲得快速專業回應</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20 hover:bg-white/15 transition-all">
+                <div className="text-2xl md:text-4xl mb-2 md:mb-4">💬</div>
+                <h3 className="font-bold text-white mb-1 md:mb-2 text-base md:text-lg">即時諮詢</h3>
+                <p className="text-white/80 text-xs md:text-sm">隨時提問，獲得快速專業回應</p>
               </div>
             </div>
             
@@ -312,7 +312,7 @@ export default function Home() {
               href={LINE_OFFICIAL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-white text-primary font-bold text-lg md:text-xl px-10 md:px-14 py-4 md:py-5 rounded-full hover:shadow-2xl transition-all hover:scale-105 mb-8 group active:scale-95"
+              className="inline-flex items-center justify-center gap-3 bg-white text-primary font-bold text-base md:text-xl px-6 md:px-14 py-3 md:py-5 rounded-full hover:shadow-2xl transition-all hover:scale-105 mb-6 md:mb-8 group active:scale-95"
             >
               <span className="text-2xl md:text-3xl group-hover:animate-pulse">💚</span>
               加入官方 LINE@
@@ -325,9 +325,9 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 md:py-32 bg-muted/20">
+        <section className="py-10 md:py-32 bg-muted/20">
           <div className="container">
-            <div className="text-center mb-16 md:mb-20">
+            <div className="text-center mb-8 md:mb-20">
               <h2 className="text-xl md:text-4xl font-display font-black text-foreground mb-4" style={{ letterSpacing: '0.05em' }}>
                 客戶見證
               </h2>
@@ -340,7 +340,7 @@ export default function Home() {
               {TESTIMONIALS.map((testimonial) => (
                 <div
                   key={testimonial.id}
-                  className="bg-background rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow border border-border"
+                  className="bg-background rounded-lg p-5 md:p-8 shadow-sm hover:shadow-md transition-shadow border border-border"
                 >
                   {/* Avatar and Info */}
                   <div className="flex items-center gap-4 mb-6">

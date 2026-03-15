@@ -105,9 +105,9 @@ export default function Footer() {
         </div>
 
         {/* FAQ Section */}
-        <div className="py-12 border-t border-border">
+        <div className="py-8 md:py-12 border-t border-border">
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl font-display font-bold text-foreground mb-8 text-center">常見問題</h3>
+            <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6 md:mb-8 text-center">常見問題</h3>
             <div className="space-y-6">
               {/* FAQ Item 1 */}
               <details className="group cursor-pointer">

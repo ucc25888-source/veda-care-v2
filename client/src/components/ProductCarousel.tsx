@@ -44,7 +44,7 @@ export default function ProductCarousel({
   return (
     <div className="w-full">
       {title && (
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
+        <h2 className="text-xl md:text-4xl font-display font-bold text-foreground mb-6 md:mb-8">
           {title}
         </h2>
       )}
