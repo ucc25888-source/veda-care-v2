@@ -135,14 +135,14 @@ export default function Home() {
                 </div>
                 
                 <p className="text-foreground/80 mb-8 leading-relaxed">
-                  不是為了讓您成為運動員，而是為了支持您，能在每一天的忙碌中，依然保持從容不迫的優雅。
+                  不必非要成為誰的榜樣，您只需要在每一個起身與邁步間，感受身體那份久違的輕盈與聽話。
                 </p>
                 
                 <div className="bg-primary/5 rounded-lg p-6 mb-8 border border-primary/20">
                   <p className="text-sm text-foreground/70 mb-3 font-medium">【規格提示】</p>
                   <div className="space-y-2 text-foreground/80">
-                    <p>📦 <span className="font-medium">500g 居家穩健打底</span> / 全方位機能補給</p>
-                    <p>📦 <span className="font-medium">15包裝隨身精準防禦</span> / 便捷簡易補充</p>
+                    <p>📦 <span className="font-medium">500g環保包裝</span> / 全家補給。</p>
+                    <p>📦 <span className="font-medium">15包單包攜帶</span> / 隨時補充。</p>
                   </div>
                 </div>
                 
