@@ -9,44 +9,47 @@ export default function About() {
       <Header />
 
       <main className="flex-1">
-        {/* Page Header with Text Only */}
-        <section className="py-12 md:py-20 bg-gradient-to-br from-primary/10 via-background to-background border-b border-border">
-          <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-              <div>
-                <h1 className="text-2xl md:text-4xl font-bold mb-6" style={{ color: '#333333', lineHeight: '1.4' }}>
-                  關於 VEDA CARE | 郝營養
-                </h1>
+        {/* Brand Hero — Magazine Split Layout */}
+        <section className="min-h-screen flex items-center bg-[#f9f8f5]">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2">
 
-                <p className="text-base md:text-xl font-bold text-primary mb-6" style={{ lineHeight: '1.8' }}>
-                  最好的營養學，是妳一聽就懂的日常。
+            {/* Left: Copy */}
+            <div className="flex flex-col justify-center px-8 py-16 md:px-16 md:py-24 lg:px-24">
+
+              <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: '#2D4F1E', fontWeight: 500 }}>
+                VEDA CARE &nbsp;｜&nbsp; 郝營養
+              </p>
+
+              <h1 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: '#2D4F1E', lineHeight: '1.5' }}>
+                最好的營養學，<br />是妳一聽就懂的日常。
+              </h1>
+
+              <p className="text-base font-bold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
+                「健康不該是一道艱澀的數學題，<br className="hidden md:block" />而是一份說走就走的底氣。」
+              </p>
+
+              <div className="space-y-6">
+                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  看了 20 多年為了生活拼搏、卻透支底氣的妳，我深知：保養不該是無止盡的堆疊。
                 </p>
-
-                <p className="text-base font-bold text-primary mb-8" style={{ lineHeight: '1.9' }}>
-                  「健康不該是一道艱澀的數學題，而是一份說走就走的底氣。」
+                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  VEDA 已經為妳過濾掉繁瑣的研究與術語。關於成分比對與科研篩選的苦工，我已經替妳把關好了。把複雜的調研留給我，而那份「隨心所欲」的生活主導權，還給妳自己。
                 </p>
-
-                <p className="text-base mb-6" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
-                  看了 20 多年為了生活拼搏、卻透支底氣的人，我深知：保養不該是無止盡的堆疊。忘了那些令人糾結的成分表吧！我們用精準的植萃高機能，取代盲目的補給。
+                <p className="text-base font-bold pt-2" style={{ color: '#333333', lineHeight: '1.9' }}>
+                  專業的事交給我，妳只需要負責輕鬆地變好。
                 </p>
-
-                <p className="text-base mb-8" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
-                  那些繁瑣的調研苦工，VEDA 已經替您把關好了。把複雜的保養留給我，而那份隨心所欲的生活主導權，還給您自己。
-                </p>
-
-                <p className="text-base font-bold mb-10 md:mb-12" style={{ color: '#333333', lineHeight: '1.9' }}>
-                  專業的事交給我，您只需要負責輕鬆地變好。
-                </p>
-
-                <div className="mt-8">
-                  <img
-                    src="/brand-story.jpg"
-                    alt="郝營養 營養教練"
-                    className="w-3/4 sm:w-full max-w-md rounded-lg shadow-lg"
-                  />
-                </div>
               </div>
             </div>
+
+            {/* Right: Photo */}
+            <div className="relative min-h-[60vw] md:min-h-screen order-first md:order-last">
+              <img
+                src="/brand-hero.png"
+                alt="VEDA CARE 品牌形象"
+                className="absolute inset-0 w-full h-full object-cover object-top"
+              />
+            </div>
+
           </div>
         </section>
 
