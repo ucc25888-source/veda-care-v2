@@ -18,7 +18,7 @@ export default function AIChatbot() {
     {
       id: "1",
       role: "assistant",
-      content: "嗨～我是郝營養！很高興在這裡遇見你 ✨\n\n抱歉，這裡的訊息量真的比較大。為了能更即時、更精準地回覆您的需求，請直接點擊下方連結，加入我的 LINE@ 專屬空間。\n\n我在那裡準備了更詳細的「游刃有餘」健康指引與驚喜的初見禮等著您喔！\n\n🔗 立即加入 LINE@ 領取建議，點擊下方按鈕。\n\n我們 LINE 上見，讓我陪您一起拿回生活的主導權 💚",
+      content: "嗨～我是郝營養！很高興在這裡遇見你 ✨\n\n抱歉，這裡的訊息量真的比較大。為了能更即時、更精準地回覆您的需求，請直接點擊下方連結，加入我的 LINE@ 專屬空間。\n\n我在那裡準備了更詳細的「游刃有餘」健康指引與驚喜的初見禮等著您喔！\n\n🔗 立即加入 LINE@ 領取建議：\nhttps://lin.ee/10DnnGU\n\n我們 LINE 上見，讓我陪您一起拿回生活的主導權 💚",
       timestamp: new Date(),
     },
   ]);
@@ -132,7 +132,13 @@ export default function AIChatbot() {
                         : "bg-muted text-foreground"
                     }`}
                   >
-                    {msg.content}
+                    {msg.content.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
+                      /^https?:\/\//.test(part) ? (
+                        <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="underline text-primary font-medium break-all">
+                          {part}
+                        </a>
+                      ) : part
+                    )}
                   </div>
                 </div>
               </div>
