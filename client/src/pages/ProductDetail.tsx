@@ -80,8 +80,15 @@ export default function ProductDetail() {
                   {product.description}
                 </p>
 
-                <div className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-                  ${product.price.toFixed(2)}
+                <div className="flex items-baseline gap-3 mb-8">
+                  <span className="text-2xl md:text-3xl font-bold text-foreground">
+                    ${product.price.toFixed(2)}
+                  </span>
+                  {product.category === "veda-advisor" && (
+                    <span className="text-sm font-medium text-primary bg-primary/10 px-2.5 py-1 rounded-full">
+                      體驗價
+                    </span>
+                  )}
                 </div>
 
                 {/* Benefits */}
