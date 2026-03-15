@@ -14,27 +14,30 @@ export default function About() {
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
               <div>
-                <h1 className="text-2xl md:text-5xl font-display font-bold text-foreground mb-4">
+                <h1 className="text-2xl md:text-4xl font-bold mb-6" style={{ color: '#333333', lineHeight: '1.4' }}>
                   關於 VEDA CARE | 郝營養
                 </h1>
-                <p className="text-base md:text-xl font-semibold text-primary mb-6">
-                  20 年生命科學智慧：只為幫您找回生活的主導權
+
+                <p className="text-base md:text-xl font-bold text-primary mb-6" style={{ lineHeight: '1.8' }}>
+                  最好的營養學，是妳一聽就懂的日常。
                 </p>
-                <p className="text-base text-primary font-bold mb-10 md:mb-12" style={{ lineHeight: '1.9' }}>
+
+                <p className="text-base font-bold text-primary mb-8" style={{ lineHeight: '1.9' }}>
                   「健康不該是一道艱澀的數學題，而是一份說走就走的底氣。」
                 </p>
-                
-                <p className="text-sm md:text-base text-foreground/70 font-light mb-6" style={{ lineHeight: '2.0' }}>
-                  二十多年來，我們在身體維護的領域裡鑽研。這份資歷讓我們明白：最好的營養學，就是您一聽就懂的生活日常。
+
+                <p className="text-base mb-6" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  看了 20 多年為了生活拼搏、卻透支底氣的人，我深知：保養不該是無止盡的堆疊。忘了那些令人糾結的成分表吧！我們用精準的植萃高機能，取代盲目的補給。
                 </p>
-                
-                <p className="text-sm md:text-base text-foreground/70 font-light mb-6" style={{ lineHeight: '2.0' }}>
-                  在這裡，我們不談生硬的術語。郝營養 已經為您過濾掉繁瑣的研究，把複雜的數據變成最簡單的選擇。
+
+                <p className="text-base mb-8" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  那些繁瑣的調研苦工，VEDA 已經替您把關好了。把複雜的保養留給我，而那份隨心所欲的生活主導權，還給您自己。
                 </p>
-                
-                <p className="text-base text-primary font-bold mb-10 md:mb-12" style={{ lineHeight: '1.9' }}>
-                  「專業的事交給我，您只需要負責輕鬆地變好。」
+
+                <p className="text-base font-bold mb-10 md:mb-12" style={{ color: '#333333', lineHeight: '1.9' }}>
+                  專業的事交給我，您只需要負責輕鬆地變好。
                 </p>
+
                 <div className="mt-8">
                   <img
                     src="/brand-story.jpg"
@@ -50,27 +53,19 @@ export default function About() {
         {/* Brand Story */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-background to-primary/5">
           <div className="container max-w-3xl">
-            <h2 className="text-xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#333333', lineHeight: '1.4' }}>
               {BRAND_STORY.title}
             </h2>
-            <p className="text-lg text-primary font-semibold mb-10 md:mb-12">
+            <p className="text-base md:text-lg font-bold text-primary mb-10 md:mb-12" style={{ lineHeight: '1.8' }}>
               {BRAND_STORY.subtitle}
             </p>
 
-            <div className="space-y-6 text-foreground/75 leading-relaxed">
-              {BRAND_STORY.content.split("\n\n").map((paragraph, index) => {
-                // Highlight key phrases in green - order matters to avoid double replacement
-                let highlightedParagraph = paragraph
-                  .replace(/保養，不該是無止盡的堆疊，而是一場減法的智慧/g, '<span className="text-primary font-bold">保養，不該是無止盡的堆疊，而是一場減法的智慧</span>')
-                  .replace(/最大的財富不是擁有多少，而是能多游刃有餘地去體驗生活/g, '<span className="text-primary font-bold">最大的財富不是擁有多少，而是能多游刃有餘地去體驗生活</span>')
-                  .replace(/系統性的平衡/g, '<span className="text-primary font-bold">系統性的平衡</span>')
-                  .replace(/找回那份久違的從容/g, '<span className="text-primary font-bold">找回那份久違的從容</span>')
-                  .replace(/減法/g, '<span className="text-primary font-bold">減法</span>');
-                
-                return (
-                  <p key={index} className="text-base" dangerouslySetInnerHTML={{ __html: highlightedParagraph }} />
-                );
-              })}
+            <div className="space-y-6">
+              {BRAND_STORY.content.split("\n\n").map((paragraph, index) => (
+                <p key={index} className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
         </section>
@@ -78,15 +73,15 @@ export default function About() {
         {/* Contact Section */}
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-accent/5 border-t border-border">
           <div className="container max-w-2xl text-center">
-            <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">
+            <h3 className="text-2xl font-bold mb-4" style={{ color: '#333333' }}>
               有任何疑問嗎？
             </h3>
-            <p className="text-lg text-foreground/70 mb-6">
+            <p className="text-base mb-6" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
               歡迎與我們聯繫，我們很樂意為您解答關於產品或品牌理念的任何問題。
             </p>
             <a
               href="mailto:ucc25888@gmail.com"
-              className="text-primary font-medium hover:text-primary/80 transition-colors text-lg"
+              className="text-primary font-bold hover:text-primary/80 transition-colors text-base"
             >
               ucc25888@gmail.com
             </a>
@@ -96,17 +91,17 @@ export default function About() {
         {/* Philosophy Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-background via-green-50/20 to-background border-y border-border">
           <div className="container">
-            <h2 className="text-xl md:text-4xl font-display font-bold text-foreground mb-8 md:mb-12 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center" style={{ color: '#333333' }}>
               {BRAND_PHILOSOPHY.title}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               {BRAND_PHILOSOPHY.pillars.map((pillar, index) => (
                 <div key={pillar.title} className={`card-wellness p-5 md:p-8 ${index === 3 ? 'md:col-start-2' : ''}`}>
-                  <h3 className="font-display font-bold text-lg md:text-2xl text-foreground mb-3">
+                  <h3 className="font-bold text-lg md:text-xl mb-3 text-primary">
                     {pillar.title}
                   </h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
                     {pillar.description}
                   </p>
                 </div>
