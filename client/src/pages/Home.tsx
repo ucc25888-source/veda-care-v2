@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import ProductCarousel from "@/components/ProductCarousel";
 import {
   PRODUCTS,
-  BRAND_STORY,
   BRAND_PHILOSOPHY,
   CATEGORIES,
   LINE_OFFICIAL_URL,
@@ -231,36 +230,50 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Life Autonomy Section - Hao Nutrition */}
-        <section className="py-10 md:py-28 bg-gradient-to-b from-background via-orange-50/10 to-background">
-          <div className="container max-w-5xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              {/* Content */}
-              <div>
-                <h2 className="text-xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 leading-tight">
-                  {BRAND_STORY.title}
-                </h2>
-                <p className="text-xl md:text-2xl font-bold text-primary mb-8" style={{ lineHeight: '1.8' }}>
-                  {BRAND_STORY.subtitle}
+        {/* Brand Story — Magazine Split Layout */}
+        <section className="min-h-screen flex items-center bg-[#f9f8f5]">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2">
+
+            {/* Left: Photo — shown first on mobile */}
+            <div className="relative min-h-[70vw] md:min-h-screen order-first">
+              <img
+                src="/brand-hero-2.png"
+                alt="VEDA CARE 生活主導權"
+                className="absolute inset-0 w-full h-full object-cover object-center"
+              />
+            </div>
+
+            {/* Right: Copy */}
+            <div className="flex flex-col justify-center px-8 py-16 md:px-14 md:py-24 lg:px-20">
+
+              <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: '#2D4F1E', fontWeight: 500 }}>
+                VEDA CARE &nbsp;｜&nbsp; 品牌理念
+              </p>
+
+              <h2 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: '#2D4F1E', lineHeight: '1.5' }}>
+                拿回生活的從容：<br />這一次，我們做減法
+              </h2>
+
+              <p className="text-base font-bold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
+                「真正的財富，是當生活推擠時，<br className="hidden md:block" />您依然能『游刃有餘』。」
+              </p>
+
+              <div className="space-y-6">
+                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  看了 20 多年為了生活拼搏、卻透支底氣的現代人，我深知：保養不該是無止盡的堆疊。
                 </p>
-                <div className="space-y-6 text-foreground/70">
-                  {BRAND_STORY.content.split('\n\n').map((paragraph, index) => (
-                    <p key={index} className="text-sm md:text-base font-light" style={{ lineHeight: '2.0' }}>
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              </div>
-              
-              {/* Image */}
-              <div className="flex justify-center">
-                <img
-                  src="/brand-story.jpg"
-                  alt="郝營養 - 生活主導權"
-                  className="w-3/4 sm:w-full max-w-md h-auto rounded-2xl shadow-lg"
-                />
+                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  忘了那些令人焦慮的成分表吧！我們用精準的植萃高機能，取代盲目的補給。
+                </p>
+                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  那些繁瑣的成分比對與科研調研，VEDA 已經替您把關好了。把複雜的保養留給我，而那份隨心所欲的生活主導權，還給您自己。
+                </p>
+                <p className="text-base font-bold pt-2" style={{ color: '#333333', lineHeight: '1.9' }}>
+                  專業的事交給我，您只需要負責輕鬆地變好。
+                </p>
               </div>
             </div>
+
           </div>
         </section>
 
