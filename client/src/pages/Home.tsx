@@ -24,8 +24,7 @@ export default function Home() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage:
-                "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/_BK4dBjBTR7EydUL_b7170061.png')",
+              backgroundImage: "url('/hero-bg.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/50" />
