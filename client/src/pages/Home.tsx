@@ -344,7 +344,7 @@ export default function Home() {
                 客戶見證
               </h2>
               <p className="text-lg text-foreground/70">
-                聽聽真實客戶如何透過 VEDA CARE 找回生活的從容
+                真實心聲：與 VEDA 一起找回生活從容
               </p>
             </div>
 
