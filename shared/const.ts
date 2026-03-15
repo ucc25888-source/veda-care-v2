@@ -22,8 +22,8 @@ export interface CartItem {
   quantity: number;
 }
 export const CATEGORIES = [
-  { id: "plant-nutrition", name: "🔋 補足生理基底", icon: "🌿" },
-  { id: "frequency-resonance", name: "🌿 重拾內在平衡", icon: "✨" },
+  { id: "plant-nutrition", name: "補足生理基底", icon: "🌿" },
+  { id: "frequency-resonance", name: "重拾內在平衡", icon: "✨" },
   { id: "veda-advisor", name: "VEDA 專屬導航", icon: "💬" },
 ] as const;
 export const SOCIAL_LINKS = {

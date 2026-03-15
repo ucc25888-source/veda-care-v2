@@ -56,7 +56,7 @@ export default function Home() {
           <div className="container max-w-3xl">
             <div className="text-center mb-8 md:mb-20">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png" alt="VEDA CARE" className="h-24 w-auto mx-auto mb-6" />
-              <h2 className="text-xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-display font-bold text-primary mb-4">
                 <span className="block">歡迎來到</span>
                 <span className="block">VEDA CARE</span>
               </h2>
@@ -83,7 +83,7 @@ export default function Home() {
         {/* Wellness Categories Section */}
         <section className="py-10 md:py-32">
           <div className="container">
-            <h2 className="text-xl md:text-4xl font-display font-bold text-foreground mb-10 md:mb-20 text-center">
+            <h2 className="text-xl md:text-4xl font-display font-bold text-primary mb-10 md:mb-20 text-center">
               精準對策
             </h2>
 
