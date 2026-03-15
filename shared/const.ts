@@ -22,9 +22,9 @@ export interface CartItem {
   quantity: number;
 }
 export const CATEGORIES = [
-  { id: "plant-nutrition", name: "補足生理基底", icon: "🌿" },
-  { id: "frequency-resonance", name: "重拾內在平衡", icon: "✨" },
-  { id: "veda-advisor", name: "VEDA 專屬導航", icon: "💬" },
+  { id: "plant-nutrition", name: "補足生理基底", icon: "🌿", tag: "身" },
+  { id: "frequency-resonance", name: "重拾內在平衡", icon: "✨", tag: "心" },
+  { id: "veda-advisor", name: "VEDA 專屬導航", icon: "💬", tag: "靈" },
 ] as const;
 export const SOCIAL_LINKS = {
   lineOfficial: LINE_OFFICIAL_URL,

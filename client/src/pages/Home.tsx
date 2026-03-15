@@ -90,8 +90,11 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {CATEGORIES.map((category) => (
                 <Link key={category.id} href={`/shop?category=${category.id}`} className="group block">
-                    <div className="card-wellness p-5 md:p-8 text-center h-full">
-                      <div className="text-3xl md:text-5xl mb-2 md:mb-4">{category.icon}</div>
+                    <div className="card-wellness p-5 md:p-8 text-center h-full flex flex-col items-center">
+                      <span className="inline-block text-xs font-bold tracking-[0.25em] text-primary border border-primary/30 rounded-full px-3 py-1 mb-4">
+                        {(category as any).tag}
+                      </span>
+                      <div className="text-3xl md:text-5xl mb-3">{category.icon}</div>
                       <h3 className="font-display font-bold text-base md:text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
                         {category.name}
                       </h3>
