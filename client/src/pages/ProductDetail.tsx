@@ -232,10 +232,10 @@ export default function ProductDetail() {
           <div className="container max-w-3xl">
             <div className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg border border-border">
               <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-4">
-                支持您的健康旅程
+                專業者的身體維護邏輯
               </h3>
               <p className="text-foreground/70 leading-relaxed">
-                此產品的設計旨在支持您的全人健康實踐。不論您尋求放鬆、力量或日常活力，我們相信讓您用心照顧您的身心。
+                真正的健康管理不是「加法」，而是「優化」。妳需要的不是更多的補給品，而是一個清楚的標竿。這套設計是為了幫妳在極致忙碌中，快速找回身體的主導權——不論是瞬間放鬆還是長效動力，我們要的是效率，不是感覺。
               </p>
             </div>
           </div>
