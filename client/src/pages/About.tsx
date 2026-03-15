@@ -42,11 +42,11 @@ export default function About() {
             </div>
 
             {/* Right: Photo */}
-            <div className="relative min-h-[60vw] md:min-h-screen order-first md:order-last">
+            <div className="relative min-h-[90vw] md:min-h-screen order-first md:order-last">
               <img
                 src="/brand-hero.png"
                 alt="VEDA CARE 品牌形象"
-                className="absolute inset-0 w-full h-full object-cover object-top"
+                className="absolute inset-0 w-full h-full object-cover object-[center_15%]"
               />
             </div>
 
