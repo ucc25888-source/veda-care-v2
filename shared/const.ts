@@ -152,19 +152,19 @@ export const BRAND_PHILOSOPHY = {
   pillars: [
     {
       title: "減法智慧",
-      description: "精準守護，而非無止盡的堆疊",
+      description: "屏除堆疊，精確填補身體缺口",
     },
     {
-      title: "系統性平衡",
-      description: "身體、心理與生活節奏的完整平衡",
+      title: "頂級萃取",
+      description: "極致純提，淬煉高品質植物能量",
     },
     {
-      title: "精準植萃",
-      description: "20 年生命科學專業，高機能植物萃取",
+      title: "穩定基底",
+      description: "調節循環，撐起動能消耗需求",
     },
     {
-      title: "生活主導權",
-      description: "幫助您重新拿回生活的從容與鬆弛",
+      title: "自主協調",
+      description: "身體聽話，拿回生活主導權力",
     },
   ],
 };
