@@ -58,7 +58,7 @@ export default function ProductDetail() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Product Image */}
-              <div className="flex items-center justify-center bg-muted rounded-lg overflow-hidden h-96 md:h-[500px]">
+              <div className="flex items-center justify-center bg-muted rounded-lg overflow-hidden h-64 sm:h-96 md:h-[500px]">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -72,7 +72,7 @@ export default function ProductDetail() {
                   {product.category.replace("-", " ")}
                 </p>
 
-                <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+                <h1 className="text-2xl md:text-5xl font-display font-bold text-foreground mb-4">
                   {product.name}
                 </h1>
 
@@ -80,7 +80,7 @@ export default function ProductDetail() {
                   {product.description}
                 </p>
 
-                <div className="text-3xl font-bold text-foreground mb-8">
+                <div className="text-2xl md:text-3xl font-bold text-foreground mb-8">
                   ${product.price.toFixed(2)}
                 </div>
 
@@ -224,7 +224,7 @@ export default function ProductDetail() {
         <section className="py-12 md:py-16">
           <div className="container max-w-3xl">
             <div className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg border border-border">
-              <h3 className="font-display font-bold text-2xl text-foreground mb-4">
+              <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-4">
                 支持您的健康旅程
               </h3>
               <p className="text-foreground/70 leading-relaxed">

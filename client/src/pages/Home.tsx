@@ -58,7 +58,7 @@ export default function Home() {
           <div className="container max-w-3xl">
             <div className="text-center mb-16 md:mb-20">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png" alt="VEDA CARE" className="h-24 w-auto mx-auto mb-6" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4">
                 <span className="block">歡迎來到</span>
                 <span className="block">VEDA CARE</span>
               </h2>
@@ -85,7 +85,7 @@ export default function Home() {
         {/* Wellness Categories Section */}
         <section className="py-20 md:py-32">
           <div className="container">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-16 md:mb-20 text-center">
+            <h2 className="text-xl md:text-4xl font-display font-bold text-foreground mb-10 md:mb-20 text-center">
               精準對策
             </h2>
 
@@ -124,7 +124,7 @@ export default function Home() {
                   植萃機能補給
                 </p>
                 
-                <h2 className="text-2xl md:text-3xl font-sans font-bold text-foreground mb-6 leading-tight text-center" style={{ letterSpacing: '0.05em' }}>
+                <h2 className="text-xl md:text-3xl font-sans font-bold text-foreground mb-6 leading-tight text-center" style={{ letterSpacing: '0.05em' }}>
                   喝下底氣，贏回自己。
                 </h2>
                 
@@ -164,7 +164,7 @@ export default function Home() {
               
               {/* Product Image */}
               <div className="flex justify-center">
-                <div className="w-full max-w-sm">
+                <div className="w-3/4 sm:w-full max-w-sm">
                   <img
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/螢幕擷取畫面2026-03-10164841_df4dc1db.png"
                     alt="EAA 完美互補植物蛋白"
@@ -184,7 +184,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Product Image */}
               <div className="flex justify-center">
-                <div className="w-full max-w-sm">
+                <div className="w-3/4 sm:w-full max-w-sm">
                   <img
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/TPB1007_68856_b2263194.png"
                     alt="GOOD JOINT 敏捷素"
@@ -199,7 +199,7 @@ export default function Home() {
                   植萃機能補給
                 </p>
                 
-                <h2 className="text-2xl md:text-3xl font-sans font-bold text-foreground mb-6 leading-tight text-center" style={{ letterSpacing: '0.05em' }}>
+                <h2 className="text-xl md:text-3xl font-sans font-bold text-foreground mb-6 leading-tight text-center" style={{ letterSpacing: '0.05em' }}>
                   身體不卡頓，生活更流暢
                 </h2>
                 
@@ -238,7 +238,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Content */}
               <div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 leading-tight">
+                <h2 className="text-xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 leading-tight">
                   {BRAND_STORY.title}
                 </h2>
                 <p className="text-lg md:text-xl font-semibold text-primary mb-8 leading-relaxed">
@@ -258,7 +258,7 @@ export default function Home() {
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663273703167/kkRacwWE5jkhKNceaD4eta/hao-nutrition-lifestyle-ip-JQtmvLmeBvDr55f4tJDmVo.webp"
                   alt="郝營養 - 生活主導權"
-                  className="w-full max-w-md h-auto rounded-2xl shadow-lg"
+                  className="w-3/4 sm:w-full max-w-md h-auto rounded-2xl shadow-lg"
                 />
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function Home() {
           <div className="container max-w-4xl text-center relative z-10">
             <div className="mb-6 text-6xl md:text-7xl animate-bounce">💬</div>
             
-            <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 leading-tight text-center">
+            <h2 className="font-display font-bold text-2xl md:text-5xl lg:text-6xl text-white mb-4 leading-tight text-center">
               減法保養對話
             </h2>
             <p className="text-lg md:text-xl text-white/90 mb-8 text-center max-w-2xl mx-auto">
@@ -285,7 +285,7 @@ export default function Home() {
               <p className="text-lg md:text-xl text-white/90 mb-4">
                 無需複雜的線上支付流程
               </p>
-              <p className="text-2xl md:text-3xl font-bold text-white mb-0">
+              <p className="text-lg md:text-3xl font-bold text-white mb-0">
                 只需加入 LINE@，告訴我們您想要的產品，我們幫您完成訂單！
               </p>
             </div>
@@ -328,7 +328,7 @@ export default function Home() {
         <section className="py-20 md:py-32 bg-muted/20">
           <div className="container">
             <div className="text-center mb-16 md:mb-20">
-              <h2 className="text-3xl md:text-4xl font-display font-black text-foreground mb-4" style={{ letterSpacing: '0.05em' }}>
+              <h2 className="text-xl md:text-4xl font-display font-black text-foreground mb-4" style={{ letterSpacing: '0.05em' }}>
                 客戶見證
               </h2>
               <p className="text-lg text-foreground/70">

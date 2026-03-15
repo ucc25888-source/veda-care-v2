@@ -14,7 +14,7 @@ export default function About() {
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
               <div>
-                <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+                <h1 className="text-2xl md:text-5xl font-display font-bold text-foreground mb-4">
                   關於 VEDA CARE | 郝營養
                 </h1>
                 <p className="text-xl font-semibold text-primary mb-6">
@@ -39,7 +39,7 @@ export default function About() {
                   <img
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/未命名設計_db1a2749.png"
                     alt="郝營養 營養教練"
-                    className="w-full max-w-md rounded-lg shadow-lg"
+                    className="w-3/4 sm:w-full max-w-md rounded-lg shadow-lg"
                   />
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function About() {
         {/* Brand Story */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-background to-primary/5">
           <div className="container max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-xl md:text-4xl font-display font-bold text-foreground mb-6">
               {BRAND_STORY.title}
             </h2>
             <p className="text-lg text-primary font-semibold mb-10 md:mb-12">
@@ -96,14 +96,14 @@ export default function About() {
         {/* Philosophy Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-background via-green-50/20 to-background border-y border-border">
           <div className="container">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">
+            <h2 className="text-xl md:text-4xl font-display font-bold text-foreground mb-8 md:mb-12 text-center">
               {BRAND_PHILOSOPHY.title}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               {BRAND_PHILOSOPHY.pillars.map((pillar, index) => (
                 <div key={pillar.title} className={`card-wellness p-8 ${index === 3 ? 'md:col-start-2' : ''}`}>
-                  <h3 className="font-display font-bold text-2xl text-foreground mb-3">
+                  <h3 className="font-display font-bold text-lg md:text-2xl text-foreground mb-3">
                     {pillar.title}
                   </h3>
                   <p className="text-foreground/70 leading-relaxed">
