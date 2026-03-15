@@ -240,12 +240,12 @@ export default function Home() {
                 <h2 className="text-xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 leading-tight">
                   {BRAND_STORY.title}
                 </h2>
-                <p className="text-lg md:text-xl font-semibold text-primary mb-8 leading-relaxed">
+                <p className="text-xl md:text-2xl font-bold text-primary mb-8" style={{ lineHeight: '1.8' }}>
                   {BRAND_STORY.subtitle}
                 </p>
-                <div className="space-y-6 text-foreground/80 leading-relaxed">
+                <div className="space-y-6 text-foreground/70">
                   {BRAND_STORY.content.split('\n\n').map((paragraph, index) => (
-                    <p key={index} className="text-base md:text-lg">
+                    <p key={index} className="text-sm md:text-base font-light" style={{ lineHeight: '2.0' }}>
                       {paragraph}
                     </p>
                   ))}

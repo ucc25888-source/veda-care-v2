@@ -20,19 +20,19 @@ export default function About() {
                 <p className="text-base md:text-xl font-semibold text-primary mb-6">
                   20 年生命科學智慧：只為幫您找回生活的主導權
                 </p>
-                <p className="text-lg text-foreground/70 mb-10 md:mb-12 italic">
+                <p className="text-base text-primary font-bold mb-10 md:mb-12" style={{ lineHeight: '1.9' }}>
                   「健康不該是一道艱澀的數學題，而是一份說走就走的底氣。」
                 </p>
                 
-                <p className="text-lg text-foreground/70 mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-foreground/70 font-light mb-6" style={{ lineHeight: '2.0' }}>
                   二十多年來，我們在身體維護的領域裡鑽研。這份資歷讓我們明白：最好的營養學，就是您一聽就懂的生活日常。
                 </p>
                 
-                <p className="text-lg text-foreground/70 mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-foreground/70 font-light mb-6" style={{ lineHeight: '2.0' }}>
                   在這裡，我們不談生硬的術語。郝營養 已經為您過濾掉繁瑣的研究，把複雜的數據變成最簡單的選擇。
                 </p>
                 
-                <p className="text-lg text-foreground/70 mb-10 md:mb-12 italic font-semibold">
+                <p className="text-base text-primary font-bold mb-10 md:mb-12" style={{ lineHeight: '1.9' }}>
                   「專業的事交給我，您只需要負責輕鬆地變好。」
                 </p>
                 <div className="mt-8">
