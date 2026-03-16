@@ -52,7 +52,7 @@ export default function Home() {
               <h1 className="text-xl sm:text-2xl md:text-3xl font-display font-black mb-6"
                 style={{ color: '#2D4F1E', lineHeight: '1.55', letterSpacing: '0.04em' }}>
                 妳以為是老了，<br />
-                其實只是營養<br className="hidden sm:block" />
+                其實只是營養<br />
                 「走錯路」了。
               </h1>
 
