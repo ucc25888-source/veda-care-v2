@@ -178,8 +178,23 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="pt-8 border-t border-border text-center text-sm text-foreground/60">
-          <p>&copy; 2026 VEDA CARE Holistic Wellness. 版權所有。</p>
+        <div className="pt-8 border-t border-border text-center space-y-3">
+
+          {/* R&D Strength */}
+          <p style={{ fontSize: '12px', color: '#4A4A4A', lineHeight: '1.8' }}>
+            VEDA CARE 連結自有研發團隊與大學建教合作，以專利技術萃取植物高機能，為您的健康嚴謹把關。
+          </p>
+
+          {/* Copyright */}
+          <p className="text-sm text-foreground/60">
+            &copy; 2026 VEDA CARE Holistic Wellness. 版權所有。
+          </p>
+
+          {/* Legal Disclaimer */}
+          <p style={{ fontSize: '10px', color: '#CCCCCC', lineHeight: '1.8' }}>
+            免責聲明：本網頁所稱「專家」及專業形象，係指擁有 20 年身體維護經驗之健康促進管理師；產品研發基於專利技術與學術合作，非指醫療法規範之醫事人員。
+          </p>
+
         </div>
       </div>
     </footer>
