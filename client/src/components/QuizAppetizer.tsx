@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
+import ShareButton from "@/components/ShareButton";
 
 const QUICK_QUESTIONS = [
   {
@@ -176,11 +177,19 @@ export default function QuizAppetizer() {
             ))}
           </div>
 
-          <div
-            className="inline-flex items-center gap-2 font-bold text-sm px-7 py-3.5 rounded-2xl transition-all duration-300 group-hover:gap-3"
-            style={{ background: "#ffffff", color: "#2D4F1E" }}
-          >
-            開始覺察 <span>→</span>
+          <div className="flex items-center gap-4 flex-wrap">
+            <div
+              className="inline-flex items-center gap-2 font-bold text-sm px-7 py-3.5 rounded-2xl transition-all duration-300 group-hover:gap-3"
+              style={{ background: "#ffffff", color: "#2D4F1E" }}
+            >
+              開始覺察 <span>→</span>
+            </div>
+            <ShareButton
+              variant="dark"
+              title="【身體主導權】覺察檢測 — VEDA CARE"
+              text="4 個問題，60 秒，看看妳是否正在預支明天的能量。"
+              url={typeof window !== "undefined" ? window.location.origin + "/awareness-check" : "/awareness-check"}
+            />
           </div>
         </div>
       </div>

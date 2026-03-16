@@ -5,14 +5,26 @@ interface ShareButtonProps {
   text: string;
   url?: string;
   label?: string;
+  variant?: "light" | "dark";
+  onClick?: (e: React.MouseEvent) => void;
 }
 
-export default function ShareButton({ title, text, url, label = "分享測驗連結" }: ShareButtonProps) {
+export default function ShareButton({
+  title,
+  text,
+  url,
+  label = "分享測驗連結",
+  variant = "light",
+  onClick,
+}: ShareButtonProps) {
   const [copied, setCopied] = useState(false);
 
   const shareUrl = url ?? window.location.href;
 
-  async function handleShare() {
+  async function handleShare(e: React.MouseEvent) {
+    e.stopPropagation();
+    if (onClick) onClick(e);
+
     if (navigator.share) {
       try {
         await navigator.share({ title, text, url: shareUrl });
@@ -36,15 +48,25 @@ export default function ShareButton({ title, text, url, label = "分享測驗連
     }
   }
 
+  const isDark = variant === "dark";
+
   return (
     <button
       onClick={handleShare}
       className="inline-flex items-center gap-2 text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200 hover:scale-[1.04] active:scale-[0.97]"
-      style={{
-        background: copied ? "rgba(45,79,30,0.12)" : "rgba(45,79,30,0.07)",
-        color: copied ? "#2D4F1E" : "rgba(45,79,30,0.6)",
-        border: "1px solid rgba(45,79,30,0.16)",
-      }}
+      style={
+        isDark
+          ? {
+              background: copied ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.10)",
+              color: copied ? "#ffffff" : "rgba(255,255,255,0.65)",
+              border: "1px solid rgba(255,255,255,0.18)",
+            }
+          : {
+              background: copied ? "rgba(45,79,30,0.12)" : "rgba(45,79,30,0.07)",
+              color: copied ? "#2D4F1E" : "rgba(45,79,30,0.6)",
+              border: "1px solid rgba(45,79,30,0.16)",
+            }
+      }
     >
       {copied ? (
         <>
