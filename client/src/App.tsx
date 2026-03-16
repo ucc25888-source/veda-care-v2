@@ -15,6 +15,7 @@ import About from "./pages/About";
 import Policies from "./pages/Policies";
 import StressTest from "./pages/StressTest";
 import WellnessQuiz from "./pages/WellnessQuiz";
+import AwarenessCheck from "./pages/AwarenessCheck";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -38,6 +39,7 @@ function Router() {
       <Route path={"/policies"} component={Policies} />
       <Route path={"/stress-test"} component={StressTest} />
       <Route path={"/quiz"} component={WellnessQuiz} />
+      <Route path={"/awareness-check"} component={AwarenessCheck} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ShareButton from "@/components/ShareButton";
 
 const LINE_URL = "https://lin.ee/10DnnGU";
 
@@ -189,6 +190,16 @@ export default function WellnessQuiz() {
                 </p>
                 <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#2D4F1E', animation: 'scanPulse 1.5s ease-in-out infinite 0.75s' }} />
               </div>
+
+              {/* Share link */}
+              {current === 0 && (
+                <div className="flex justify-center mb-5">
+                  <ShareButton
+                    title="【VEDA 精準方案】匹配諮詢 — VEDA CARE"
+                    text="6 個問題，獲取妳的科研專屬健康路徑。"
+                  />
+                </div>
+              )}
 
               {/* Progress — clinical scan style */}
               <div className="mb-2 flex items-center gap-3">
