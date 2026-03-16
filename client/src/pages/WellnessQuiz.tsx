@@ -266,26 +266,26 @@ export default function WellnessQuiz() {
             className="flex flex-col"
             style={{ background: "linear-gradient(160deg, #f9f8f5 0%, #eef3ec 100%)" }}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto w-full px-4 py-12 md:py-16 gap-10 md:gap-16 items-center">
-
-              {/* Photo */}
-              <div className="flex justify-center order-first md:order-first">
-                <div className="relative w-64 md:w-80 rounded-3xl overflow-hidden shadow-2xl">
-                  <img
-                    src="/quiz-result.png"
-                    alt="VEDA CARE 郝營養"
-                    className="w-full object-cover"
-                  />
-                  <div
-                    className="absolute bottom-0 left-0 right-0 px-4 py-3"
-                    style={{ background: 'linear-gradient(0deg, rgba(45,79,30,0.92) 0%, rgba(45,79,30,0) 100%)', paddingTop: '32px' }}
-                  >
-                    <p className="text-white text-xs font-medium tracking-widest text-center">
-                      郝營養 ｜ VEDA CARE
-                    </p>
-                  </div>
-                </div>
+            {/* Hero photo — full width, landscape */}
+            <div className="relative w-full overflow-hidden" style={{ maxHeight: '360px' }}>
+              <img
+                src="/quiz-result.png"
+                alt="VEDA CARE 郝營養"
+                className="w-full object-cover object-[50%_25%]"
+                style={{ maxHeight: '360px' }}
+              />
+              <div
+                className="absolute inset-0"
+                style={{ background: 'linear-gradient(to bottom, rgba(45,79,30,0) 40%, rgba(45,79,30,0.55) 100%)' }}
+              />
+              <div className="absolute bottom-4 left-6">
+                <p className="text-white text-xs font-medium tracking-widest">
+                  郝營養 ｜ VEDA CARE
+                </p>
               </div>
+            </div>
+
+            <div className="max-w-2xl mx-auto w-full px-6 py-10 md:py-14">
 
               {/* Result copy */}
               <div className="order-last md:order-last">
