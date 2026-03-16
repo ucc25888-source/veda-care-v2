@@ -334,7 +334,7 @@ export default function Home() {
                   看了 20 多年為了生活拼搏、卻透支底氣的現代人，我深知：保養不該是無止盡的堆疊。
                 </p>
                 <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
-                  忘了那些令人焦慮的成分表吧！我們用精準的植萃高機能，取代盲目的補給。
+                  讓繁瑣的篩選留給我。我們以精準的植萃高機能，取代盲目的堆疊。
                 </p>
                 <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
                   那些繁瑣的成分比對與科研調研，VEDA 已經替您把關好了。把複雜的保養留給我，而那份隨心所欲的生活主導權，還給您自己。
