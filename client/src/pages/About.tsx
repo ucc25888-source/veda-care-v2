@@ -9,52 +9,48 @@ export default function About() {
       <Header />
 
       <main className="flex-1">
-        {/* Brand Hero — Full-width cinematic layout */}
-        <section className="relative min-h-screen flex items-center overflow-hidden">
+        {/* Brand Hero — Magazine Split Layout: text left / photo right */}
+        <section className="min-h-screen flex items-center bg-[#f9f8f5]">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 min-h-screen">
 
-          {/* Background image — full width */}
-          <img
-            src="/brand-hero.png"
-            alt="VEDA CARE 品牌形象"
-            className="absolute inset-0 w-full h-full object-cover object-[62%_center]"
-          />
+            {/* Left: Copy — clean background, no photo behind */}
+            <div className="flex flex-col justify-center px-8 py-16 md:px-14 md:py-24 lg:px-20 order-last md:order-first">
 
-          {/* Left gradient overlay for text readability + color cohesion */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(105deg, rgba(45,79,30,0.82) 0%, rgba(45,79,30,0.70) 38%, rgba(45,79,30,0.30) 62%, rgba(45,79,30,0.0) 78%)'
-            }}
-          />
-
-          {/* Content */}
-          <div className="relative z-10 w-full max-w-xl px-8 py-24 md:max-w-2xl md:px-14 md:py-32 lg:px-20">
-
-            <p className="text-xs tracking-[0.35em] uppercase mb-8" style={{ color: 'rgba(255,255,255,0.75)', fontWeight: 500 }}>
-              VEDA CARE &nbsp;｜&nbsp; 郝營養
-            </p>
-
-            <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-8" style={{ color: '#ffffff', lineHeight: '1.6' }}>
-              最好的營養學，<br />是妳一聽就懂的日常。
-            </h1>
-
-            <p className="text-base md:text-lg font-bold mb-10 pb-10" style={{ color: 'rgba(255,255,255,0.90)', lineHeight: '1.9', borderBottom: '1px solid rgba(255,255,255,0.25)' }}>
-              「健康不該是一道艱澀的數學題，<br className="hidden md:block" />而是一份說走就走的底氣。」
-            </p>
-
-            <div className="space-y-5">
-              <p className="text-sm md:text-base" style={{ color: 'rgba(255,255,255,0.85)', lineHeight: '2.0', fontWeight: 400 }}>
-                看了 20 多年為了生活拼搏、卻透支底氣的妳，我深知：保養不該是無止盡的堆疊。
+              <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: '#2D4F1E', fontWeight: 500 }}>
+                VEDA CARE &nbsp;｜&nbsp; 郝營養
               </p>
-              <p className="text-sm md:text-base" style={{ color: 'rgba(255,255,255,0.85)', lineHeight: '2.0', fontWeight: 400 }}>
-                VEDA 已經為妳過濾掉繁瑣的研究與術語。關於成分比對與科研篩選的苦工，我已經替妳把關好了。把複雜的調研留給我，而那份「隨心所欲」的生活主導權，還給妳自己。
+
+              <h1 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: '#2D4F1E', lineHeight: '1.5' }}>
+                最好的營養學，<br />是妳一聽就懂的日常。
+              </h1>
+
+              <p className="text-base font-bold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
+                「健康不該是一道艱澀的數學題，<br className="hidden md:block" />而是一份說走就走的底氣。」
               </p>
-              <p className="text-sm md:text-base font-bold pt-2" style={{ color: '#ffffff', lineHeight: '1.9' }}>
-                專業的事交給我，妳只需要負責輕鬆地變好。
-              </p>
+
+              <div className="space-y-6">
+                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  看了 20 多年為了生活拼搏、卻透支底氣的妳，我深知：保養不該是無止盡的堆疊。
+                </p>
+                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  VEDA 已經為妳過濾掉繁瑣的研究與術語。關於成分比對與科研篩選的苦工，我已經替妳把關好了。把複雜的調研留給我，而那份「隨心所欲」的生活主導權，還給妳自己。
+                </p>
+                <p className="text-base font-bold pt-2" style={{ color: '#333333', lineHeight: '1.9' }}>
+                  專業的事交給我，妳只需要負責輕鬆地變好。
+                </p>
+              </div>
             </div>
-          </div>
 
+            {/* Right: Photo — full panel, face fully visible, no text overlay */}
+            <div className="relative min-h-[90vw] md:min-h-screen order-first md:order-last">
+              <img
+                src="/brand-hero.png"
+                alt="VEDA CARE 品牌形象"
+                className="absolute inset-0 w-full h-full object-cover object-[40%_center]"
+              />
+            </div>
+
+          </div>
         </section>
 
         {/* Brand Story */}
