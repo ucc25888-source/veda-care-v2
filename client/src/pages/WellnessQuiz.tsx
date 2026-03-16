@@ -233,7 +233,7 @@ export default function WellnessQuiz() {
                         </span>
                         <span
                           className="text-sm md:text-base leading-relaxed"
-                          style={{ color: isSelected ? '#ffffff' : '#333333', lineHeight: '1.7' }}
+                          style={{ color: isSelected ? '#ffffff' : '#4A4A4A', lineHeight: '1.7' }}
                         >
                           {opt.label}
                         </span>
@@ -309,7 +309,7 @@ export default function WellnessQuiz() {
                 <div className="w-10 h-[2px] mb-6" style={{ background: '#2D4F1E' }} />
 
                 <p className="text-sm md:text-base mb-6"
-                  style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
                   {result.description}
                 </p>
 

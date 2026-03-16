@@ -1,0 +1,23 @@
+Please apply a comprehensive "Premium Unification" update to the app, ensuring typography, colors, and layout consistency across ALL sections (Home, About, Quiz, Results, Product pages).
+
+**I. Strategic Typography (高級感字體一致化):**
+- **FONT:** Apply a clean, professional **Sans-Serif font family** (e.g., 'Inter', 'Lora' for body if a serif is desired, but let's stick to Sans-Serif for now like **'Helvetica Neue' or 'Montserrat'** for a more modern premium feel) GLOBALLY across the entire app. *NO MIXING OF FONTS.*
+- **Global Body Text Color:** Change all body text to a uniform **Deep Charcoal Grey (#4A4A4A)**. *Pure black is too harsh for premium brands.*
+- **Global Highlight/Accent Color:** Change all highlight text (like green sentences, important points) and CTA borders to the Deep Forest Green **(#2D4F1E)**.
+- **Header Text (e.g., 精準對策):** All header text should be Bold, Deep Forest Green **(#2D4F1E)**, and consistent in size.
+
+**II. Brand Philosophy Section Upgrade (品牌理念質感升級):**
+- **Remove Mixing:** Keep only ONE font style. Remove the extra formatting (mixing serif/sans-serif or italic). Use the Global Body Text with consistent Deep charcoal grey for the entire paragraph.
+- **Headline (e.g., 拿回生活的從容):** Make it Bold, Deep Forest Green **(#2D4F1E)**, and slightly larger for impact, but consistent with other headers.
+
+**III. Precision Strategy Section (精準對策區塊):**
+- **Remove Checklist Style:** REMOVE the extra list markers (like the small green checks or squares) next to the text "補足生理基底", "重拾內在平衡", etc. This will reduce visual clutter. 
+- **Block Layout:** Keep the overall block design but unify the text style *within* the blocks to match the global body text (Charcoal grey). Bold the titles (e.g., 補足生理基底).
+- **Icons:** Retain the clean icons (e.g., seedling, meditating person).
+
+**IV. Global UI Elements (網頁通用元件):**
+- **CTA Button (e.g., 立即測驗):** Keep the shape but ensure the white text is crisp against the Deep Forest Green (#2D4F1E) background. Use the global unified font.
+- **LINE Button:** Keep the clean heart icon, use Deep Charcoal Grey (#4A4A4A) for the text "加入 LINE@ 直接訂購".
+- **Product Price:** Keep Bold and uniform.
+
+Ensure that after this update, the entire webpage has a seamless, deliberate, and high-end aesthetic, like a luxury skincare or lifestyle brand.

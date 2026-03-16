@@ -29,13 +29,13 @@ export default function About() {
               </p>
 
               <div className="space-y-6">
-                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
                   看了 20 多年為了生活拼搏、卻透支底氣的妳，我深知：保養不該是無止盡的堆疊。
                 </p>
-                <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
                   VEDA 已經為妳過濾掉繁瑣的研究與術語。關於成分比對與科研篩選的苦工，我已經替妳把關好了。把複雜的調研留給我，而那份「隨心所欲」的生活主導權，還給妳自己。
                 </p>
-                <p className="text-base font-bold pt-2" style={{ color: '#333333', lineHeight: '1.9' }}>
+                <p className="text-base font-bold pt-2" style={{ color: '#4A4A4A', lineHeight: '1.9' }}>
                   專業的事交給我，妳只需要負責輕鬆地變好。
                 </p>
               </div>
@@ -56,7 +56,7 @@ export default function About() {
         {/* Brand Story */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-background to-primary/5">
           <div className="container max-w-3xl">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#333333', lineHeight: '1.4' }}>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#4A4A4A', lineHeight: '1.4' }}>
               {BRAND_STORY.title}
             </h2>
             <p className="text-base md:text-lg font-bold text-primary mb-10 md:mb-12" style={{ lineHeight: '1.8' }}>
@@ -65,7 +65,7 @@ export default function About() {
 
             <div className="space-y-6">
               {BRAND_STORY.content.split("\n\n").map((paragraph, index) => (
-                <p key={index} className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                <p key={index} className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
                   {paragraph}
                 </p>
               ))}
@@ -76,7 +76,7 @@ export default function About() {
         {/* Philosophy Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-background via-green-50/20 to-background border-y border-border">
           <div className="container">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center" style={{ color: '#333333' }}>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center" style={{ color: '#4A4A4A' }}>
               {BRAND_PHILOSOPHY.title}
             </h2>
 
@@ -86,7 +86,7 @@ export default function About() {
                   <h3 className="font-bold text-lg md:text-xl mb-3 text-primary">
                     {pillar.title}
                   </h3>
-                  <p className="text-base" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
+                  <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
                     {pillar.description}
                   </p>
                 </div>

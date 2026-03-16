@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: 'Noto Sans TC', system-ui, sans-serif;
-  --font-display: 'Noto Sans TC', sans-serif;
-  --font-heading: 'Noto Sans TC', sans-serif;
+  --font-sans: 'Montserrat', 'Noto Sans TC', system-ui, sans-serif;
+  --font-display: 'Montserrat', 'Noto Sans TC', sans-serif;
+  --font-heading: 'Montserrat', 'Noto Sans TC', sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -58,11 +58,11 @@
   --chart-5: oklch(0.35 0.17 140);
   --radius: 0.65rem;
   --background: oklch(0.98 0.001 0);
-  --foreground: oklch(0.235 0.015 65);
+  --foreground: oklch(0.345 0 0);
   --card: oklch(0.97 0.002 0);
-  --card-foreground: oklch(0.235 0.015 65);
+  --card-foreground: oklch(0.345 0 0);
   --popover: oklch(0.97 0.002 0);
-  --popover-foreground: oklch(0.235 0.015 65);
+  --popover-foreground: oklch(0.345 0 0);
   --secondary: oklch(0.50 0.13 140);
   --secondary-foreground: oklch(0.98 0 0);
   --muted: oklch(0.88 0.01 140);
@@ -127,8 +127,8 @@
   }
   body {
     @apply bg-background;
-    color: #333333;
-    font-family: 'Noto Sans TC', system-ui, sans-serif;
+    color: #4A4A4A;
+    font-family: 'Montserrat', 'Noto Sans TC', system-ui, sans-serif;
     line-height: 1.8;
     letter-spacing: 0.02em;
   }
@@ -201,6 +201,26 @@
 
   .btn-wellness-outline {
     @apply inline-flex items-center justify-center rounded-lg border-2 border-primary px-6 py-3 font-medium text-primary transition-all duration-200 hover:bg-primary/5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl px-7 py-3 font-semibold text-sm transition-all duration-200 active:scale-95;
+    background: #2D4F1E;
+    color: #ffffff;
+  }
+  .btn-primary:hover {
+    background: #3a6426;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border px-7 py-3 font-semibold text-sm transition-all duration-200 active:scale-95;
+    border-color: rgba(45,79,30,0.35);
+    color: #4A4A4A;
+    background: transparent;
+  }
+  .btn-secondary:hover {
+    background: rgba(45,79,30,0.05);
+    border-color: rgba(45,79,30,0.55);
   }
 
   .heading-display {
