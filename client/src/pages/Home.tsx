@@ -19,32 +19,60 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-screen md:h-[600px] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen md:min-h-[680px] flex items-center overflow-hidden">
+          {/* Background */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('/hero-bg.jpg')",
-            }}
+            style={{ backgroundImage: "url('/hero-bg.jpg')" }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/50" />
+            {/* Warm overlay — lighter on the right so the model stays visible */}
+            <div className="absolute inset-0"
+              style={{ background: 'linear-gradient(105deg, rgba(249,248,245,0.72) 0%, rgba(249,248,245,0.38) 55%, rgba(249,248,245,0.10) 100%)' }} />
           </div>
 
-          <div className="relative container z-10 max-w-2xl">
-            <div className="text-center">
-              <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-bold mb-6 leading-relaxed" style={{ letterSpacing: '0.08em' }}>
-                <span className="text-primary font-black">為什麼日子越過越好，</span>
-                <br />
-                <span className="text-primary font-black">身體的電量卻越掉越快？</span>
-              </h1>
-              <p className="text-base md:text-lg text-foreground/80 mb-8 leading-relaxed">
-                其實您需要的不是更多的休息，而是更精準的日常補給。VEDA CARE 專注於全方位機能調節，用最純粹的植萃力量，為您補足缺席的那一塊全人健康拼圖。
+          {/* Text — left-aligned, glassmorphism card */}
+          <div className="relative container z-10 flex justify-start">
+            <div
+              className="w-full max-w-xl px-8 py-10 md:px-12 md:py-14 rounded-3xl"
+              style={{
+                background: 'rgba(255, 255, 255, 0.52)',
+                backdropFilter: 'blur(18px)',
+                WebkitBackdropFilter: 'blur(18px)',
+                border: '1px solid rgba(255,255,255,0.70)',
+                boxShadow: '0 8px 40px rgba(45,79,30,0.08)',
+              }}
+            >
+              {/* Eyebrow label */}
+              <p className="text-xs tracking-[0.3em] uppercase font-semibold mb-5"
+                style={{ color: '#2D4F1E' }}>
+                VEDA CARE &nbsp;｜&nbsp; 全人健康
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/about" className="btn-secondary text-center font-bold">
+
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-display font-black mb-6"
+                style={{ color: '#2D4F1E', lineHeight: '1.55', letterSpacing: '0.04em' }}>
+                妳以為是老了，<br />
+                其實只是營養<br className="hidden sm:block" />
+                「走錯路」了。
+              </h1>
+
+              <p className="text-sm md:text-base mb-8"
+                style={{ color: '#4A4A4A', lineHeight: '2.0' }}>
+                身體的電量掉得比手機還快？這不是必然，而是警告。VEDA CARE 拒絕無止盡的堆疊，我們只給妳最精準的生理底氣。
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/about" className="btn-secondary text-center font-semibold">
                   認識我們
                 </Link>
-                <Link href="/shop" className="btn-primary text-center font-bold">
-                  探索純粹植萃
+                <Link href="/shop"
+                  className="inline-flex items-center justify-center text-center font-semibold text-sm px-7 py-3 transition-all duration-200 active:scale-95"
+                  style={{
+                    background: '#2D4F1E',
+                    color: '#ffffff',
+                    borderRadius: '1.25rem',
+                    boxShadow: '0 4px 16px rgba(45,79,30,0.22)',
+                  }}>
+                  探索純粹植萃 →
                 </Link>
               </div>
             </div>
