@@ -133,7 +133,7 @@ export default function Home() {
               {CATEGORIES.map((category) => {
                 const copy: Record<string, string> = {
                   "plant-nutrition": "精準補充每日所需原料，為身體預約明天的從容。",
-                  "frequency-resonance": "穩定情緒與睡眠底氣，找回游刃有餘的生活節奏。",
+                  "frequency-resonance": "維持情緒平衡與良好睡眠品質，找回游刃有餘的生活節奏。",
                   "veda-advisor": "由 Veda 親自為您規劃，最適合您的精準健康方案。",
                 };
                 return (
