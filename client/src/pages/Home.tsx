@@ -105,6 +105,39 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Wellness Quiz Banner */}
+        <section className="py-10 md:py-16">
+          <div className="container max-w-3xl">
+            <div className="rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-5 items-center"
+              style={{ background: 'linear-gradient(120deg, #2D4F1E 0%, #3d6b28 100%)' }}>
+              <div className="md:col-span-3 px-8 py-10 md:px-10 md:py-12">
+                <p className="text-xs tracking-[0.3em] uppercase font-medium mb-4"
+                  style={{ color: 'rgba(255,255,255,0.65)' }}>
+                  VEDA CARE &nbsp;｜&nbsp; 健康活力測驗
+                </p>
+                <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: '#ffffff', lineHeight: '1.5' }}>
+                  你的身體，現在幾分？
+                </h3>
+                <p className="text-sm mb-6" style={{ color: 'rgba(255,255,255,0.80)', lineHeight: '1.9' }}>
+                  6 個問題，找出你最需要的健康支持
+                </p>
+                <Link href="/quiz"
+                  className="inline-block px-7 py-3 rounded-xl font-bold text-sm transition-opacity hover:opacity-90"
+                  style={{ background: '#ffffff', color: '#2D4F1E' }}>
+                  立即測驗 →
+                </Link>
+              </div>
+              <div className="md:col-span-2 h-52 md:h-full relative">
+                <img
+                  src="/quiz-result.png"
+                  alt="健康活力測驗"
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Featured Products Carousel */}
         <section className="py-10 md:py-32 bg-gradient-to-b from-background via-green-50/20 to-background">
           <div className="container">

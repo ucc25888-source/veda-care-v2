@@ -13,6 +13,7 @@ import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Policies from "./pages/Policies";
 import StressTest from "./pages/StressTest";
+import WellnessQuiz from "./pages/WellnessQuiz";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -25,6 +26,7 @@ function Router() {
       <Route path={"/policies/:id"} component={Policies} />
       <Route path={"/policies"} component={Policies} />
       <Route path={"/stress-test"} component={StressTest} />
+      <Route path={"/quiz"} component={WellnessQuiz} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
