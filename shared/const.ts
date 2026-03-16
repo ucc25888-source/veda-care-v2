@@ -149,7 +149,7 @@ export const PRODUCTS: Product[] = [
 ];
 // 產品展示順序：先盒裝(product-1)，再袋裝(product-2)，最後敏捷素(product-3)
 export const BRAND_STORY = {
-  title: "減法才能讓生活的從容",
+  title: "減法才能讓生活「變」從容",
   subtitle: "最好的狀態，從來不是無止盡的堆疊。",
   content: `看了 20 多年，有太多人為了生活拼搏、卻透支底氣，捨不得保養自己。有些人是看到什麼補什麼，以為有補就是好，其實是大錯特錯。
 

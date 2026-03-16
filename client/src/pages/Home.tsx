@@ -359,7 +359,7 @@ export default function Home() {
               </p>
 
               <h2 className="text-2xl md:text-4xl font-bold mb-6" style={{ color: '#2D4F1E', lineHeight: '1.45' }}>
-                減法才能讓<br />生活的從容
+                減法才能讓<br />生活「變」從容
               </h2>
 
               <p className="text-base font-semibold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
