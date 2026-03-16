@@ -83,6 +83,15 @@ export default function ProductDetail() {
                   </p>
                 )}
 
+                {product.dietaryBadge && (
+                  <div className="mb-4">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full"
+                      style={{ background: 'rgba(45,79,30,0.1)', color: '#2D4F1E', border: '1px solid rgba(45,79,30,0.25)' }}>
+                      🌿 {product.dietaryBadge}
+                    </span>
+                  </div>
+                )}
+
                 <p className="text-lg text-foreground/70 mb-6">
                   {product.description}
                 </p>

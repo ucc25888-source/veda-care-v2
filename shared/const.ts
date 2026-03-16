@@ -14,6 +14,7 @@ export interface Product {
   description: string;
   benefits: string[];
   footerHook?: string;
+  dietaryBadge?: string;
   ingredients?: string[];
   howToUse?: string;
   suitableFor?: string;
@@ -100,16 +101,18 @@ export const PRODUCTS: Product[] = [
   {
     id: "product-3",
     name: "GOOD JOINT 敏捷素",
+    subtitle: "靈活，是給身體最優雅的底氣。",
     category: "plant-nutrition",
     price: 1200,
     image: "/good-joint.png",
-    description: "新一代高階胜肽補給，蘊含 50+ 植萃機能胜肽、珍貴三胜肽，並揉合穩健基底所需的礦物質與維生素 K2。小分子胜肽結構帶來極致順暢的吸收體驗，專為追求「流暢行動力」與「頂尖運動狀態」的您精準打造。台灣嚴謹製造，支持您的每一個躍動瞬間。",
+    description: "不該讓細微的卡頓，限制了妳對生活的想像。這款高階植萃胜肽配方，揉合了靈活應援的關鍵組件——MSM、薑黃與植物性葡萄糖胺。專為追求「行動主導權」的妳打造，讓每一次的跨步與轉身，都恢復到最絲滑的節奏，預約明天那份游刃有餘的從容。",
+    dietaryBadge: "奶素可食",
     benefits: [
-      "50+ 健康功能性胜肽",
-      "超級三胜肽",
-      "螯合礦物質與維生素 K2",
-      "支持動能節奏",
-      "小分子胜肽結構",
+      "關鍵應援：黃金比例 MSM 與薑黃，支撐身體最輕盈的活動節奏。",
+      "高階胜肽：精選小分子植萃胜肽，以極致吸收率補足妳的行動底氣。",
+      "精準引導：整合維生素 K2，確保每一份微量元素都能抵達關鍵位置。",
+      "絲滑體驗：專利胡椒鹼導航，帶來無負擔、更高效的營養利用。",
+      "純淨潔淨：台灣嚴謹製造，拒絕多餘添加，只留下最純粹的動能支持。",
     ],
     ingredients: [
       "大豆分離蛋白",
