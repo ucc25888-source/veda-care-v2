@@ -82,7 +82,7 @@ export default function About() {
               妳以為的保養，<br className="md:hidden" />是否正在透支妳？
             </h2>
             <p className="text-sm text-center mb-16" style={{ color: '#666666', lineHeight: '1.9' }}>
-              許多人做了很多，卻始終事倍功半。這三個誤區，妳中了幾個？
+              別再事倍功半！這三大誤區，妳中了嗎？
             </p>
 
             <div className="space-y-6">
