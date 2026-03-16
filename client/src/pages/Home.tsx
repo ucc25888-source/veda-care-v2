@@ -403,8 +403,8 @@ export default function Home() {
               {/* Closing Signature */}
               <div className="mt-2 pt-8 border-t border-[#2D4F1E]/12 text-center">
                 <p className="text-base italic"
-                  style={{ color: '#666666', lineHeight: '2.0', letterSpacing: '0.03em' }}>
-                  我深信，身體是有靈性的，它聽得懂妳給了它什麼。
+                  style={{ color: '#666666', lineHeight: '2.0', letterSpacing: '0.03em', whiteSpace: 'nowrap' }}>
+                  我深信，身體是有靈性的，它能懂妳給了什麼。
                 </p>
               </div>
             </div>
