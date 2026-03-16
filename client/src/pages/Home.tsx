@@ -352,32 +352,34 @@ export default function Home() {
             </div>
 
             {/* Right: Copy */}
-            <div className="flex flex-col justify-center px-8 py-16 md:px-14 md:py-24 lg:px-20">
+            <div className="flex flex-col justify-center px-8 py-20 md:px-14 md:py-32 lg:px-20">
 
               <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: '#2D4F1E', fontWeight: 500 }}>
                 VEDA CARE &nbsp;｜&nbsp; 品牌理念
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: '#2D4F1E', lineHeight: '1.5' }}>
-                拿回生活的從容：<br />這一次，我們做減法
+              <h2 className="text-2xl md:text-4xl font-bold mb-6" style={{ color: '#2D4F1E', lineHeight: '1.45' }}>
+                減法才能讓<br />生活的從容
               </h2>
 
-              <p className="text-base font-bold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
-                「真正的財富，是當生活推擠時，<br className="hidden md:block" />您依然能『游刃有餘』。」
+              <p className="text-base font-semibold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
+                「最好的狀態，從來不是無止盡的堆疊。」
               </p>
 
-              <div className="space-y-6">
-                <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
-                  看了 20 多年為了生活拼搏、卻透支底氣的現代人，我深知：保養不該是無止盡的堆疊。
+              <div className="space-y-5 mb-10">
+                <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '1.95', fontWeight: 400 }}>
+                  看了 20 多年，有太多人為了生活拼搏、卻透支底氣，捨不得保養自己。有些人是看到什麼補什麼，以為有補就是好，其實是大錯特錯。
                 </p>
-                <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
-                  讓繁瑣的篩選留給我。我們以精準的植萃高機能，取代盲目的堆疊。
+                <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '1.95', fontWeight: 400 }}>
+                  我們以精準的植萃高機能，取代盲目的補充。那些繁瑣的成分比對與科研調研交給我，好商品未必會貴，而那份「隨心所欲」的生活主導權，還給您自己。
                 </p>
-                <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
-                  那些繁瑣的成分比對與科研調研，VEDA 已經替您把關好了。把複雜的保養留給我，而那份隨心所欲的生活主導權，還給您自己。
-                </p>
-                <p className="text-base font-bold pt-2" style={{ color: '#4A4A4A', lineHeight: '1.9' }}>
-                  專業的事交給我，您只需要負責輕鬆地變好。
+              </div>
+
+              {/* Closing Signature */}
+              <div className="mt-2 pt-8 border-t border-[#2D4F1E]/12 text-center">
+                <p className="text-sm italic"
+                  style={{ color: '#666666', lineHeight: '2.0', letterSpacing: '0.03em' }}>
+                  把生活塞滿不叫充實，保養身體亦是如此。
                 </p>
               </div>
             </div>
