@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCarousel from "@/components/ProductCarousel";
+import QuizAppetizer from "@/components/QuizAppetizer";
 import {
   PRODUCTS,
   BRAND_PHILOSOPHY,
@@ -180,36 +181,54 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Wellness Quiz Banner */}
-        <section className="py-10 md:py-16">
-          <div className="container max-w-3xl">
-            <div className="rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-5 items-center"
-              style={{ background: 'linear-gradient(120deg, #2D4F1E 0%, #3d6b28 100%)' }}>
-              <div className="md:col-span-3 px-8 py-10 md:px-10 md:py-12">
-                <p className="text-xs tracking-[0.3em] uppercase font-medium mb-4"
-                  style={{ color: 'rgba(255,255,255,0.65)' }}>
-                  VEDA CARE &nbsp;｜&nbsp; 健康活力測驗
-                </p>
-                <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: '#ffffff', lineHeight: '1.5' }}>
-                  你的身體，現在幾分？
-                </h3>
-                <p className="text-sm mb-6" style={{ color: 'rgba(255,255,255,0.80)', lineHeight: '1.9' }}>
-                  6 個問題，找出你最需要的健康支持
-                </p>
-                <Link href="/quiz"
-                  className="inline-block px-7 py-3 rounded-xl font-bold text-sm transition-opacity hover:opacity-90"
-                  style={{ background: '#ffffff', color: '#2D4F1E' }}>
-                  立即測驗 →
-                </Link>
-              </div>
-              <div className="md:col-span-2 h-52 md:h-full relative">
-                <img
-                  src="/quiz-result.png"
-                  alt="健康活力測驗"
-                  className="absolute inset-0 w-full h-full object-cover object-top"
-                />
-              </div>
+        {/* Journey Map — Discovery Path */}
+        <section className="py-10 md:py-14 bg-[#f9f8f5]">
+          <div className="container max-w-2xl">
+            <p className="text-xs tracking-[0.3em] uppercase font-semibold text-center mb-8"
+              style={{ color: 'rgba(45,79,30,0.5)' }}>
+              VEDA CARE &nbsp;｜&nbsp; 妳的發現旅程
+            </p>
+
+            <div className="relative flex items-start justify-between gap-2">
+              {/* Connecting line */}
+              <div className="absolute top-[18px] left-[12.5%] right-[12.5%] h-[2px]"
+                style={{ background: 'rgba(45,79,30,0.12)' }} />
+
+              {[
+                { step: "01", label: "覺察", sub: "發現漏電點", active: true },
+                { step: "02", label: "深解", sub: "了解根本原因", active: false },
+                { step: "03", label: "精準匹配", sub: "獲取科研方案", active: false },
+              ].map((s) => (
+                <div key={s.step} className="flex-1 flex flex-col items-center text-center relative z-10">
+                  <div
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold mb-2 transition-all duration-300"
+                    style={{
+                      background: s.active ? '#2D4F1E' : '#ffffff',
+                      border: s.active ? '2px solid #2D4F1E' : '2px solid rgba(45,79,30,0.18)',
+                      color: s.active ? '#ffffff' : 'rgba(45,79,30,0.4)',
+                      boxShadow: s.active ? '0 0 0 5px rgba(45,79,30,0.10)' : 'none',
+                      animation: s.active ? 'scanPulse 2.2s ease-in-out infinite' : 'none',
+                    }}
+                  >
+                    {s.step}
+                  </div>
+                  <p className="text-xs font-bold mb-0.5"
+                    style={{ color: s.active ? '#2D4F1E' : 'rgba(45,79,30,0.45)' }}>
+                    {s.label}
+                  </p>
+                  <p className="text-[10px]" style={{ color: 'rgba(45,79,30,0.35)' }}>
+                    {s.sub}
+                  </p>
+                </div>
+              ))}
             </div>
+          </div>
+        </section>
+
+        {/* Route A — Appetizer Quiz */}
+        <section className="py-10 md:py-16 bg-[#f9f8f5]">
+          <div className="container max-w-xl">
+            <QuizAppetizer />
           </div>
         </section>
 

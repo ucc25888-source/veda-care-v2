@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,18 +8,56 @@ const MISCONCEPTIONS = [
     index: "01",
     myth: "看到熱門成分就補，以為「多」就是好。",
     truth: "盲目堆疊只會增加代謝負擔。VEDA 主張「精準減法」，只給身體認得出的純粹。",
+    insight: "你知道嗎？同時補充過多種類的保健品，反而可能干擾彼此的吸收率。「精準」才是最高效的日常保養策略。",
   },
   {
     index: "02",
     myth: "累了就喝咖啡或提神飲料，快速充電。",
     truth: "那只是在預支未來的能量。真正的底氣，來自於日常穩健的生理基底維護。",
+    insight: "你知道嗎？咖啡因的提神效果通常只維持 3-5 小時，之後反而會有「能量谷底」效應。穩定的植萃日常補充，才是更持久的能量基礎。",
   },
   {
     index: "03",
     myth: "保養是為了「以後」不生病。",
     truth: "保養是為了「現在」就能隨心所欲。最好的狀態，是妳想走就走的自由。",
+    insight: "你知道嗎？研究顯示，把保養當成「現在的投資」而非「未來的保險」的人，更容易建立持久的健康習慣，並對自己的狀態感到滿意。",
   },
 ];
+
+function InsightTooltip({ text }: { text: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="relative inline-block mt-3">
+      <button
+        onClick={() => setOpen(!open)}
+        className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full transition-all duration-200"
+        style={{
+          background: open ? '#2D4F1E' : 'rgba(45,79,30,0.08)',
+          color: open ? '#ffffff' : '#2D4F1E',
+          border: '1px solid rgba(45,79,30,0.18)',
+        }}
+      >
+        <span>💡</span>
+        <span>深入解析</span>
+        <span style={{ transform: open ? 'rotate(180deg)' : 'none', display: 'inline-block', transition: 'transform 0.2s' }}>▾</span>
+      </button>
+      {open && (
+        <div
+          className="mt-2 p-4 rounded-2xl text-sm"
+          style={{
+            background: 'rgba(45,79,30,0.06)',
+            border: '1px solid rgba(45,79,30,0.14)',
+            color: '#4A4A4A',
+            lineHeight: '1.85',
+            animation: 'tooltipReveal 0.3s cubic-bezier(0.34,1.56,0.64,1) both',
+          }}
+        >
+          {text}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function About() {
   return (
@@ -119,6 +158,7 @@ export default function About() {
                         <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '1.9' }}>
                           {item.truth}
                         </p>
+                        <InsightTooltip text={item.insight} />
                       </div>
                     </div>
                   </div>

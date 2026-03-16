@@ -176,81 +176,92 @@ export default function WellnessQuiz() {
         {!done ? (
           <section
             className="min-h-[calc(100vh-80px)] flex flex-col items-center justify-center px-4 py-16"
-            style={{ background: "linear-gradient(160deg, #f9f8f5 0%, #eef3ec 100%)" }}
+            style={{ background: "linear-gradient(160deg, #f4f7f5 0%, #edf2ef 100%)" }}
           >
             <div className="w-full max-w-xl">
 
-              {/* Badge */}
-              <p className="text-xs tracking-[0.3em] uppercase text-center mb-6 font-medium"
-                style={{ color: '#2D4F1E' }}>
-                VEDA CARE &nbsp;｜&nbsp; 身體自主意識測驗
-              </p>
+              {/* Clinical badge */}
+              <div className="flex items-center justify-center gap-3 mb-7">
+                <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#2D4F1E', animation: 'scanPulse 1.5s ease-in-out infinite' }} />
+                <p className="text-xs tracking-[0.22em] uppercase font-semibold text-center"
+                  style={{ color: '#2D4F1E' }}>
+                  VEDA LABS &nbsp;｜&nbsp; 科研匹配分析
+                </p>
+                <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#2D4F1E', animation: 'scanPulse 1.5s ease-in-out infinite 0.75s' }} />
+              </div>
 
-              {/* Progress bar */}
-              <div className="w-full h-[3px] rounded-full mb-2" style={{ background: 'rgba(45,79,30,0.12)' }}>
-                <div
-                  className="h-[3px] rounded-full transition-all duration-700 ease-out"
-                  style={{ width: `${progress}%`, background: '#2D4F1E' }}
-                />
+              {/* Progress — clinical scan style */}
+              <div className="mb-2 flex items-center gap-3">
+                <div className="flex-1 h-[2px] rounded-full" style={{ background: 'rgba(45,79,30,0.1)' }}>
+                  <div
+                    className="h-[2px] rounded-full"
+                    style={{ width: `${progress}%`, background: '#2D4F1E', transition: 'width 0.7s cubic-bezier(0.34,1.02,0.64,1)' }}
+                  />
+                </div>
+                <span className="text-[10px] font-bold tracking-widest shrink-0"
+                  style={{ color: '#2D4F1E', animation: 'scanPulse 2s ease-in-out infinite' }}>
+                  SCANNING
+                </span>
               </div>
               <div className="flex justify-between mb-8">
                 <span className="text-xs font-medium" style={{ color: 'rgba(45,79,30,0.5)' }}>
-                  Step {current + 1} / {QUESTIONS.length}
+                  分析項目 {current + 1} / {QUESTIONS.length}
                 </span>
                 <span className="text-xs font-medium" style={{ color: 'rgba(45,79,30,0.35)' }}>
-                  {Math.round(((current) / QUESTIONS.length) * 100)}% 完成
+                  {Math.round((current / QUESTIONS.length) * 100)}% 完成
                 </span>
               </div>
 
-              {/* Question card — keyed for fade-slide animation */}
+              {/* Question card — spring animation */}
               <div
                 key={animKey}
-                style={{ animation: 'quizFadeSlide 0.42s cubic-bezier(0.22,1,0.36,1) both' }}
+                style={{ animation: 'springIn 0.5s cubic-bezier(0.34,1.56,0.64,1) both' }}
               >
-                {/* Topic */}
-                <p className="text-xs font-semibold tracking-wider uppercase mb-3"
-                  style={{ color: 'rgba(45,79,30,0.65)' }}>
-                  {q.topic}
-                </p>
+                {/* Category chip */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg mb-4"
+                  style={{ background: 'rgba(45,79,30,0.07)', border: '1px solid rgba(45,79,30,0.12)' }}>
+                  <span className="w-1.5 h-1.5 rounded-full" style={{ background: '#2D4F1E' }} />
+                  <span className="text-[11px] font-semibold tracking-wider uppercase" style={{ color: '#2D4F1E' }}>
+                    {q.topic}
+                  </span>
+                </div>
 
                 {/* Question */}
                 <h2 className="text-lg md:text-xl font-bold mb-7"
-                  style={{ color: '#2D4F1E', lineHeight: '1.7' }}>
+                  style={{ color: '#1a2e12', lineHeight: '1.7' }}>
                   {q.question}
                 </h2>
 
-                {/* Options */}
-                <div className="space-y-3 mb-8">
+                {/* Options — clinical line style */}
+                <div className="space-y-2.5 mb-8">
                   {q.options.map((opt) => {
                     const isSelected = selectedKey === opt.key;
                     return (
                       <button
                         key={opt.key}
                         onClick={() => handleSelect(opt.key)}
-                        className="w-full text-left rounded-2xl transition-all duration-200"
+                        className="w-full text-left rounded-xl transition-all duration-250"
                         style={{
-                          border: isSelected
-                            ? '2px solid #2D4F1E'
-                            : '2px solid rgba(45,79,30,0.16)',
-                          background: isSelected ? '#2D4F1E' : '#ffffff',
-                          boxShadow: isSelected
-                            ? '0 0 0 4px rgba(45,79,30,0.12)'
-                            : '0 1px 4px rgba(0,0,0,0.04)',
+                          border: isSelected ? '1.5px solid #2D4F1E' : '1.5px solid rgba(45,79,30,0.14)',
+                          background: isSelected ? 'rgba(45,79,30,0.05)' : '#ffffff',
+                          borderLeft: isSelected ? '4px solid #2D4F1E' : '4px solid transparent',
+                          boxShadow: isSelected ? '0 2px 16px rgba(45,79,30,0.10)' : '0 1px 3px rgba(0,0,0,0.03)',
                         }}
                       >
                         <div className="flex items-start gap-4 px-5 py-4">
                           <span
-                            className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold mt-0.5 transition-all duration-200"
+                            className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold mt-0.5 transition-all duration-200"
                             style={{
-                              background: isSelected ? 'rgba(255,255,255,0.22)' : 'rgba(45,79,30,0.08)',
+                              background: isSelected ? '#2D4F1E' : 'rgba(45,79,30,0.07)',
                               color: isSelected ? '#ffffff' : '#2D4F1E',
+                              fontFamily: 'monospace',
                             }}
                           >
-                            {opt.key}
+                            {isSelected ? '✓' : opt.key}
                           </span>
                           <span
                             className="text-sm md:text-base"
-                            style={{ color: isSelected ? '#ffffff' : '#4A4A4A', lineHeight: '1.75' }}
+                            style={{ color: '#4A4A4A', lineHeight: '1.75', fontWeight: isSelected ? 500 : 400 }}
                           >
                             {opt.label}
                           </span>
@@ -260,20 +271,19 @@ export default function WellnessQuiz() {
                   })}
                 </div>
 
-                {/* Next / Submit */}
+                {/* Confirm */}
                 <button
                   onClick={handleNext}
                   disabled={!selectedKey}
-                  className="w-full py-4 rounded-2xl font-bold text-base transition-all duration-200"
+                  className="w-full py-4 rounded-xl font-bold text-base transition-all duration-200"
                   style={{
-                    background: selectedKey ? '#2D4F1E' : 'rgba(45,79,30,0.20)',
+                    background: selectedKey ? '#2D4F1E' : 'rgba(45,79,30,0.18)',
                     color: '#ffffff',
                     cursor: selectedKey ? 'pointer' : 'not-allowed',
-                    letterSpacing: '0.02em',
-                    transform: selectedKey ? 'scale(1)' : 'scale(0.99)',
+                    letterSpacing: '0.04em',
                   }}
                 >
-                  {current + 1 === QUESTIONS.length ? "查看我的專屬結果 →" : "下一題 →"}
+                  {current + 1 === QUESTIONS.length ? "生成我的專屬科研報告 →" : "確認，進入下一項分析 →"}
                 </button>
               </div>
 
@@ -284,7 +294,7 @@ export default function WellnessQuiz() {
           /* ── Results ── */
           <section
             className="flex flex-col"
-            style={{ background: "linear-gradient(160deg, #f9f8f5 0%, #eef3ec 100%)", animation: 'quizFadeSlide 0.5s cubic-bezier(0.22,1,0.36,1) both' }}
+            style={{ background: "linear-gradient(160deg, #f4f7f5 0%, #edf2ef 100%)", animation: 'springIn 0.55s cubic-bezier(0.34,1.56,0.64,1) both' }}
           >
             {/* Hero photo */}
             <div className="relative w-full overflow-hidden" style={{ maxHeight: '360px' }}>
@@ -304,6 +314,19 @@ export default function WellnessQuiz() {
             </div>
 
             <div className="max-w-2xl mx-auto w-full px-6 py-10 md:py-14">
+
+              {/* Clinical report header */}
+              <div className="flex items-center gap-3 mb-6 pb-6 border-b border-[rgba(45,79,30,0.10)]">
+                <div className="flex gap-1">
+                  <div className="w-2 h-2 rounded-full" style={{ background: '#2D4F1E' }} />
+                  <div className="w-2 h-2 rounded-full" style={{ background: 'rgba(45,79,30,0.3)' }} />
+                  <div className="w-2 h-2 rounded-full" style={{ background: 'rgba(45,79,30,0.1)' }} />
+                </div>
+                <span className="text-[10px] font-bold tracking-[0.3em] uppercase"
+                  style={{ color: 'rgba(45,79,30,0.5)' }}>
+                  VEDA PERSONAL REPORT
+                </span>
+              </div>
 
               <p className="text-xs tracking-[0.3em] uppercase font-medium mb-3"
                 style={{ color: 'rgba(45,79,30,0.6)' }}>
