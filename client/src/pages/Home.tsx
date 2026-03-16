@@ -18,8 +18,8 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative min-h-screen md:min-h-[680px] flex items-center overflow-hidden">
+        {/* Hero Section — 78vh so next section peeks at bottom */}
+        <section className="relative flex items-center overflow-hidden" style={{ minHeight: '78vh', maxHeight: '860px' }}>
           {/* Background */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -77,13 +77,22 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Scroll indicator — bouncing chevron */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 z-10"
+            style={{ animation: 'scrollBounce 1.8s ease-in-out infinite' }}>
+            <span className="text-xs tracking-widest uppercase font-medium" style={{ color: 'rgba(45,79,30,0.55)', letterSpacing: '0.2em' }}>scroll</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(45,79,30,0.55)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
         </section>
 
         {/* Brand Introduction Section */}
-        <section className="py-10 md:py-32 bg-gradient-to-b from-background via-orange-50/20 to-background">
+        <section className="py-10 md:py-16 bg-gradient-to-b from-background via-orange-50/20 to-background">
           <div className="container max-w-3xl">
-            <div className="text-center mb-8 md:mb-20">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png" alt="VEDA CARE" className="h-24 w-auto mx-auto mb-6" />
+            <div className="text-center mb-6 md:mb-12">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png" alt="VEDA CARE" className="h-16 w-auto mx-auto mb-5" />
               <h2 className="text-xl md:text-3xl lg:text-4xl font-display font-bold text-primary mb-4">
                 <span className="block">歡迎來到</span>
                 <span className="block">VEDA CARE</span>
