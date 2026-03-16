@@ -286,3 +286,27 @@
   from { opacity: 0; transform: translateY(-6px) scale(0.97); }
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
+
+@keyframes lockPop {
+  0%   { opacity: 0; transform: scale(0.6) translateY(10px); }
+  40%  { opacity: 1; transform: scale(1.25) translateY(-4px); }
+  60%  { transform: scale(0.95) translateY(2px); }
+  75%  { transform: scale(1.08) translateY(-1px); }
+  88%  { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+
+@keyframes ctaGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(45,79,30,0), 0 4px 16px rgba(45,79,30,0.25); }
+  50%       { box-shadow: 0 0 0 7px rgba(45,79,30,0.12), 0 8px 28px rgba(45,79,30,0.42); }
+}
+
+@keyframes playPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.25); transform: scale(1); }
+  50%       { box-shadow: 0 0 0 12px rgba(255,255,255,0); transform: scale(1.06); }
+}
+
+@keyframes unlockFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

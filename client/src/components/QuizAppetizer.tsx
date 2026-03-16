@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 
 const QUICK_QUESTIONS = [
@@ -72,7 +72,7 @@ const DRAIN_RESULTS = {
   },
 };
 
-type Phase = "idle" | "quiz" | "result" | "unlocked";
+type Phase = "idle" | "quiz" | "result" | "unlocking" | "unlocked";
 
 export default function QuizAppetizer() {
   const [phase, setPhase] = useState<Phase>("idle");
@@ -81,6 +81,22 @@ export default function QuizAppetizer() {
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [advancing, setAdvancing] = useState(false);
   const [animKey, setAnimKey] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(false);
+
+  useEffect(() => {
+    if (phase === "unlocking") {
+      const t = setTimeout(() => setPhase("unlocked"), 1500);
+      return () => clearTimeout(t);
+    }
+  }, [phase]);
+
+  function togglePlay() {
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.paused) { v.play(); setPlaying(true); }
+    else { v.pause(); setPlaying(false); }
+  }
 
   const aCount = answers.filter((a) => a === "A").length;
   const drainLevel = aCount >= 3 ? "high" : aCount >= 1 ? "medium" : "low";
@@ -112,6 +128,8 @@ export default function QuizAppetizer() {
     setSelectedKey(null);
     setAdvancing(false);
     setAnimKey(0);
+    setPlaying(false);
+    if (videoRef.current) videoRef.current.pause();
   }
 
   const q = QUICK_QUESTIONS[current];
@@ -169,7 +187,7 @@ export default function QuizAppetizer() {
     );
   }
 
-  if (phase === "result" || phase === "unlocked") {
+  if (phase === "result" || phase === "unlocking" || phase === "unlocked") {
     return (
       <div
         className="rounded-3xl overflow-hidden"
@@ -235,7 +253,7 @@ export default function QuizAppetizer() {
 
           {phase === "result" && (
             <button
-              onClick={() => setPhase("unlocked")}
+              onClick={() => setPhase("unlocking")}
               className="w-full py-4 rounded-2xl font-bold text-sm mb-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
               style={{ background: "#2D4F1E", color: "#ffffff" }}
             >
@@ -243,52 +261,128 @@ export default function QuizAppetizer() {
             </button>
           )}
 
+          {/* ── Unlocking animation ── */}
+          {phase === "unlocking" && (
+            <div
+              className="flex flex-col items-center justify-center py-10"
+              style={{ animation: "unlockFadeIn 0.35s ease both" }}
+            >
+              <span
+                className="text-6xl mb-4"
+                style={{ animation: "lockPop 1.5s cubic-bezier(0.34,1.56,0.64,1) both", display: "block" }}
+              >
+                🔓
+              </span>
+              <p className="text-xs font-semibold tracking-widest"
+                style={{ color: "rgba(45,79,30,0.5)", letterSpacing: "0.2em" }}>
+                正在解鎖妳的專屬方案…
+              </p>
+            </div>
+          )}
+
+          {/* ── Unlocked: cinematic video reward ── */}
           {phase === "unlocked" && (
-            <div style={{ animation: "springIn 0.45s cubic-bezier(0.34,1.56,0.64,1) both" }}>
-              <p className="text-xs font-semibold tracking-widest uppercase text-center mb-4"
-                style={{ color: "rgba(45,79,30,0.5)" }}>
-                🔓 已解鎖：品牌影片 + 科研精準方案
+            <div style={{ animation: "unlockFadeIn 0.55s cubic-bezier(0.34,1.02,0.64,1) both" }}>
+
+              {/* Caption above */}
+              <p
+                className="text-sm font-bold text-center mb-3"
+                style={{ color: "#2D4F1E", letterSpacing: "0.04em" }}
+              >
+                🔓 已解鎖：專屬妳的重啟預覽
               </p>
 
-              {/* Brand video reward */}
+              {/* Cinematic 16:9 video container */}
               <div
-                className="rounded-2xl overflow-hidden mb-5"
-                style={{ aspectRatio: "16/9", background: "#1a2e12", position: "relative" }}
+                className="rounded-2xl overflow-hidden mb-2"
+                style={{
+                  aspectRatio: "16/9",
+                  background: "linear-gradient(135deg, #1a2e12 0%, #0f1d0a 100%)",
+                  position: "relative",
+                  cursor: "pointer",
+                }}
+                onClick={togglePlay}
               >
                 <video
-                  autoPlay
+                  ref={videoRef}
                   muted
                   loop
                   playsInline
+                  poster="/brand-hero.png"
                   className="absolute inset-0 w-full h-full object-cover"
-                  style={{ opacity: 0.6 }}
+                  style={{ opacity: playing ? 0.85 : 0.55 }}
                 >
                   <source src="/veda_brand_video.mp4" type="video/mp4" />
                 </video>
+
+                {/* Gradient overlay */}
                 <div
-                  className="absolute inset-0 flex flex-col items-center justify-center"
+                  className="absolute inset-0"
                   style={{
-                    background: "linear-gradient(135deg, rgba(45,79,30,0.68) 0%, rgba(26,46,18,0.48) 100%)",
+                    background: playing
+                      ? "linear-gradient(to top, rgba(26,46,18,0.55) 0%, transparent 50%)"
+                      : "linear-gradient(135deg, rgba(26,46,18,0.62) 0%, rgba(45,79,30,0.38) 100%)",
+                    pointerEvents: "none",
                   }}
-                >
-                  <div
-                    className="w-12 h-12 rounded-full flex items-center justify-center mb-3"
-                    style={{ background: "rgba(255,255,255,0.2)", backdropFilter: "blur(8px)" }}
-                  >
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                      <polygon points="5,3 19,12 5,21" />
-                    </svg>
+                />
+
+                {/* Pulsing play button */}
+                {!playing && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div
+                      className="w-16 h-16 rounded-full flex items-center justify-center"
+                      style={{
+                        background: "rgba(255,255,255,0.18)",
+                        backdropFilter: "blur(10px)",
+                        border: "1.5px solid rgba(255,255,255,0.35)",
+                        animation: "playPulse 2s ease-in-out infinite",
+                      }}
+                    >
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" style={{ marginLeft: 3 }}>
+                        <polygon points="5,3 19,12 5,21" />
+                      </svg>
+                    </div>
                   </div>
-                  <p className="text-xs font-medium tracking-widest" style={{ color: "rgba(255,255,255,0.7)" }}>
-                    30 秒，看見妳渴望的從容
-                  </p>
-                </div>
+                )}
+
+                {/* Pause icon when playing */}
+                {playing && (
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div
+                      className="w-12 h-12 rounded-full flex items-center justify-center gap-1"
+                      style={{ background: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)" }}
+                    >
+                      <div className="w-1.5 h-5 rounded-full bg-white" />
+                      <div className="w-1.5 h-5 rounded-full bg-white" />
+                    </div>
+                  </div>
+                )}
               </div>
 
+              {/* Caption below — Montserrat italic */}
+              <p
+                className="text-center mb-5"
+                style={{
+                  fontFamily: "'Montserrat', sans-serif",
+                  fontStyle: "italic",
+                  fontSize: "14px",
+                  color: "rgba(45,79,30,0.55)",
+                  lineHeight: "1.6",
+                }}
+              >
+                30 秒，看見妳渴望的從容
+              </p>
+
+              {/* Glowing CTA */}
               <Link
                 href="/quiz"
                 className="block w-full text-center py-4 rounded-2xl font-bold text-sm mb-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
-                style={{ background: "#2D4F1E", color: "#ffffff" }}
+                style={{
+                  background: "#2D4F1E",
+                  color: "#ffffff",
+                  animation: "ctaGlow 2.4s ease-in-out infinite",
+                  letterSpacing: "0.03em",
+                }}
               >
                 進入 VEDA 科研精準方案匹配 →
               </Link>
