@@ -53,7 +53,7 @@ export default function About() {
                 <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
                   我們以精準的植萃高機能，取代盲目的補充。那些繁瑣的成分比對與科研調研交給我，好商品未必會貴，而那份「隨心所欲」的生活主導權，還給妳自己。
                 </p>
-                <p className="text-sm" style={{ color: '#666666', lineHeight: '1.9', fontStyle: 'italic' }}>
+                <p className="text-base" style={{ color: '#666666', lineHeight: '1.9', fontStyle: 'italic' }}>
                   把生活塞滿不叫充實，保養身體亦是如此。
                 </p>
               </div>
