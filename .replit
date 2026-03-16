@@ -41,3 +41,9 @@ externalPort = 3000
 deploymentTarget = "autoscale"
 run = ["node", "dist/index.js"]
 build = ["pnpm", "run", "build"]
+
+[userenv]
+
+[userenv.shared]
+VITE_ANALYTICS_ENDPOINT = "https://placeholder.com"
+VITE_ANALYTICS_WEBSITE_ID = "12345"
