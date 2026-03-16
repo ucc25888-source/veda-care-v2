@@ -7,11 +7,13 @@ export const LINE_OFFICIAL_URL = "https://lin.ee/10DnnGU";
 export interface Product {
   id: string;
   name: string;
+  subtitle?: string;
   category: "plant-nutrition" | "frequency-resonance" | "veda-advisor";
   price: number;
   image: string;
   description: string;
   benefits: string[];
+  footerHook?: string;
   ingredients?: string[];
   howToUse?: string;
   suitableFor?: string;
@@ -65,18 +67,20 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "product-2",
-    name: "EAA 完美互補植物蛋白 (環保袋裝)",
+    name: "EAA 完美互補植物蛋白（500g 大容量環保裝）",
+    subtitle: "穩定，是給身體最深情的告白。",
     category: "plant-nutrition",
     price: 990,
     image: "/eaa-bag.png",
-    description: "含有完整 EAA 胺基酸的植物性蛋白粉 (全素可食)。高優質均衡蛋白質、高優質纖維。📦 500g 居家穩健打底 / 全方位機能補給。台灣製造。",
+    description: "最好的修護，不在於偶爾的衝刺，而在於每日的堅持。500g 居家穩健裝，為妳省去過度包裝，留下最純粹的營養基石。讓這份「大容量的守護」成為妳餐桌上的日常儀式，在每個清晨或運動後，紮實地撐起妳的動能需求。",
     benefits: [
-      "高PER蛋白質效率化",
-      "最均衡PDCAAS=1",
-      "健康不飽和脂肪酸與饍食纖維",
-      "非人工甘味劑、天然不加糖",
-      "添加每天需要量1/3的微量元素及維生素",
+      "效率修護：以極致利用率，在妳休息時默默完成能量補給。",
+      "全時守護：PDCAAS=1 黃金比例，確保妳的胺基酸庫房永遠充足。",
+      "代謝支撐：高品質膳食纖維，讓身體由內而外感受輕盈與順暢。",
+      "潔淨配方：無添加糖、無人工代糖，只有黑芝麻最誠實的醇香。",
+      "微量補給：每日一杯，精準填補那些被忙碌生活消耗的隱形微元素。",
     ],
+    footerHook: "這不只是完美互補植物蛋白，更是妳對身體「主導權」的長期投資。",
     ingredients: [
       "大豆分離蛋白",
       "芝麻蛋白",

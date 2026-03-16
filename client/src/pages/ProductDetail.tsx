@@ -72,9 +72,16 @@ export default function ProductDetail() {
                   {product.category.replace("-", " ")}
                 </p>
 
-                <h1 className="text-2xl md:text-5xl font-display font-bold text-foreground mb-4">
+                <h1 className="text-2xl md:text-5xl font-display font-bold text-foreground mb-3">
                   {product.name}
                 </h1>
+
+                {product.subtitle && (
+                  <p className="text-base md:text-lg font-medium italic mb-4"
+                    style={{ color: '#2D4F1E' }}>
+                    「{product.subtitle}」
+                  </p>
+                )}
 
                 <p className="text-lg text-foreground/70 mb-6">
                   {product.description}
@@ -105,6 +112,15 @@ export default function ProductDetail() {
                     ))}
                   </ul>
                 </div>
+
+                {product.footerHook && (
+                  <div className="mb-8 px-5 py-4 rounded-2xl"
+                    style={{ background: 'rgba(45,79,30,0.07)', borderLeft: '3px solid #2D4F1E' }}>
+                    <p className="text-sm font-medium" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
+                      「{product.footerHook}」
+                    </p>
+                  </div>
+                )}
 
                 {/* Add to Cart / LINE@ Ordering */}
                 <div className="space-y-3 mb-8">
