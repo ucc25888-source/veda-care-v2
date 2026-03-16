@@ -224,7 +224,7 @@ export default function About() {
 
             <h2 className="text-2xl md:text-3xl font-bold mb-6"
               style={{ color: '#ffffff', lineHeight: '1.6' }}>
-              不再讓身體拖妳後腿，<br />從這一步開始。
+              別讓身體拖了後腿，<br />從這一步開始。
             </h2>
 
             <p className="text-sm mb-10" style={{ color: 'rgba(255,255,255,0.72)', lineHeight: '2.0' }}>
