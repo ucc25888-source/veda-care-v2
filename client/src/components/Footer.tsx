@@ -79,6 +79,14 @@ export default function Footer() {
                   Instagram
                 </a>
               </li>
+              <li>
+                <a
+                  href="mailto:ucc25888@gmail.com"
+                  className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+                >
+                  Mail 聯繫
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -111,7 +119,7 @@ export default function Footer() {
             <div className="space-y-6">
               {/* FAQ Item 1 */}
               <details className="group cursor-pointer">
-                <summary className="flex items-center justify-between font-medium text-foreground hover:text-primary transition-colors">
+                <summary className="flex items-center justify-between font-medium text-foreground/60 hover:text-primary transition-colors">
                   <span>如何加入 LINE@ 客服？</span>
                   <span className="text-lg group-open:rotate-180 transition-transform">▼</span>
                 </summary>
@@ -127,7 +135,7 @@ export default function Footer() {
 
               {/* FAQ Item 2 */}
               <details className="group cursor-pointer">
-                <summary className="flex items-center justify-between font-medium text-foreground hover:text-primary transition-colors">
+                <summary className="flex items-center justify-between font-medium text-foreground/60 hover:text-primary transition-colors">
                   <span>貨到付款的流程是什麼？</span>
                   <span className="text-lg group-open:rotate-180 transition-transform">▼</span>
                 </summary>
@@ -136,16 +144,15 @@ export default function Footer() {
                   <ol className="mt-3 space-y-2 list-decimal list-inside">
                     <li>加入官方 LINE@，告訴我們您想要的產品和數量</li>
                     <li>我們會確認您的訂單並提供總金額</li>
-                    <li>安排宅配送貨，您可選擇方便的收貨時間</li>
-                    <li>收貨時直接支付給宅配人員即可</li>
+                    <li>安排宅配送貨，收貨時直接支付給宅配人員即可</li>
                   </ol>
-                  <p className="mt-3"><span className="font-medium">運費說明：</span>滿 NT$3,000 免運費，未滿則需支付運費。</p>
+                  <p className="mt-3"><span className="font-medium">運費說明：</span>滿 NT$3,000 免運費，未滿則需支付運費 100 元。</p>
                 </div>
               </details>
 
               {/* FAQ Item 3 */}
               <details className="group cursor-pointer">
-                <summary className="flex items-center justify-between font-medium text-foreground hover:text-primary transition-colors">
+                <summary className="flex items-center justify-between font-medium text-foreground/60 hover:text-primary transition-colors">
                   <span>新好友禮物《生活微調術》是什麼？</span>
                   <span className="text-lg group-open:rotate-180 transition-transform">▼</span>
                 </summary>
@@ -157,7 +164,7 @@ export default function Footer() {
 
               {/* FAQ Item 4 */}
               <details className="group cursor-pointer">
-                <summary className="flex items-center justify-between font-medium text-foreground hover:text-primary transition-colors">
+                <summary className="flex items-center justify-between font-medium text-foreground/60 hover:text-primary transition-colors">
                   <span>產品有保存期限嗎？</span>
                   <span className="text-lg group-open:rotate-180 transition-transform">▼</span>
                 </summary>

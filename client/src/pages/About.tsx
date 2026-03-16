@@ -73,24 +73,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-accent/5 border-t border-border">
-          <div className="container max-w-2xl text-center">
-            <h3 className="text-2xl font-bold mb-4" style={{ color: '#333333' }}>
-              有任何疑問嗎？
-            </h3>
-            <p className="text-base mb-6" style={{ color: '#333333', lineHeight: '2.0', fontWeight: 400 }}>
-              歡迎與我們聯繫，我們很樂意為您解答關於產品或品牌理念的任何問題。
-            </p>
-            <a
-              href="mailto:ucc25888@gmail.com"
-              className="text-primary font-bold hover:text-primary/80 transition-colors text-base"
-            >
-              ucc25888@gmail.com
-            </a>
-          </div>
-        </section>
-
         {/* Philosophy Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-background via-green-50/20 to-background border-y border-border">
           <div className="container">
