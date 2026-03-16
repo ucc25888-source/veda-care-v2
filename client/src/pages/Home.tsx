@@ -81,26 +81,64 @@ export default function Home() {
         </section>
 
         {/* Wellness Categories Section */}
-        <section className="py-10 md:py-32">
+        <section className="pt-0 pb-10 md:pb-32">
+          {/* Divider between Brand Philosophy and Precision Strategy */}
+          <div className="container mb-10 md:mb-16">
+            <div className="h-px w-full" style={{ background: 'rgba(45,79,30,0.12)' }} />
+          </div>
+
           <div className="container">
-            <h2 className="text-xl md:text-4xl font-display font-bold text-primary mb-10 md:mb-20 text-center">
+            <h2 className="text-xl md:text-4xl font-display font-bold text-primary mb-10 md:mb-14 text-center">
               精準對策
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {CATEGORIES.map((category) => (
-                <Link key={category.id} href={`/shop?category=${category.id}`} className="group block">
-                    <div className="card-wellness p-5 md:p-8 text-center h-full flex flex-col items-center">
-                      <div className="text-4xl md:text-5xl mb-3" style={{ lineHeight: 1 }}>{category.icon}</div>
-                      <h3 className="font-display font-bold text-base md:text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {CATEGORIES.map((category) => {
+                const copy: Record<string, string> = {
+                  "plant-nutrition": "精準補充每日所需原料，為身體預約明天的從容。",
+                  "frequency-resonance": "穩定情緒與睡眠底氣，找回游刃有餘的生活節奏。",
+                  "veda-advisor": "由 Veda 親自為您規劃，最適合您的精準健康方案。",
+                };
+                return (
+                  <Link key={category.id} href={`/shop?category=${category.id}`} className="group block">
+                    <div
+                      className="p-6 md:p-8 rounded-2xl h-full flex flex-col transition-all duration-300"
+                      style={{
+                        background: 'rgba(45,79,30,0.05)',
+                        border: '1.5px solid rgba(45,79,30,0.10)',
+                        boxShadow: '0 1px 3px rgba(45,79,30,0.04)',
+                      }}
+                      onMouseEnter={e => {
+                        (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 28px rgba(45,79,30,0.13)';
+                        (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(45,79,30,0.22)';
+                        (e.currentTarget as HTMLDivElement).style.background = 'rgba(45,79,30,0.08)';
+                      }}
+                      onMouseLeave={e => {
+                        (e.currentTarget as HTMLDivElement).style.boxShadow = '0 1px 3px rgba(45,79,30,0.04)';
+                        (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(45,79,30,0.10)';
+                        (e.currentTarget as HTMLDivElement).style.background = 'rgba(45,79,30,0.05)';
+                      }}
+                    >
+                      <div className="text-4xl md:text-5xl mb-4" style={{ lineHeight: 1 }}>{category.icon}</div>
+                      <h3 className="font-display font-bold text-base md:text-xl mb-2 transition-colors"
+                        style={{ color: '#2D4F1E' }}>
                         {category.name}
                       </h3>
-                      <p className="text-sm text-foreground/60">
-                        探索我們精選的此類別產品
+                      <p className="text-sm flex-1 leading-relaxed" style={{ color: '#555555', lineHeight: '1.8' }}>
+                        {copy[category.id] ?? "探索精選產品"}
                       </p>
+                      <div className="mt-5 flex justify-end">
+                        <span
+                          className="text-xs font-semibold flex items-center gap-1 transition-all duration-200 group-hover:gap-2"
+                          style={{ color: '#2D4F1E' }}
+                        >
+                          了解更多 <span className="text-sm">→</span>
+                        </span>
+                      </div>
                     </div>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>
