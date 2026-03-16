@@ -177,7 +177,7 @@ export default function About() {
               VEDA CARE &nbsp;｜&nbsp; 品牌影片
             </p>
             <h2 className="text-xl md:text-2xl font-bold mb-12 text-center" style={{ color: '#2D4F1E', lineHeight: '1.6' }}>
-              30 秒，看見妳渴望的從容
+              30 秒，看見渴望的從容
             </h2>
 
             {/* Video container */}

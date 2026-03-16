@@ -370,7 +370,7 @@ export default function QuizAppetizer() {
                   lineHeight: "1.6",
                 }}
               >
-                30 秒，看見妳渴望的從容
+                30 秒，看見渴望的從容
               </p>
 
               {/* Glowing CTA */}
