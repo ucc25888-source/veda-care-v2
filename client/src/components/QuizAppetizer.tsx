@@ -275,7 +275,7 @@ export default function QuizAppetizer() {
               className="w-full py-4 rounded-2xl font-bold mb-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
               style={{ background: "#2D4F1E", color: "#ffffff", fontSize: '14px' }}
             >
-              🎁 解鎖：查看妳的第一步引導方案
+              🎁 解鎖：查看妳的<br />第一步引導方案
             </button>
           )}
 
