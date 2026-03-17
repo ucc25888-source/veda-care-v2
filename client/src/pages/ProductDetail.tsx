@@ -173,9 +173,9 @@ export default function ProductDetail() {
                     href={LINE_OFFICIAL_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full btn-secondary flex items-center justify-center gap-2 font-bold text-center hover:shadow-lg transition-all"
+                    className="w-full inline-flex items-center justify-center rounded-xl border px-7 py-3 font-semibold text-sm tracking-widest transition-all duration-200 active:scale-95 hover:bg-primary/5"
+                    style={{ background: '#fff', borderColor: '#2D4F1E', color: '#2D4F1E' }}
                   >
-                    <span className="text-xl">💚</span>
                     加入 LINE@ 直接訂購
                   </a>
                 </div>
@@ -186,7 +186,7 @@ export default function ProductDetail() {
                     <div className="p-4 bg-muted/30 rounded-lg border border-border">
                       <p className="text-sm font-medium text-foreground mb-2">【規格提示】</p>
                       <p className="text-foreground/70 text-sm">
-                        📦 15包裝隨身精準防禦 / 便捷簡易補給
+                        15包裝隨身精準防禦 / 便捷簡易補給
                       </p>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export default function ProductDetail() {
                     <div className="p-4 bg-muted/30 rounded-lg border border-border">
                       <p className="text-sm font-medium text-foreground mb-2">【規格提示】</p>
                       <p className="text-foreground/70 text-sm">
-                        📦 500g 居家穩健打底 / 全方位機能補給
+                        500g 居家穩健打底 / 全方位機能補給
                       </p>
                     </div>
                   </div>
