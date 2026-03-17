@@ -31,7 +31,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     <Link href={`/product/${product.id}`} className="group block">
         <div className="card-wellness overflow-hidden">
           {/* Product Image */}
-          <div className="relative overflow-hidden bg-[#f8f7f5] h-64 md:h-72 flex items-center justify-center p-4">
+          <div className="relative overflow-hidden bg-[#f8f7f5] h-40 md:h-56 flex items-center justify-center px-3 py-4">
             <img
               src={product.image}
               alt={product.name}
@@ -45,36 +45,36 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
 
           {/* Product Info */}
-          <div className="p-5">
-            <p className="text-xs font-medium text-primary/70 uppercase tracking-wide mb-2">
+          <div className="p-3 md:p-5">
+            <p className="text-[10px] md:text-xs font-medium text-primary/70 uppercase tracking-wide mb-1 md:mb-2">
               {product.category.replace("-", " ")}
             </p>
-            <h3 className="font-display font-bold text-lg text-foreground mb-1 group-hover:text-primary transition-colors">
+            <h3 className="font-display font-bold text-sm md:text-lg text-foreground mb-1 group-hover:text-primary transition-colors leading-tight">
               {product.name}
             </h3>
             {product.variant && (
-              <p style={{ fontSize: '11px', color: '#8A9E6E', letterSpacing: '0.1em', fontWeight: 300, marginBottom: '6px' }}>
+              <p style={{ fontSize: '10px', color: '#8A9E6E', letterSpacing: '0.08em', fontWeight: 300, marginBottom: '4px' }}>
                 — {product.variant}
               </p>
             )}
-            <p className="text-sm text-foreground/70 mb-4 line-clamp-2">
+            <p className="text-xs md:text-sm text-foreground/70 mb-3 md:mb-4 line-clamp-2 hidden md:block">
               {product.description}
             </p>
 
             {/* Price and Button */}
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-bold text-foreground">
+            <div className="flex items-center justify-between mt-2">
+              <span className="text-sm md:text-lg font-bold text-foreground">
                 ${product.price.toFixed(2)}
               </span>
               <button
                 onClick={handleAddToCart}
-                className={`p-2 rounded-lg transition-all duration-300 ${
+                className={`p-1.5 md:p-2 rounded-lg transition-all duration-300 ${
                   added
                     ? "bg-primary/20 text-primary"
                     : "bg-primary text-primary-foreground hover:bg-primary/90"
                 }`}
               >
-                <ShoppingCart className="w-5 h-5" />
+                <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
               </button>
             </div>
           </div>
