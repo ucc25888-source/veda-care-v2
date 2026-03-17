@@ -159,7 +159,7 @@ export default function QuizAppetizer() {
           </div>
 
           <h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: "#ffffff", lineHeight: "1.5" }}>
-            【身體主導權】覺察檢測
+            【身體主導權】<br className="md:hidden" />覺察檢測
           </h3>
           <p className="text-sm mb-8" style={{ color: "rgba(255,255,255,0.6)", lineHeight: "1.8" }}>
             妳正在「預支明天」嗎？

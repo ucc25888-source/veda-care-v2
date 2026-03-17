@@ -24,7 +24,7 @@ export default function AwarenessCheck() {
             </p>
             <h1 className="text-xl md:text-2xl font-bold mb-2"
               style={{ color: "#2D4F1E", lineHeight: "1.55" }}>
-              【身體主導權】覺察檢測
+              【身體主導權】<br className="md:hidden" />覺察檢測
             </h1>
             <p className="text-sm mb-5" style={{ color: "rgba(45,79,30,0.55)", lineHeight: "1.8" }}>
               妳正在「預支明天」嗎？4 題，60 秒，即刻知道。
