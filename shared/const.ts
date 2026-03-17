@@ -225,10 +225,10 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "testimonial-2",
-    name: "上班族兼二寶媽",
-    title: "張小姐",
+    name: "張小姐",
+    title: "上班族兼二寶媽",
     avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/testimonial-zhang-female-L6xeAQqQCsrRnaQW9EDsBN.webp",
-    headline: "坐久了或蹲著玩，站起來身體『卡卡的』",
+    headline: "坐久了或蹲著玩，站起來身體總覺得有點卡",
     problem: "",
     experience: "",
     improvement: "",
@@ -239,11 +239,11 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "王小姐",
     title: "健身愛好者",
     avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/testimonial-wang-female-v2-MRDqnH8ZGUoBJWkQn4TEAS.webp",
-    headline: "我體質比較敏感，以前喝過幾款高蛋白都會脹氣",
+    headline: "體質敏感，以前喝蛋白喝完肚子就咕嚕叫",
     problem: "",
     experience: "",
     improvement: "",
-    recommendation: "我體質比較敏感，以前喝過幾款高蛋白或營養品，喝完肚子都會脹氣、咕嚕咕嚕叫，超級不舒服。這款 EAA 真的救了我！口感順，最感動的是喝完肚子安安靜靜，完全沒有負擔感，現在每天一杯真的有差。"
+    recommendation: "我體質比較敏感，以前喝過幾款高蛋白或營養品，喝完肚子都會脹氣、咕嚕咕嚕叫，超級不舒服。後來試了 VEDA 的 EAA，口感順，最感動的是喝完肚子安安靜靜，完全沒有負擔感，現在每天一杯真的有差。"
   }
 ];
 export const AXIOS_TIMEOUT_MS = 30_000;

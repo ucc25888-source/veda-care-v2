@@ -527,48 +527,70 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-10 md:py-32 bg-muted/20">
-          <div className="container">
-            <div className="text-center mb-8 md:mb-20">
-              <h2 className="text-xl md:text-4xl font-display font-black text-foreground mb-4" style={{ letterSpacing: '0.05em' }}>
-                客戶見證
-              </h2>
-              <p className="text-lg text-foreground/70">
-                真實心聲：與 VEDA 一起找回生活從容
-              </p>
-            </div>
+        <section className="py-16 md:py-28 overflow-hidden" style={{ background: '#f9f8f5' }}>
+          <div className="container max-w-5xl">
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {TESTIMONIALS.map((testimonial) => (
+            {/* Header */}
+            <p className="text-xs tracking-[0.3em] uppercase font-semibold mb-5 text-center" style={{ color: '#2D4F1E' }}>
+              VEDA CARE &nbsp;｜&nbsp; 使用者心聲
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-3" style={{ color: '#2D4F1E' }}>
+              她們說的，妳也能感受到
+            </h2>
+            <p className="text-sm text-center mb-14 md:mb-20" style={{ color: '#999', lineHeight: '1.8' }}>
+              真實生活中，遇見 VEDA 之後
+            </p>
+
+            {/* Cards — staggered grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
+              {TESTIMONIALS.map((testimonial, i) => (
                 <div
                   key={testimonial.id}
-                  className="bg-background rounded-lg p-5 md:p-8 shadow-sm hover:shadow-md transition-shadow border border-border"
+                  className={i === 1 ? 'md:mt-10' : ''}
+                  style={{
+                    background: '#ffffff',
+                    borderRadius: 20,
+                    padding: '32px 28px',
+                    border: '1px solid rgba(45,79,30,0.1)',
+                    boxShadow: '0 4px 28px rgba(45,79,30,0.06)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                  }}
                 >
-                  {/* Avatar and Info */}
-                  <div className="flex items-center gap-4 mb-6">
+                  {/* Decorative quote mark */}
+                  <div style={{ fontSize: 72, lineHeight: 0.8, color: 'rgba(45,79,30,0.1)', fontFamily: 'Georgia, serif', marginBottom: 16, userSelect: 'none' }}>
+                    "
+                  </div>
+
+                  {/* Pull quote — headline */}
+                  <p style={{ fontSize: 15, fontWeight: 600, color: '#2D4F1E', lineHeight: 1.7, marginBottom: 16, fontStyle: 'italic' }}>
+                    {testimonial.headline}
+                  </p>
+
+                  {/* Thin divider */}
+                  <div style={{ width: 36, height: 1, background: 'rgba(45,79,30,0.2)', marginBottom: 16 }} />
+
+                  {/* Full testimonial */}
+                  <p style={{ fontSize: 13, color: '#666', lineHeight: 2.0, marginBottom: 28, flex: 1 }}>
+                    {testimonial.recommendation}
+                  </p>
+
+                  {/* Signature — avatar + name at bottom */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderTop: '1px solid rgba(45,79,30,0.08)', paddingTop: 20 }}>
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover"
+                      style={{ width: 40, height: 40, borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
                     />
                     <div>
-                      <h3 className="font-semibold text-foreground">{testimonial.name}</h3>
-                      <p className="text-sm text-foreground/60">{testimonial.title}</p>
+                      <p style={{ fontSize: 13, fontWeight: 600, color: '#3a3a3a', marginBottom: 2 }}>{testimonial.name}</p>
+                      <p style={{ fontSize: 11, color: '#aaa', letterSpacing: '0.05em' }}>{testimonial.title}</p>
                     </div>
                   </div>
-
-                  {/* Headline */}
-                  <h4 className="font-semibold text-lg text-foreground mb-6 leading-snug">
-                    【{testimonial.title} {testimonial.name}】
-                  </h4>
-
-                  {/* Recommendation */}
-                  <p className="text-foreground/80 text-sm leading-relaxed">
-                    「{testimonial.recommendation}」
-                  </p>
                 </div>
               ))}
             </div>
+
           </div>
         </section>
 
