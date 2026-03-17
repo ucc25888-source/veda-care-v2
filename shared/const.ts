@@ -71,7 +71,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "product-2",
     name: "EAA 完美互補植物蛋白（袋裝）",
-    variant: "500g 環保包裝・黑芝麻風味",
+    variant: "黑芝麻風味・500g 環保包裝",
     subtitle: "穩定，是給身體最深情的告白。",
     category: "plant-nutrition",
     price: 990,
