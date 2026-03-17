@@ -280,7 +280,7 @@ export default function ProductDetail() {
 
             <div className="category-tag">植萃機能補給</div>
 
-            <h2 className="main-title">身體不卡頓，<br className="md:hidden" />生活更流暢</h2>
+            <h2 className="main-title">身體不卡頓，<br className="md:hidden" />生活更流暢。</h2>
 
             <span className="motto-text">喝下底氣，<br className="md:hidden" />贏回自己。</span>
 

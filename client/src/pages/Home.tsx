@@ -378,7 +378,7 @@ export default function Home() {
                 </p>
 
                 <h2 style={{fontSize:'clamp(1.15rem, 4.5vw, 1.5rem)', fontWeight:700, color:'#1a1a1a', marginBottom:'20px', lineHeight:1.4, letterSpacing:'0.03em'}}>
-                  身體不卡頓，<br className="md:hidden" />生活更流暢
+                  身體不卡頓，<br className="md:hidden" />生活更流暢。
                 </h2>
 
                 <p style={{fontSize:'15px', fontWeight:600, color:'#2D4F1E', marginBottom:'6px'}}>
