@@ -165,12 +165,12 @@ export default function QuizAppetizer() {
             妳正在「預支明天」嗎？
           </p>
 
-          <div className="flex flex-wrap justify-center gap-2 mb-10">
+          <div className="grid grid-cols-2 gap-2 mb-6 w-full">
             {QUICK_QUESTIONS.map((q) => (
               <span
                 key={q.id}
-                className="text-xs px-3 py-1.5 rounded-full"
-                style={{ background: "rgba(255,255,255,0.09)", color: "rgba(255,255,255,0.65)" }}
+                className="quiz-tag-breathe text-xs py-2 rounded-full flex items-center justify-center gap-1.5 cursor-pointer"
+                style={{ background: "rgba(255,255,255,0.09)", color: "rgba(255,255,255,0.7)" }}
               >
                 {q.icon} {q.tag}
               </span>
@@ -179,8 +179,8 @@ export default function QuizAppetizer() {
 
           {/* Unlock hint */}
           <div
-            className="inline-flex items-center gap-2 mb-6 px-3.5 py-2.5 rounded-xl"
-            style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.10)" }}
+            className="flex items-center justify-center gap-2 mb-6 px-3.5 py-2.5 rounded-xl w-full"
+            style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(181,154,109,0.55)" }}
           >
             <span style={{ fontSize: "13px" }}>🔒</span>
             <span className="text-xs" style={{ color: "rgba(255,255,255,0.55)", lineHeight: "1.5" }}>
