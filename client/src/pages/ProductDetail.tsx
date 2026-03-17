@@ -67,13 +67,14 @@ export default function ProductDetail() {
                 {product.category === "veda-advisor" && (
                   <div className="absolute top-4 left-4"
                     style={{
-                      background: 'rgba(181,154,109,0.92)',
+                      background: '#B59A6D',
                       color: '#fff',
-                      fontSize: '11px',
-                      fontWeight: 700,
-                      letterSpacing: '0.25em',
-                      padding: '4px 10px',
+                      fontSize: '13px',
+                      fontWeight: 800,
+                      letterSpacing: '0.3em',
+                      padding: '6px 14px',
                       borderRadius: '4px',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
                     }}>
                     限　量
                   </div>
