@@ -485,14 +485,14 @@ export default function Home() {
 
             {/* Section label */}
             <p style={{ fontSize: 11, letterSpacing: '0.32em', textTransform: 'uppercase', color: 'rgba(181,154,109,0.92)', fontWeight: 600, marginBottom: 24 }}>
-              VEDA CARE &nbsp;｜&nbsp; 專業顧問服務
+              VEDA CARE &nbsp;｜&nbsp; 專業規劃師服務
             </p>
 
             <h2 className="font-bold text-2xl md:text-4xl text-white mb-5 leading-tight">
               減法保養對話
             </h2>
             <p className="text-sm md:text-base mb-12 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.62)', lineHeight: '2.0', fontStyle: 'italic', letterSpacing: '0.04em' }}>
-              由專業顧問親自為妳梳理需求，<br />
+              由專業規劃師親自為妳梳理需求，<br />
               只留下身體真正需要的那份。
             </p>
 

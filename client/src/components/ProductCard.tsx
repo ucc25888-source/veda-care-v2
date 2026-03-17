@@ -16,7 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
     // Show consultation message and redirect to LINE@
-    toast.success("專業顧問諮詢中", {
+    toast.success("專業規劃師諮詢中", {
       description: "請加入 LINE@ 完成訂購",
       action: {
         label: "加入 LINE@",
