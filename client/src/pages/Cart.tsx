@@ -201,13 +201,13 @@ export default function Cart() {
           <div className="container max-w-3xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <p className="text-lg md:text-2xl font-bold text-primary mb-2">免運費</p>
-                <p className="text-sm text-foreground/60">滿 NT$1000 以上</p>
+                <p className="text-lg md:text-2xl font-bold text-primary mb-2">滿額免運</p>
+                <p className="text-sm text-foreground/60">NT$3,000 以上免運費｜未滿運費 NT$100</p>
               </div>
               <div>
-                <p className="text-lg md:text-2xl font-bold text-primary mb-2">30 天退貨</p>
+                <p className="text-lg md:text-2xl font-bold text-primary mb-2">7 天猶豫期</p>
                 <p className="text-sm text-foreground/60">
-                  滿意度保證
+                  未拆封且不影響商品完整性適用
                 </p>
               </div>
               <div>
