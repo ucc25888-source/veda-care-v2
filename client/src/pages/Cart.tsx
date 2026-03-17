@@ -179,7 +179,7 @@ export default function Cart() {
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style={{ flexShrink: 0 }}>
                       <path d="M12 2C6.48 2 2 6.03 2 11c0 3.12 1.67 5.88 4.24 7.63-.1.37-.65 2.37-.75 2.74-.12.43.16.43.34.31.14-.09 2.27-1.54 3.19-2.17.63.09 1.29.14 1.98.14 5.52 0 10-4.03 10-9 0-4.97-4.48-9-10-9z"/>
                     </svg>
-                    加入 LINE@ 完成訂單
+                    加入 LINE@ 完成下單
                   </a>
 
                   <Link href="/shop" className="block w-full text-center px-4 py-3 border border-border rounded-lg text-foreground hover:bg-muted transition-colors">
