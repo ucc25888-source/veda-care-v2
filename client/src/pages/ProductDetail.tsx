@@ -101,8 +101,8 @@ export default function ProductDetail() {
                 )}
 
                 {product.subtitle && (
-                  <p className="text-sm md:text-lg font-medium italic mb-4"
-                    style={{ color: '#2D4F1E' }}>
+                  <p className="font-medium italic mb-4"
+                    style={{ color: '#2D4F1E', fontSize: 'clamp(13px, 3.8vw, 18px)', whiteSpace: 'nowrap' }}>
                     「{product.subtitle}」
                   </p>
                 )}
