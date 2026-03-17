@@ -163,10 +163,10 @@ export default function Footer() {
       </div>
 
       {/* ── FAQ ── */}
-      <div style={{ padding: '44px 0' }}>
+      <div style={{ padding: '28px 0 36px' }}>
         <div className="container" style={{ maxWidth: 520 }}>
           <p
-            className="text-xs uppercase tracking-[0.28em] font-semibold text-center mb-8"
+            className="text-xs uppercase tracking-[0.28em] font-semibold text-center mb-5"
             style={{ color: '#2D4F1E' }}
           >
             常見問題
@@ -193,16 +193,16 @@ export default function Footer() {
               <details
                 key={q}
                 className="group cursor-pointer"
-                style={{ borderBottom: i < arr.length - 1 ? '1px solid rgba(45,79,30,0.1)' : 'none', paddingBottom: 14 }}
+                style={{ borderBottom: i < arr.length - 1 ? '1px solid rgba(45,79,30,0.1)' : 'none' }}
               >
                 <summary
-                  style={{ listStyle: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', cursor: 'pointer' }}
+                  style={{ listStyle: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '9px 0', cursor: 'pointer' }}
                 >
-                  <span style={{ fontSize: 14, fontWeight: 400, color: '#4A4A4A', letterSpacing: '0.08em' }}>{q}</span>
+                  <span style={{ fontSize: 12, fontWeight: 400, color: '#4A4A4A', letterSpacing: '0.08em' }}>{q}</span>
                   <svg
                     className="group-open:rotate-180 transition-transform duration-200"
-                    width="13"
-                    height="13"
+                    width="11"
+                    height="11"
                     viewBox="0 0 14 14"
                     fill="none"
                     stroke="rgba(45,79,30,0.5)"
@@ -214,7 +214,7 @@ export default function Footer() {
                     <polyline points="2,4 7,10 12,4" />
                   </svg>
                 </summary>
-                <p style={{ fontSize: 13, fontWeight: 300, color: '#999', lineHeight: '1.9', letterSpacing: '0.06em', paddingBottom: 8 }}>
+                <p style={{ fontSize: 11, fontWeight: 300, color: '#999', lineHeight: '1.8', letterSpacing: '0.05em', paddingBottom: 8 }}>
                   {a}
                 </p>
               </details>
