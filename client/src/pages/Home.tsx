@@ -428,61 +428,100 @@ export default function Home() {
         </section>
 
         {/* VEDA Advisor Section - Enhanced */}
-        <section className="py-10 md:py-28 bg-gradient-to-br from-primary via-primary/95 to-primary/85 relative overflow-hidden">
-          {/* Background decorative elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-accent/15 rounded-full -mr-48 -mt-48 blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/15 rounded-full -ml-48 -mb-48 blur-3xl" />
-          
-          <div className="container max-w-4xl text-center relative z-10">
-            <div className="mb-6 text-3xl md:text-7xl animate-bounce">💬</div>
-            
-            <h2 className="font-display font-bold text-2xl md:text-5xl lg:text-6xl text-white mb-4 leading-tight text-center">
+        <section className="py-14 md:py-28 relative overflow-hidden"
+          style={{ background: 'linear-gradient(135deg, #3d6328 0%, #325220 55%, #2D4F1E 100%)' }}>
+          <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl" style={{ background: 'rgba(181,154,109,0.08)' }} />
+          <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full -ml-48 -mb-48 blur-3xl" style={{ background: 'rgba(181,154,109,0.08)' }} />
+
+          <div className="container max-w-3xl text-center relative z-10">
+
+            {/* Section label */}
+            <p className="text-xs tracking-[0.3em] uppercase font-semibold mb-6" style={{ color: 'rgba(181,154,109,0.85)' }}>
+              VEDA CARE &nbsp;｜&nbsp; 專業顧問服務
+            </p>
+
+            <h2 className="font-bold text-2xl md:text-4xl text-white mb-5 leading-tight">
               減法保養對話
             </h2>
-            <p className="text-lg md:text-xl text-white/90 mb-8 text-center max-w-2xl mx-auto">
-              由團隊為您精準找出問題，避免盲目堆疊購買
+            <p className="text-sm md:text-base mb-10 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.78)', lineHeight: '1.9' }}>
+              由專業顧問為您精準理清身體需求，避免盲目堆疊補充。
             </p>
-            
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/30 p-5 md:p-10 mb-8 md:mb-10 text-center">
-              <p className="text-lg md:text-xl text-white/90 mb-4">
+
+            {/* Main prompt card */}
+            <div className="rounded-2xl p-6 md:p-10 mb-10 text-center"
+              style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(181,154,109,0.35)', backdropFilter: 'blur(12px)' }}>
+              <p className="text-sm mb-3" style={{ color: 'rgba(255,255,255,0.65)', letterSpacing: '0.05em' }}>
                 無需複雜的線上支付流程
               </p>
-              <p className="text-lg md:text-3xl font-bold text-white mb-0">
-                只需加入 LINE@，告訴我們您想要的產品，我們幫您完成訂單！
+              <p className="text-base md:text-2xl font-bold text-white" style={{ lineHeight: '1.7' }}>
+                加入 LINE@，告訴我們您想要的，<br className="hidden md:block" />我們為您完整安排訂單。
               </p>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-8 md:mb-20">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20 hover:bg-white/15 transition-all">
-                <div className="text-2xl md:text-4xl mb-2 md:mb-4">🎁</div>
-                <h3 className="font-bold text-white mb-1 md:mb-2 text-base md:text-lg">新好友禮物</h3>
-                <p className="text-white/80 text-xs md:text-sm">加入即贈送《生活微調術》</p>
+
+            {/* Three feature cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+
+              {/* Card 1 — Gift */}
+              <div className="rounded-xl p-5 md:p-7 text-center transition-all hover:bg-white/10"
+                style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(181,154,109,0.3)' }}>
+                <div className="flex items-center justify-center mb-4 mx-auto" style={{ width: 40, height: 40 }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(181,154,109,0.9)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 12 20 22 4 22 4 12" />
+                    <rect x="2" y="7" width="20" height="5" />
+                    <line x1="12" y1="22" x2="12" y2="7" />
+                    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+                    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-white mb-2 text-sm md:text-base tracking-wide">新好友限定尊享</h3>
+                <p className="text-xs md:text-sm" style={{ color: 'rgba(255,255,255,0.65)', lineHeight: '1.7' }}>
+                  成功加入即贈送<br />《生活微調術》專屬報告
+                </p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20 hover:bg-white/15 transition-all">
-                <div className="text-2xl md:text-4xl mb-2 md:mb-4">🚚</div>
-                <h3 className="font-bold text-white mb-1 md:mb-2 text-base md:text-lg">滿三千免運</h3>
-                <p className="text-white/80 text-xs md:text-sm">支持宅配、貨到付款（限台灣）</p>
+
+              {/* Card 2 — Shipping */}
+              <div className="rounded-xl p-5 md:p-7 text-center transition-all hover:bg-white/10"
+                style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(181,154,109,0.3)' }}>
+                <div className="flex items-center justify-center mb-4 mx-auto" style={{ width: 40, height: 40 }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(181,154,109,0.9)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="1" y="3" width="15" height="13" />
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-white mb-2 text-sm md:text-base tracking-wide">滿三千免運</h3>
+                <p className="text-xs md:text-sm" style={{ color: 'rgba(255,255,255,0.65)', lineHeight: '1.7' }}>
+                  支持宅配、貨到付款<br />（限台灣地區）
+                </p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20 hover:bg-white/15 transition-all">
-                <div className="text-2xl md:text-4xl mb-2 md:mb-4">💬</div>
-                <h3 className="font-bold text-white mb-1 md:mb-2 text-base md:text-lg">即時諮詢</h3>
-                <p className="text-white/80 text-xs md:text-sm">隨時提問，獲得快速專業回應</p>
+
+              {/* Card 3 — Consultation */}
+              <div className="rounded-xl p-5 md:p-7 text-center transition-all hover:bg-white/10"
+                style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(181,154,109,0.3)' }}>
+                <div className="flex items-center justify-center mb-4 mx-auto" style={{ width: 40, height: 40 }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(181,154,109,0.9)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-white mb-2 text-sm md:text-base tracking-wide">即時諮詢</h3>
+                <p className="text-xs md:text-sm" style={{ color: 'rgba(255,255,255,0.65)', lineHeight: '1.7' }}>
+                  隨時提問，獲得<br />快速專業回應
+                </p>
               </div>
+
             </div>
-            
+
             <a
               href={LINE_OFFICIAL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-white text-primary font-bold text-base md:text-xl px-6 md:px-14 py-3 md:py-5 rounded-full hover:shadow-2xl transition-all hover:scale-105 mb-6 md:mb-8 group active:scale-95"
+              className="inline-flex items-center justify-center gap-3 font-bold text-sm md:text-base px-8 md:px-14 py-3 md:py-4 rounded-full transition-all hover:scale-105 active:scale-95"
+              style={{ background: '#ffffff', color: '#2D4F1E', letterSpacing: '0.05em', boxShadow: '0 8px 32px rgba(0,0,0,0.18)' }}
             >
-              <span className="text-2xl md:text-3xl group-hover:animate-pulse">💚</span>
               加入官方 LINE@
             </a>
-            
-            <p className="text-white/70 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-              點擊按鈕加入，領取新好友禮物《生活微調術》，開始您的健康諮詢之旅。滿 NT$3,000 免運費，支持宅配與貨到付款（限台灣地區）。
-            </p>
+
           </div>
         </section>
 
