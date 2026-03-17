@@ -301,14 +301,14 @@ export default function ProductDetail() {
         {/* Wellness Philosophy */}
         <section className="py-12 md:py-16">
           <div className="container max-w-3xl">
-            <div className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg border border-border" style={{textAlign:'center'}}>
+            <div className="p-5 md:p-8 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg border border-border" style={{textAlign:'center'}}>
               <h3 className="font-display font-bold text-xl md:text-2xl mb-3" style={{color:'#2D4F1E', maxWidth:'600px', margin:'0 auto 12px'}}>
                 維護，從減法開始
               </h3>
-              <p className="text-sm mb-5" style={{color:'#AAAAAA', maxWidth:'600px', margin:'0 auto 20px', lineHeight:'2.2'}}>
+              <p className="text-sm mb-5" style={{color:'#AAAAAA', maxWidth:'600px', margin:'0 auto 20px', lineHeight:'2', whiteSpace:'nowrap'}}>
                 健康管理，不是加法，是優化。
               </p>
-              <p style={{color:'rgba(0,0,0,0.65)', maxWidth:'600px', margin:'0 auto', lineHeight:'2.6', textAlign:'center'}}>
+              <p className="text-sm" style={{color:'rgba(0,0,0,0.65)', maxWidth:'600px', margin:'0 auto', lineHeight:'2.4', textAlign:'center', wordBreak:'keep-all'}}>
                 妳需要的不是更多的補給品，<br />
                 而是一個清楚的標竿。<br />
                 幫妳在極致忙碌中，<br />
