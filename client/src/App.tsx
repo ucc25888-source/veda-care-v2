@@ -40,6 +40,7 @@ function Router() {
       <Route path={"/stress-test"} component={StressTest} />
       <Route path={"/quiz"} component={WellnessQuiz} />
       <Route path={"/awareness-check"} component={AwarenessCheck} />
+      <Route path={"/check-health"} component={AwarenessCheck} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

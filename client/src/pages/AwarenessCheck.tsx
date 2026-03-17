@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuizAppetizer from "@/components/QuizAppetizer";
 import ShareButton from "@/components/ShareButton";
 
 export default function AwarenessCheck() {
+  useEffect(() => {
+    document.title = "VEDA CARE ｜ 您的身體缺什麼？";
+    return () => { document.title = "VEDA CARE 郝營養 | 科研級植萃精粹"; };
+  }, []);
   return (
     <div className="min-h-screen flex flex-col bg-[#f9f8f5]">
       <Header />
