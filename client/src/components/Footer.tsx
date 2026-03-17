@@ -113,64 +113,59 @@ export default function Footer() {
         </div>
 
         {/* FAQ Section */}
-        <div className="py-8 md:py-12 border-t border-border">
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6 md:mb-8 text-center">常見問題</h3>
-            <div className="space-y-6">
+        <div className="py-8 md:py-12" style={{ borderTop: '1px solid #EEE' }}>
+          <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+            <h3 className="font-display font-bold text-center mb-6" style={{ color: '#4A5D23', letterSpacing: '0.2em', fontSize: '1rem' }}>常見問題</h3>
+            <div className="space-y-3">
               {/* FAQ Item 1 */}
-              <details className="group cursor-pointer">
-                <summary className="flex items-center justify-between font-medium text-foreground/60 hover:text-primary transition-colors">
-                  <span>如何加入 LINE@ 客服？</span>
-                  <span className="text-lg group-open:rotate-180 transition-transform">▼</span>
+              <details className="group cursor-pointer" style={{ borderBottom: '1px solid #EEE', paddingBottom: '12px' }}>
+                <summary className="flex items-center justify-between transition-colors py-2" style={{ listStyle: 'none' }}>
+                  <span style={{ fontSize: '15px', fontWeight: 300, color: '#4A4A4A', letterSpacing: '0.12em' }}>如何加入 LINE@ 客服？</span>
+                  <svg className="group-open:rotate-180 transition-transform duration-200" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#888" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginLeft: '12px' }}>
+                    <polyline points="2,4 7,10 12,4"/>
+                  </svg>
                 </summary>
-                <div className="mt-4 pl-4 text-foreground/70 leading-relaxed border-l-2 border-primary/30">
-                  <p>您可以透過以下方式加入 VEDA CARE 官方 LINE@ 帳號：</p>
-                  <ul className="mt-3 space-y-2 list-disc list-inside">
-                    <li>點擊網站上的「加入 LINE@ 訂購」按鈕</li>
-                    <li>在 LINE 中搜尋「@vedacare」</li>
-                  </ul>
-                  <p className="mt-3">加入後即可領取新好友禮物《生活微調術》，並獲得專業營養建議與即時諮詢服務。</p>
+                <div className="pt-3 pl-2" style={{ fontSize: '14px', fontWeight: 300, color: '#888', lineHeight: '1.9', letterSpacing: '0.1em' }}>
+                  <p>點擊網站上的「加入 LINE@ 訂購」按鈕，或在 LINE 中搜尋「@vedacare」即可加入。加入後即可領取新好友禮物《生活微調術》，並獲得即時諮詢服務。</p>
                 </div>
               </details>
 
               {/* FAQ Item 2 */}
-              <details className="group cursor-pointer">
-                <summary className="flex items-center justify-between font-medium text-foreground/60 hover:text-primary transition-colors">
-                  <span>貨到付款的流程是什麼？</span>
-                  <span className="text-lg group-open:rotate-180 transition-transform">▼</span>
+              <details className="group cursor-pointer" style={{ borderBottom: '1px solid #EEE', paddingBottom: '12px' }}>
+                <summary className="flex items-center justify-between transition-colors py-2" style={{ listStyle: 'none' }}>
+                  <span style={{ fontSize: '15px', fontWeight: 300, color: '#4A4A4A', letterSpacing: '0.12em' }}>貨到付款的流程是什麼？</span>
+                  <svg className="group-open:rotate-180 transition-transform duration-200" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#888" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginLeft: '12px' }}>
+                    <polyline points="2,4 7,10 12,4"/>
+                  </svg>
                 </summary>
-                <div className="mt-4 pl-4 text-foreground/70 leading-relaxed border-l-2 border-primary/30">
-                  <p>VEDA CARE 提供便捷的貨到付款服務（限台灣地區）：</p>
-                  <ol className="mt-3 space-y-2 list-decimal list-inside">
-                    <li>加入官方 LINE@，告訴我們您想要的產品和數量</li>
-                    <li>我們會確認您的訂單並提供總金額</li>
-                    <li>安排宅配送貨，收貨時直接支付給宅配人員即可</li>
-                  </ol>
-                  <p className="mt-3"><span className="font-medium">運費說明：</span>滿 NT$3,000 免運費，未滿則需支付運費 100 元。</p>
+                <div className="pt-3 pl-2" style={{ fontSize: '14px', fontWeight: 300, color: '#888', lineHeight: '1.9', letterSpacing: '0.1em' }}>
+                  <p>加入官方 LINE@ → 告知商品與數量 → 確認訂單 → 宅配送達 → 現場付款給宅配人員。滿 NT$3,000 免運費，未滿運費 NT$100。</p>
                 </div>
               </details>
 
               {/* FAQ Item 3 */}
-              <details className="group cursor-pointer">
-                <summary className="flex items-center justify-between font-medium text-foreground/60 hover:text-primary transition-colors">
-                  <span>新好友禮物《生活微調術》是什麼？</span>
-                  <span className="text-lg group-open:rotate-180 transition-transform">▼</span>
+              <details className="group cursor-pointer" style={{ borderBottom: '1px solid #EEE', paddingBottom: '12px' }}>
+                <summary className="flex items-center justify-between transition-colors py-2" style={{ listStyle: 'none' }}>
+                  <span style={{ fontSize: '15px', fontWeight: 300, color: '#4A4A4A', letterSpacing: '0.12em' }}>新好友禮物《生活微調術》是什麼？</span>
+                  <svg className="group-open:rotate-180 transition-transform duration-200" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#888" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginLeft: '12px' }}>
+                    <polyline points="2,4 7,10 12,4"/>
+                  </svg>
                 </summary>
-                <div className="mt-4 pl-4 text-foreground/70 leading-relaxed border-l-2 border-primary/30">
-                  <p>《生活微調術》是 VEDA CARE 為新加入 LINE@ 的朋友精心準備的獨家禮物。這份禮物包含實用的健康生活建議和產品使用指南，幫助您更好地開始您的健康之旅。</p>
-                  <p className="mt-3">加入 LINE@ 後，我們會自動發送給您，無需額外申請。</p>
+                <div className="pt-3 pl-2" style={{ fontSize: '14px', fontWeight: 300, color: '#888', lineHeight: '1.9', letterSpacing: '0.1em' }}>
+                  <p>加入 LINE@ 後自動發送的獨家禮物，內含實用的健康生活建議與產品使用指南，無需額外申請。</p>
                 </div>
               </details>
 
               {/* FAQ Item 4 */}
-              <details className="group cursor-pointer">
-                <summary className="flex items-center justify-between font-medium text-foreground/60 hover:text-primary transition-colors">
-                  <span>產品有保存期限嗎？</span>
-                  <span className="text-lg group-open:rotate-180 transition-transform">▼</span>
+              <details className="group cursor-pointer" style={{ paddingBottom: '12px' }}>
+                <summary className="flex items-center justify-between transition-colors py-2" style={{ listStyle: 'none' }}>
+                  <span style={{ fontSize: '15px', fontWeight: 300, color: '#4A4A4A', letterSpacing: '0.12em' }}>產品有保存期限嗎？</span>
+                  <svg className="group-open:rotate-180 transition-transform duration-200" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#888" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginLeft: '12px' }}>
+                    <polyline points="2,4 7,10 12,4"/>
+                  </svg>
                 </summary>
-                <div className="mt-4 pl-4 text-foreground/70 leading-relaxed border-l-2 border-primary/30">
-                  <p>所有 VEDA CARE 產品均有清楚標示的有效期限。請在收貨時檢查包裝上的保存期限，並按照產品說明書的建議方式妥善保存。</p>
-                  <p className="mt-3">如有任何關於產品保存的問題，歡迎隨時在 LINE@ 上詢問我們的專業團隊。</p>
+                <div className="pt-3 pl-2" style={{ fontSize: '14px', fontWeight: 300, color: '#888', lineHeight: '1.9', letterSpacing: '0.1em' }}>
+                  <p>所有產品均清楚標示有效期限，請依包裝說明妥善保存。如有疑問歡迎透過 LINE@ 諮詢。</p>
                 </div>
               </details>
             </div>
