@@ -162,19 +162,19 @@ export const BRAND_PHILOSOPHY = {
   pillars: [
     {
       title: "減法智慧",
-      description: "屏除堆疊，精確填補身體缺口",
+      description: "屏除堆疊 · 精準填補身體缺口",
     },
     {
       title: "頂級萃取",
-      description: "極致純提，淬煉高品質植物能量",
+      description: "極致純提 · 淬煉高質植物能量",
     },
     {
       title: "穩定基底",
-      description: "穩定節奏，支持日常動能補充",
+      description: "穩定節奏 · 支持日常動能補充",
     },
     {
       title: "自主協調",
-      description: "身體聽話，拿回生活主導權力",
+      description: "身體聽話 · 拿回生活主導權力",
     },
   ],
 };
