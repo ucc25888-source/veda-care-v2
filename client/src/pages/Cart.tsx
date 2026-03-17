@@ -62,69 +62,61 @@ export default function Cart() {
                   {cartItems.map((item) => (
                     <div
                       key={item.productId}
-                      className="card-wellness p-6 flex gap-6"
+                      className="card-wellness p-4 flex gap-4"
                     >
                       {/* Product Image */}
-                      <div className="w-24 h-24 flex-shrink-0 bg-muted rounded-lg overflow-hidden">
-                        <img
-                          src={item.product?.image}
-                          alt={item.product?.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+                      <Link href={`/product/${item.productId}`} className="flex-shrink-0">
+                        <div className="w-20 h-20 bg-muted rounded-lg overflow-hidden">
+                          <img
+                            src={item.product?.image}
+                            alt={item.product?.name}
+                            className="w-full h-full object-contain p-1"
+                          />
+                        </div>
+                      </Link>
 
                       {/* Product Info */}
-                      <div className="flex-1">
-                        <Link href={`/product/${item.productId}`} className="font-display font-bold text-lg text-foreground hover:text-primary transition-colors block">
+                      <div className="flex-1 min-w-0 flex flex-col gap-2">
+                        {/* Name + delete */}
+                        <div className="flex items-start justify-between gap-2">
+                          <Link href={`/product/${item.productId}`}
+                            className="font-display font-bold text-foreground hover:text-primary transition-colors leading-snug"
+                            style={{ fontSize: '14px' }}>
                             {item.product?.name}
-                        </Link>
-                        <p className="text-sm text-foreground/60 mb-4">
-                          {item.product?.description}
-                        </p>
+                          </Link>
+                          <button
+                            onClick={() => removeItem(item.productId)}
+                            className="flex-shrink-0 p-1 text-destructive hover:bg-destructive/10 rounded-lg transition-colors"
+                          >
+                            <Trash2 className="w-4 h-4" />
+                          </button>
+                        </div>
 
+                        {/* Price + quantity */}
                         <div className="flex items-center justify-between">
                           <div className="flex items-center border border-border rounded-lg">
                             <button
-                              onClick={() =>
-                                updateQuantity(
-                                  item.productId,
-                                  Math.max(1, item.quantity - 1)
-                                )
-                              }
+                              onClick={() => updateQuantity(item.productId, Math.max(1, item.quantity - 1))}
                               className="px-3 py-1 hover:bg-muted transition-colors"
-                            >
-                              −
-                            </button>
-                            <span className="px-4 py-1 font-medium">
+                              style={{ fontSize: '14px' }}
+                            >−</button>
+                            <span className="px-3 py-1 font-medium" style={{ fontSize: '14px' }}>
                               {item.quantity}
                             </span>
                             <button
-                              onClick={() =>
-                                updateQuantity(item.productId, item.quantity + 1)
-                              }
+                              onClick={() => updateQuantity(item.productId, item.quantity + 1)}
                               className="px-3 py-1 hover:bg-muted transition-colors"
-                            >
-                              +
-                            </button>
+                              style={{ fontSize: '14px' }}
+                            >+</button>
                           </div>
-
                           <div className="text-right">
-                            <p className="text-sm text-foreground/60 mb-1">
-                              ${item.product?.price.toFixed(2)}
+                            <p style={{ fontSize: '11px', color: 'var(--foreground)', opacity: 0.5 }}>
+                              單價 ${item.product?.price.toFixed(0)}
                             </p>
-                            <p className="font-bold text-lg text-foreground">
-                              ${(
-                                (item.product?.price || 0) * item.quantity
-                              ).toFixed(2)}
+                            <p className="font-bold" style={{ fontSize: '15px' }}>
+                              ${((item.product?.price || 0) * item.quantity).toFixed(0)}
                             </p>
                           </div>
-
-                          <button
-                            onClick={() => removeItem(item.productId)}
-                            className="p-2 text-destructive hover:bg-destructive/10 rounded-lg transition-colors"
-                          >
-                            <Trash2 className="w-5 h-5" />
-                          </button>
                         </div>
                       </div>
                     </div>
