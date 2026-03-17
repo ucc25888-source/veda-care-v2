@@ -499,7 +499,7 @@ export default function Home() {
                 無需複雜的線上支付流程
               </p>
               <p className="text-base md:text-xl font-semibold text-white" style={{ lineHeight: '1.8', letterSpacing: '0.02em' }}>
-                加入 LINE@，我們為妳完整安排訂單。
+                加入 LINE@，我們一站式為妳處理。
               </p>
             </div>
 
@@ -591,7 +591,7 @@ export default function Home() {
             <p className="text-xs tracking-[0.3em] uppercase font-semibold mb-5 text-center" style={{ color: '#2D4F1E' }}>
               VEDA CARE &nbsp;｜&nbsp; 使用者心聲
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-3" style={{ color: '#2D4F1E' }}>
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-3 whitespace-nowrap" style={{ color: '#2D4F1E' }}>
               她們說的，妳也能感受到
             </h2>
             <p className="text-sm text-center mb-14 md:mb-20" style={{ color: '#999', lineHeight: '1.8' }}>
