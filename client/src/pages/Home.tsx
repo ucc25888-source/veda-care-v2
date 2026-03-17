@@ -428,34 +428,40 @@ export default function Home() {
         </section>
 
         {/* VEDA Advisor Section - Enhanced */}
-        <section className="py-14 md:py-28 relative overflow-hidden"
-          style={{ background: 'linear-gradient(135deg, #3d6328 0%, #325220 55%, #2D4F1E 100%)' }}>
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl" style={{ background: 'rgba(181,154,109,0.08)' }} />
-          <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full -ml-48 -mb-48 blur-3xl" style={{ background: 'rgba(181,154,109,0.08)' }} />
+        <section className="py-16 md:py-32 relative overflow-hidden"
+          style={{ background: '#1a2e12' }}>
+          {/* Radial centre glow */}
+          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 800, height: 600, background: 'radial-gradient(ellipse at center, rgba(61,99,40,0.52) 0%, transparent 70%)', pointerEvents: 'none' }} />
+          {/* Gold corner glows */}
+          <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl" style={{ background: 'rgba(181,154,109,0.07)' }} />
+          <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full -ml-48 -mb-48 blur-3xl" style={{ background: 'rgba(181,154,109,0.07)' }} />
 
           <div className="container max-w-3xl text-center relative z-10">
 
+            {/* Top gold rule */}
+            <div style={{ width: 40, height: 1, background: '#B59A6D', margin: '0 auto 28px' }} />
+
             {/* Section label */}
-            <p className="text-sm tracking-[0.25em] uppercase font-semibold mb-6" style={{ color: 'rgba(181,154,109,1)' }}>
+            <p style={{ fontSize: 11, letterSpacing: '0.32em', textTransform: 'uppercase', color: 'rgba(181,154,109,0.92)', fontWeight: 600, marginBottom: 24 }}>
               VEDA CARE &nbsp;｜&nbsp; 專業顧問服務
             </p>
 
             <h2 className="font-bold text-2xl md:text-4xl text-white mb-5 leading-tight">
               減法保養對話
             </h2>
-            <p className="text-sm md:text-base mb-10 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.78)', lineHeight: '2.0' }}>
-              由專業顧問為您精準梳理需求，<br />
-              避免盲目堆疊補充。
+            <p className="text-sm md:text-base mb-12 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.62)', lineHeight: '2.0', fontStyle: 'italic', letterSpacing: '0.04em' }}>
+              由專業顧問親自為妳梳理需求，<br />
+              只留下身體真正需要的那份。
             </p>
 
             {/* Main prompt card */}
             <div className="rounded-2xl p-6 md:p-10 mb-10 text-center"
-              style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(181,154,109,0.35)', backdropFilter: 'blur(12px)' }}>
-              <p className="text-sm mb-3" style={{ color: 'rgba(255,255,255,0.65)', letterSpacing: '0.05em' }}>
+              style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(181,154,109,0.3)', backdropFilter: 'blur(12px)' }}>
+              <p className="text-xs mb-3" style={{ color: 'rgba(181,154,109,0.7)', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
                 無需複雜的線上支付流程
               </p>
-              <p className="text-base md:text-2xl font-bold text-white" style={{ lineHeight: '1.7' }}>
-                加入 LINE@，我們為您完整安排訂單。
+              <p className="text-base md:text-xl font-semibold text-white" style={{ lineHeight: '1.8', letterSpacing: '0.02em' }}>
+                加入 LINE@，我們為妳完整安排訂單。
               </p>
             </div>
 
@@ -517,11 +523,24 @@ export default function Home() {
               href={LINE_OFFICIAL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 font-bold text-sm md:text-base px-8 md:px-14 py-3 md:py-4 rounded-full transition-all hover:scale-105 active:scale-95"
-              style={{ background: '#ffffff', color: '#2D4F1E', letterSpacing: '0.05em', boxShadow: '0 8px 32px rgba(0,0,0,0.18)' }}
+              className="inline-flex items-center justify-center gap-3 font-semibold transition-all duration-300 active:scale-95"
+              style={{
+                border: '1px solid rgba(181,154,109,0.65)',
+                color: '#C8A97A',
+                padding: '14px 44px',
+                borderRadius: 100,
+                fontSize: 13,
+                letterSpacing: '0.14em',
+                textDecoration: 'none',
+              }}
+              onMouseEnter={e => (e.currentTarget.style.background = 'rgba(181,154,109,0.1)')}
+              onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
             >
               加入官方 LINE@
             </a>
+
+            {/* Bottom gold rule */}
+            <div style={{ width: 40, height: 1, background: 'rgba(181,154,109,0.25)', margin: '44px auto 0' }} />
 
           </div>
         </section>

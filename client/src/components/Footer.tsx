@@ -16,7 +16,10 @@ export default function Footer() {
   };
 
   return (
-    <footer style={{ background: '#f5f4f0', borderTop: '1px solid rgba(45,79,30,0.1)' }}>
+    <footer style={{ background: '#f5f4f0' }}>
+
+      {/* Champagne gold top accent line */}
+      <div style={{ height: 1, background: 'linear-gradient(90deg, transparent 0%, rgba(181,154,109,0.6) 30%, rgba(181,154,109,0.6) 70%, transparent 100%)' }} />
 
       {/* ── Top editorial strip ── */}
       <div style={{ borderBottom: '1px solid rgba(45,79,30,0.1)', padding: '56px 0 48px' }}>
