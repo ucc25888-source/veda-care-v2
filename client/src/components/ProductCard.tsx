@@ -44,16 +44,17 @@ export default function ProductCard({ product }: ProductCardProps) {
                 </div>
               )}
               {product.category === "veda-advisor" && (
-                <div className="absolute top-2 left-2"
+                <div className="absolute bottom-0 left-1/2"
                   style={{
+                    transform: 'translateX(-50%)',
                     background: '#B59A6D',
                     color: '#fff',
                     fontSize: '10px',
                     fontWeight: 800,
                     letterSpacing: '0.25em',
-                    padding: '3px 8px',
-                    borderRadius: '3px',
-                    boxShadow: '0 1px 6px rgba(0,0,0,0.18)',
+                    padding: '3px 12px',
+                    borderRadius: '3px 3px 0 0',
+                    boxShadow: '0 -1px 6px rgba(0,0,0,0.12)',
                     whiteSpace: 'nowrap',
                   }}>
                   限　量

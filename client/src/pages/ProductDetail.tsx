@@ -66,16 +66,18 @@ export default function ProductDetail() {
                     className="w-full h-full object-contain"
                   />
                   {product.category === "veda-advisor" && (
-                    <div className="absolute top-2 left-2"
+                    <div className="absolute bottom-0 left-1/2"
                       style={{
+                        transform: 'translateX(-50%)',
                         background: '#B59A6D',
                         color: '#fff',
                         fontSize: '13px',
                         fontWeight: 800,
                         letterSpacing: '0.3em',
-                        padding: '6px 14px',
-                        borderRadius: '4px',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
+                        padding: '6px 18px',
+                        borderRadius: '4px 4px 0 0',
+                        boxShadow: '0 -2px 8px rgba(0,0,0,0.12)',
+                        whiteSpace: 'nowrap',
                       }}>
                       限　量
                     </div>
