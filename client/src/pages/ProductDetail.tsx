@@ -306,15 +306,21 @@ export default function ProductDetail() {
               <h3 className="font-display font-bold text-xl md:text-2xl mb-3" style={{color:'#2D4F1E', maxWidth:'600px', margin:'0 auto 12px'}}>
                 維護，從減法開始
               </h3>
-              <p className="text-sm mb-5" style={{color:'#AAAAAA', maxWidth:'600px', margin:'0 auto 20px', lineHeight:'2', whiteSpace:'nowrap'}}>
+              <p style={{color:'#AAAAAA', maxWidth:'600px', margin:'0 auto 20px', lineHeight:'2', whiteSpace:'nowrap', fontSize:'clamp(12px, 3.5vw, 14px)'}}>
                 健康管理，不是加法，是優化。
               </p>
-              <p className="text-sm" style={{color:'rgba(0,0,0,0.65)', maxWidth:'600px', margin:'0 auto', lineHeight:'2.4', textAlign:'center', wordBreak:'keep-all'}}>
-                妳需要的不是更多的補給品，<br />
-                而是一個清楚的標竿。<br />
-                幫妳在極致忙碌中，<br />
-                找回對身體的主導權——<br />
-                不靠感覺，靠的是清晰的邏輯。
+              <p style={{color:'rgba(0,0,0,0.65)', maxWidth:'600px', margin:'0 auto', textAlign:'center'}}>
+                {[
+                  '妳需要的不是更多的補給品，',
+                  '而是一個清楚的標竿。',
+                  '幫妳在極致忙碌中，',
+                  '找回對身體的主導權——',
+                  '不靠感覺，靠的是清晰的邏輯。',
+                ].map((line, i) => (
+                  <span key={i} style={{display:'block', whiteSpace:'nowrap', lineHeight:'2.4', fontSize:'clamp(12px, 3.5vw, 14px)'}}>
+                    {line}
+                  </span>
+                ))}
               </p>
             </div>
           </div>
