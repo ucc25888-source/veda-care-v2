@@ -46,10 +46,10 @@ export default function ProductCard({ product }: ProductCardProps) {
 
           {/* Product Info */}
           <div className="p-3 md:p-5">
-            <p className="text-[10px] md:text-xs font-medium text-primary/70 uppercase tracking-wide mb-1 md:mb-2">
-              {product.category.replace("-", " ")}
+            <p className="text-[9px] md:text-xs font-medium text-primary/70 uppercase tracking-normal md:tracking-wide mb-1 md:mb-2 min-h-[2.2em] flex items-end">
+              {product.category.replace(/-/g, " ")}
             </p>
-            <h3 className="font-display font-bold text-sm md:text-lg text-foreground mb-1 group-hover:text-primary transition-colors leading-tight">
+            <h3 className="font-display font-bold text-sm md:text-lg text-foreground mb-1 group-hover:text-primary transition-colors leading-tight min-h-[2.6em]">
               {product.name}
             </h3>
             {product.variant && (
