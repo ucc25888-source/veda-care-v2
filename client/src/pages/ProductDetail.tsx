@@ -292,7 +292,7 @@ export default function ProductDetail() {
                 維護，從減法開始
               </h3>
               <p className="text-sm mb-5" style={{color:'#AAAAAA', maxWidth:'600px', margin:'0 auto 20px', lineHeight:'2.2'}}>
-                真正的健康管理不是「加法」，而是「優化」。
+                健康管理，不是加法，是優化。
               </p>
               <p style={{color:'rgba(0,0,0,0.65)', maxWidth:'600px', margin:'0 auto', lineHeight:'2.6', textAlign:'center'}}>
                 妳需要的不是更多的補給品，<br />
