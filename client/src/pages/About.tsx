@@ -222,34 +222,56 @@ export default function About() {
         </section>
 
         {/* IV. Final CTA */}
-        <section className="py-20 md:py-28"
-          style={{ background: 'linear-gradient(135deg, #2D4F1E 0%, #3d6b28 100%)' }}>
-          <div className="container max-w-2xl text-center">
+        <section className="py-24 md:py-36 relative overflow-hidden"
+          style={{ background: '#1a2e12' }}>
 
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] mb-6"
-              style={{ color: 'rgba(255,255,255,0.6)' }}>
-              VEDA CARE &nbsp;｜&nbsp; 第一步
+          {/* Soft radial glow */}
+          <div style={{
+            position: 'absolute', top: '50%', left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: 700, height: 500,
+            background: 'radial-gradient(ellipse at center, rgba(61,99,40,0.55) 0%, transparent 70%)',
+            pointerEvents: 'none',
+          }} />
+
+          <div className="container max-w-xl text-center relative" style={{ zIndex: 1 }}>
+
+            {/* Top gold rule */}
+            <div style={{ width: 40, height: 1, background: '#B59A6D', margin: '0 auto 32px' }} />
+
+            {/* Label */}
+            <p style={{ fontSize: 11, letterSpacing: '0.32em', textTransform: 'uppercase', color: 'rgba(181,154,109,0.9)', fontWeight: 600, marginBottom: 28 }}>
+              VEDA CARE &nbsp;｜&nbsp; 開始妳的旅程
             </p>
 
-            <h2 className="text-2xl md:text-3xl font-bold mb-6"
-              style={{ color: '#ffffff', lineHeight: '1.6' }}>
+            {/* Heading */}
+            <h2 style={{ fontSize: 26, fontWeight: 700, color: '#ffffff', lineHeight: 1.7, marginBottom: 22, letterSpacing: '0.02em' }}>
               別讓身體拖了後腿，<br />從這一步開始。
             </h2>
 
-            <p className="text-sm mb-10" style={{ color: 'rgba(255,255,255,0.72)', lineHeight: '2.0' }}>
-              6 個問題，找出妳現在最需要的健康支持。由 VEDA 為妳精準規劃。
+            {/* Subtitle */}
+            <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.58)', lineHeight: 2.1, marginBottom: 48, fontStyle: 'italic', letterSpacing: '0.05em' }}>
+              六道問題，由 VEDA 親自為妳梳理<br />最值得優先關注的身體需求。
             </p>
 
+            {/* CTA — champagne gold outline pill */}
             <Link href="/quiz"
-              className="inline-flex items-center gap-2 font-bold px-8 py-4 rounded-2xl transition-all duration-200 hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-3 transition-all duration-300 hover:bg-[rgba(181,154,109,0.12)] active:scale-95"
               style={{
-                background: '#ffffff',
-                color: '#2D4F1E',
-                boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
-                fontSize: '0.95rem',
+                border: '1px solid rgba(181,154,109,0.65)',
+                color: '#C8A97A',
+                padding: '14px 40px',
+                borderRadius: 100,
+                fontSize: 13,
+                fontWeight: 600,
+                letterSpacing: '0.14em',
+                textDecoration: 'none',
               }}>
-              立即進行健康主導權檢測 →
+              立即測驗 &ensp;→
             </Link>
+
+            {/* Bottom gold rule */}
+            <div style={{ width: 40, height: 1, background: 'rgba(181,154,109,0.25)', margin: '44px auto 0' }} />
 
           </div>
         </section>
