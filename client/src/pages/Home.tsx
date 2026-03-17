@@ -251,6 +251,10 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Product Content */}
               <div>
+                <p style={{fontSize:'18px', fontStyle:'italic', color:'#4A5D23', marginBottom:'20px', lineHeight:1.6, letterSpacing:'0.04em', borderLeft:'2px solid #C8D8A8', paddingLeft:'14px'}}>
+                  妳以為是太累，<br />其實是缺口太大。
+                </p>
+
                 <p style={{fontSize:'11px', letterSpacing:'0.15em', color:'#8A9E6E', textTransform:'uppercase', marginBottom:'16px'}}>
                   植萃機能補給
                 </p>
@@ -323,6 +327,10 @@ export default function Home() {
               
               {/* Product Content */}
               <div>
+                <p style={{fontSize:'18px', fontStyle:'italic', color:'#4A5D23', marginBottom:'20px', lineHeight:1.6, letterSpacing:'0.04em', borderLeft:'2px solid #C8D8A8', paddingLeft:'14px'}}>
+                  上次起身不覺得卡，<br />是多久以前的事了？
+                </p>
+
                 <p style={{fontSize:'11px', letterSpacing:'0.15em', color:'#8A9E6E', textTransform:'uppercase', marginBottom:'16px'}}>
                   植萃機能補給
                 </p>
