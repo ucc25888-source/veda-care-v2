@@ -32,8 +32,8 @@ export default function AwarenessCheck() {
               style={{ color: "rgba(45,79,30,0.5)", fontSize: '11px' }}>
               VEDA CARE &nbsp;｜&nbsp; 身體覺察
             </p>
-            <p className="font-semibold" style={{ color: 'rgba(45,79,30,0.65)', fontSize: '14px', lineHeight: '1.9' }}>
-              4 題，60 秒，即刻了解妳的能量狀態。
+            <p className="font-semibold" style={{ color: 'rgba(45,79,30,0.65)', fontSize: '13px', lineHeight: '1.9', whiteSpace: 'nowrap' }}>
+              4 道題，即刻了解妳的能量狀態
             </p>
           </div>
 
