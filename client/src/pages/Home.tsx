@@ -74,7 +74,10 @@ export default function Home() {
                     letterSpacing: '0.06em',
                     animation: 'ctaGlow 3s ease-in-out infinite',
                   }}>
-                  🔓 解鎖專屬營養配方
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block', marginRight: 7, verticalAlign: 'middle', marginTop: -2 }}>
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+                  </svg>解鎖專屬營養配方
                 </Link>
                 <Link href="/about" className="btn-secondary text-center font-semibold">
                   認識我們
