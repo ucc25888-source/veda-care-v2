@@ -73,7 +73,7 @@ export default function About() {
             {/* Left: Copy */}
             <div className="flex flex-col justify-center px-8 py-16 md:px-14 md:py-24 lg:px-20 order-last md:order-first">
 
-              <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: '#2D4F1E', fontWeight: 500 }}>
+              <p className="text-sm tracking-[0.25em] uppercase mb-10" style={{ color: '#2D4F1E', fontWeight: 600 }}>
                 VEDA CARE &nbsp;｜&nbsp; 郝營養
               </p>
 
@@ -82,7 +82,7 @@ export default function About() {
               </h1>
 
               <p className="text-base font-semibold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
-                「健康不該是一道艱澀的數學題，<br className="hidden md:block" />而是一份說走就走的底氣。」
+                「健康不該是一道算不完的題——<br className="hidden md:block" />它應該是妳說走就走的底氣。」
               </p>
 
               <div className="space-y-5">
@@ -92,9 +92,13 @@ export default function About() {
                 <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '2.0', fontWeight: 400 }}>
                   我們以精準的植萃高機能，取代盲目的補充。那些繁瑣的成分比對與科研調研交給我，好商品未必會貴，而那份「隨心所欲」的生活主導權，還給妳自己。
                 </p>
-                <p className="text-base" style={{ color: '#666666', lineHeight: '1.9', fontStyle: 'italic' }}>
-                  把生活塞滿不叫充實，保養身體亦是如此。
-                </p>
+
+                {/* Signature quote — 最喜歡那句 */}
+                <div style={{ borderLeft: '3px solid #2D4F1E', paddingLeft: 18, marginTop: 28 }}>
+                  <p style={{ fontSize: 17, fontWeight: 600, color: '#2D4F1E', lineHeight: 1.85, fontStyle: 'italic', letterSpacing: '0.04em' }}>
+                    把生活塞滿不叫充實，<br />保養身體亦是如此。
+                  </p>
+                </div>
               </div>
             </div>
 
