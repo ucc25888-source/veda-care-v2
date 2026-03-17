@@ -379,7 +379,7 @@ export default function Home() {
                 <p style={{fontSize:'15px', fontWeight:600, color:'#2D4F1E', marginBottom:'6px'}}>
                   心之所向，身體無縫跟上。
                 </p>
-                <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8, textAlign:'center'}}>
+                <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
                   專為久坐久站、肌肉量偏少、偶爾蹲下就卡的妳設計。不是吃止痛，而是從源頭補充所需。
                 </p>
 
