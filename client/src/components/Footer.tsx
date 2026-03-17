@@ -40,8 +40,8 @@ export default function Footer() {
                 VEDA CARE
               </p>
               <p
-                className="text-sm italic"
-                style={{ color: '#888', lineHeight: '1.8', letterSpacing: '0.04em', maxWidth: 260 }}
+                className="text-sm italic whitespace-nowrap"
+                style={{ color: '#888', lineHeight: '1.8', letterSpacing: '0.04em' }}
               >
                 在繁忙的時光裡，預留一份愛給身體。
               </p>
