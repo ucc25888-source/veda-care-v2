@@ -251,6 +251,46 @@
   }
 }
 
+.veda-philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.philosophy-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(181, 154, 109, 0.2);
+  padding: 25px 15px;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.philosophy-card:hover {
+  border-color: #B59A6D;
+  box-shadow: 0 0 15px rgba(181, 154, 109, 0.15);
+  transform: translateY(-5px);
+}
+
+.philosophy-title {
+  font-family: 'PingFang TC', sans-serif;
+  font-size: 1.2rem;
+  color: #4A5D23;
+  letter-spacing: 0.2em;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.philosophy-desc {
+  font-size: 0.9rem;
+  color: #666;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+}
+
 .intro-text-refined {
   font-family: 'PingFang TC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;

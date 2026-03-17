@@ -107,13 +107,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-              {BRAND_PHILOSOPHY.pillars.map((pillar, index) => (
-                <div key={pillar.title} className={`card-wellness p-5 md:p-8 text-center ${index === 3 ? 'md:col-start-2' : ''}`}>
-                  <h3 className="font-display font-bold text-lg text-foreground mb-2">
+            <div className="veda-philosophy-grid">
+              {BRAND_PHILOSOPHY.pillars.map((pillar) => (
+                <div key={pillar.title} className="philosophy-card">
+                  <h3 className="philosophy-title">
                     {pillar.title}
                   </h3>
-                  <p className="text-sm text-foreground/70">
+                  <p className="philosophy-desc">
                     {pillar.description}
                   </p>
                 </div>
