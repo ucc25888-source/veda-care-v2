@@ -58,12 +58,26 @@ export default function ProductDetail() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Product Image */}
-              <div className="flex items-center justify-center bg-[#f8f7f5] rounded-xl overflow-hidden h-64 sm:h-96 md:h-[500px] p-4 md:p-8">
+              <div className="relative flex items-center justify-center bg-[#f8f7f5] rounded-xl overflow-hidden h-64 sm:h-96 md:h-[500px] p-4 md:p-8">
                 <img
                   src={product.image}
                   alt={product.name}
                   className="w-full h-full object-contain"
                 />
+                {product.category === "veda-advisor" && (
+                  <div className="absolute top-4 left-4"
+                    style={{
+                      background: 'rgba(181,154,109,0.92)',
+                      color: '#fff',
+                      fontSize: '11px',
+                      fontWeight: 700,
+                      letterSpacing: '0.25em',
+                      padding: '4px 10px',
+                      borderRadius: '4px',
+                    }}>
+                    限　量
+                  </div>
+                )}
               </div>
 
               {/* Product Info */}
@@ -115,8 +129,9 @@ export default function ProductDetail() {
                     ${product.price.toFixed(2)}
                   </span>
                   {product.category === "veda-advisor" && (
-                    <span className="text-sm font-medium text-primary bg-primary/10 px-2.5 py-1 rounded-full">
-                      體驗價
+                    <span className="text-sm font-medium px-2.5 py-1 rounded-full"
+                      style={{ background: 'rgba(181,154,109,0.15)', color: '#B59A6D', fontWeight: 600 }}>
+                      限量體驗價
                     </span>
                   )}
                 </div>
