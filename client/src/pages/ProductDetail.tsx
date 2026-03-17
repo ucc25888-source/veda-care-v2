@@ -72,9 +72,15 @@ export default function ProductDetail() {
                   {product.category.replace("-", " ")}
                 </p>
 
-                <h1 className="text-2xl md:text-5xl font-display font-bold text-foreground mb-3">
+                <h1 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-1">
                   {product.name}
                 </h1>
+
+                {product.variant && (
+                  <p style={{ fontSize: '13px', color: '#8A9E6E', letterSpacing: '0.12em', marginBottom: '12px', fontWeight: 300 }}>
+                    — {product.variant}
+                  </p>
+                )}
 
                 {product.subtitle && (
                   <p className="text-base md:text-lg font-medium italic mb-4"

@@ -49,9 +49,14 @@ export default function ProductCard({ product }: ProductCardProps) {
             <p className="text-xs font-medium text-primary/70 uppercase tracking-wide mb-2">
               {product.category.replace("-", " ")}
             </p>
-            <h3 className="font-display font-bold text-lg text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+            <h3 className="font-display font-bold text-lg text-foreground mb-1 group-hover:text-primary transition-colors">
               {product.name}
             </h3>
+            {product.variant && (
+              <p style={{ fontSize: '11px', color: '#8A9E6E', letterSpacing: '0.1em', fontWeight: 300, marginBottom: '6px' }}>
+                — {product.variant}
+              </p>
+            )}
             <p className="text-sm text-foreground/70 mb-4 line-clamp-2">
               {product.description}
             </p>

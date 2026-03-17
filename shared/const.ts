@@ -7,6 +7,7 @@ export const LINE_OFFICIAL_URL = "https://lin.ee/10DnnGU";
 export interface Product {
   id: string;
   name: string;
+  variant?: string;
   subtitle?: string;
   category: "plant-nutrition" | "frequency-resonance" | "veda-advisor";
   price: number;
@@ -38,7 +39,8 @@ export const SOCIAL_LINKS = {
 export const PRODUCTS: Product[] = [
   {
     id: "product-1",
-    name: "EAA 完美互補植物蛋白（黑芝麻風味）盒裝",
+    name: "EAA 完美互補植物蛋白（盒裝）",
+    variant: "黑芝麻風味",
     category: "plant-nutrition",
     price: 990,
     image: "/eaa-box.png",
@@ -68,7 +70,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "product-2",
-    name: "EAA 完美互補植物蛋白（500g 環保袋裝）",
+    name: "EAA 完美互補植物蛋白（袋裝）",
+    variant: "500g 環保包裝・黑芝麻風味",
     subtitle: "穩定，是給身體最深情的告白。",
     category: "plant-nutrition",
     price: 990,
