@@ -125,6 +125,7 @@ export default function Footer() {
                 {[
                   { label: 'LINE@', href: SOCIAL_LINKS.lineOfficial },
                   { label: 'Facebook', href: SOCIAL_LINKS.facebook },
+                  // { label: 'YouTube', href: SOCIAL_LINKS.youtube },  // 開通後取消此行註解
                   { label: 'Mail', href: 'mailto:ucc25888@gmail.com' },
                 ].map(({ label, href }) => (
                   <li key={label}>
