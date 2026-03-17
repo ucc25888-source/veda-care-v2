@@ -52,11 +52,13 @@ export default function ProductCard({ product }: ProductCardProps) {
             <h3 className="font-display font-bold text-sm md:text-lg text-foreground mb-1 group-hover:text-primary transition-colors leading-tight min-h-[2.6em]">
               {product.name}
             </h3>
-            {product.variant && (
-              <p style={{ fontSize: '10px', color: '#8A9E6E', letterSpacing: '0.08em', fontWeight: 300, marginBottom: '4px' }}>
-                — {product.variant}
-              </p>
-            )}
+            <div style={{ minHeight: '1.5em' }}>
+              {product.variant && (
+                <p style={{ fontSize: '10px', color: '#8A9E6E', letterSpacing: '0.08em', fontWeight: 300, marginBottom: '4px' }}>
+                  — {product.variant}
+                </p>
+              )}
+            </div>
             <p className="text-xs md:text-sm text-foreground/70 mb-3 md:mb-4 line-clamp-2 hidden md:block">
               {product.description}
             </p>
