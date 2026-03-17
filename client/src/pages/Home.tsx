@@ -44,8 +44,8 @@ export default function Home() {
               }}
             >
               {/* Eyebrow label */}
-              <p className="text-xs tracking-[0.3em] uppercase font-semibold mb-5"
-                style={{ color: '#2D4F1E' }}>
+              <p className="uppercase font-semibold mb-5"
+                style={{ color: '#2D4F1E', fontSize: '10px', letterSpacing: '0.15em', whiteSpace: 'nowrap' }}>
                 VEDA CARE &nbsp;｜&nbsp; 科研級精粹
               </p>
 
