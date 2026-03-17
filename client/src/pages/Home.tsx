@@ -344,7 +344,7 @@ export default function Home() {
                   心之所向，身體無縫跟上。
                 </p>
                 <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
-                  專為久坐、久站、偶爾蹲下就卡一下的妳設計。<br />
+                  專為久坐久站、肌肉量偏少、或偶爾蹲下就卡一下的妳設計。<br />
                   不是吃止痛，而是從源頭補充日常所需。
                 </p>
 
