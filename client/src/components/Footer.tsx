@@ -230,7 +230,7 @@ export default function Footer() {
             © 2026 VEDA CARE Holistic Wellness
           </p>
           <p style={{ fontSize: 11, color: '#bbb', lineHeight: '1.7', letterSpacing: '0.04em' }}>
-            本網頁所稱「專業建議」係基於健康促進管理師之生活保健經驗，非醫療法規範之醫事人員意見。本網站內容僅供參考，不替代醫師診斷或治療建議。本產品為一般食品，非藥品，不具療效。如有疾病或特殊生理狀況，請諮詢醫療專業人員。
+            本網站內容僅供參考，不替代醫師診斷或治療建議。本產品為一般食品，非藥品，不具療效。如有疾病或特殊生理狀況，請諮詢醫療專業人員。
           </p>
         </div>
       </div>
