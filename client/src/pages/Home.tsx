@@ -261,7 +261,7 @@ export default function Home() {
                 
                 <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 mb-8 border border-primary/10">
                   <p className="text-lg text-foreground leading-relaxed">
-                    <span className="font-bold text-primary">真正的遊刃有餘，來自穩健的生理基底。</span>EAA 完美互補植物蛋白，摒棄多餘負擔，以黃金比例植萃精華，精準填補您日常消耗的能量缺口。
+                    <span className="font-bold text-primary">遊刃有餘，來自穩健的生理基底。</span>植物 EAA 黃金比例，補充日常能量缺口。
                   </p>
                 </div>
                 

@@ -273,10 +273,9 @@ export default function ProductDetail() {
             <span className="motto-text">喝下底氣，贏回自己。</span>
 
             <div className="philosophy-card editorial-card">
-              <h3 className="inner-highlight">真正的遊刃有餘，來自穩健的生理基底。</h3>
+              <h3 className="inner-highlight">遊刃有餘，來自穩健的生理基底。</h3>
               <p className="content-text">
-                EAA 完美互補植物蛋白，摒棄多餘負擔，<br />
-                以黃金比例植萃精華，精準填補您日常消耗的能量缺口。
+                植物 EAA 黃金比例，補充日常能量缺口。
               </p>
             </div>
 
