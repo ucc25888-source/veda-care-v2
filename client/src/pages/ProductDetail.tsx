@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import ProductCarousel from "@/components/ProductCarousel";
 import { PRODUCTS, LINE_OFFICIAL_URL } from "@/../../shared/const";
 import { useCart } from "@/contexts/CartContext";
-import { ShoppingCart, Check } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 
 export default function ProductDetail() {
   const [match, params] = useRoute("/product/:id");
@@ -92,7 +92,14 @@ export default function ProductDetail() {
                   </div>
                 )}
 
-                <p className="text-lg text-foreground/70 mb-6">
+                <p className="mb-6" style={{
+                  fontSize: '0.95rem',
+                  color: '#666',
+                  lineHeight: '2',
+                  letterSpacing: '0.15em',
+                  maxWidth: '500px',
+                  margin: '0 auto 1.5rem auto',
+                }}>
                   {product.description}
                 </p>
 
@@ -108,15 +115,15 @@ export default function ProductDetail() {
                 </div>
 
                 {/* Benefits */}
-                <div className="mb-8">
-                  <h3 className="font-display font-bold text-foreground mb-3">
+                <div className="mb-8" style={{ maxWidth: '500px', margin: '0 auto 2rem auto' }}>
+                  <h3 className="font-display font-bold mb-4" style={{ color: '#4A5D23', letterSpacing: '0.2em' }}>
                     主要效益
                   </h3>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {product.benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-foreground/70">{benefit}</span>
+                        <span style={{ color: '#4A5D23', flexShrink: 0, marginTop: '2px' }}>·</span>
+                        <span style={{ fontSize: '14px', fontWeight: 300, color: '#666', letterSpacing: '0.12em', lineHeight: '1.9' }}>{benefit}</span>
                       </li>
                     ))}
                   </ul>
