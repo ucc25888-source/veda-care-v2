@@ -436,15 +436,16 @@ export default function Home() {
           <div className="container max-w-3xl text-center relative z-10">
 
             {/* Section label */}
-            <p className="text-xs tracking-[0.3em] uppercase font-semibold mb-6" style={{ color: 'rgba(181,154,109,0.85)' }}>
+            <p className="text-sm tracking-[0.25em] uppercase font-semibold mb-6" style={{ color: 'rgba(181,154,109,1)' }}>
               VEDA CARE &nbsp;｜&nbsp; 專業顧問服務
             </p>
 
             <h2 className="font-bold text-2xl md:text-4xl text-white mb-5 leading-tight">
               減法保養對話
             </h2>
-            <p className="text-sm md:text-base mb-10 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.78)', lineHeight: '1.9' }}>
-              由專業顧問為您精準理清身體需求，避免盲目堆疊補充。
+            <p className="text-sm md:text-base mb-10 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.78)', lineHeight: '2.0' }}>
+              由專業顧問為您精準梳理需求，<br />
+              避免盲目堆疊補充。
             </p>
 
             {/* Main prompt card */}
@@ -454,7 +455,7 @@ export default function Home() {
                 無需複雜的線上支付流程
               </p>
               <p className="text-base md:text-2xl font-bold text-white" style={{ lineHeight: '1.7' }}>
-                加入 LINE@，告訴我們您想要的，<br className="hidden md:block" />我們為您完整安排訂單。
+                加入 LINE@，我們為您完整安排訂單。
               </p>
             </div>
 
