@@ -288,11 +288,16 @@ export default function ProductDetail() {
         <section className="py-12 md:py-16">
           <div className="container max-w-3xl">
             <div className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg border border-border">
-              <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-4">
-                專業者的身體維護邏輯
+              <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-3">
+                維護，從減法開始
               </h3>
+              <p className="text-foreground/50 text-sm mb-4">
+                真正的健康管理不是「加法」，而是「優化」。
+              </p>
               <p className="text-foreground/70 leading-relaxed">
-                真正的健康管理不是「加法」，而是「優化」。妳需要的不是更多的補給品，而是一個清楚的標竿。這套設計是為了幫妳在極致忙碌中，找回對身體的主導權——讓日常補充更有方向，不靠感覺，靠的是清晰的邏輯。
+                妳需要的不是更多的補給品，而是一個清楚的標竿。<br />
+                幫妳在極致忙碌中，找回對身體的主導權——<br />
+                不靠感覺，靠的是清晰的邏輯。
               </p>
             </div>
           </div>
