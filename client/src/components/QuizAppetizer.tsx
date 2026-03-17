@@ -145,8 +145,8 @@ export default function QuizAppetizer() {
         }}
         onClick={() => setPhase("quiz")}
       >
-        <div className="px-8 py-10 md:px-12 md:py-14">
-          <div className="flex items-center gap-3 mb-7">
+        <div className="px-8 py-10 md:px-12 md:py-14 text-center">
+          <div className="flex items-center justify-center gap-3 mb-7">
             <span
               className="text-xs font-bold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full"
               style={{ background: "rgba(255,255,255,0.13)", color: "rgba(255,255,255,0.9)" }}
@@ -165,7 +165,7 @@ export default function QuizAppetizer() {
             妳正在「預支明天」嗎？
           </p>
 
-          <div className="flex flex-wrap gap-2 mb-10">
+          <div className="flex flex-wrap justify-center gap-2 mb-10">
             {QUICK_QUESTIONS.map((q) => (
               <span
                 key={q.id}
@@ -179,7 +179,7 @@ export default function QuizAppetizer() {
 
           {/* Unlock hint */}
           <div
-            className="flex items-center gap-2 mb-6 px-3.5 py-2.5 rounded-xl w-fit"
+            className="inline-flex items-center gap-2 mb-6 px-3.5 py-2.5 rounded-xl"
             style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.10)" }}
           >
             <span style={{ fontSize: "13px" }}>🔒</span>
@@ -189,7 +189,7 @@ export default function QuizAppetizer() {
             </span>
           </div>
 
-          <div className="flex items-center gap-4 flex-wrap">
+          <div className="flex items-center justify-center gap-4 flex-wrap">
             <div
               className="inline-flex items-center gap-2 font-bold text-sm px-7 py-3.5 rounded-2xl transition-all duration-300 group-hover:gap-3"
               style={{ background: "#ffffff", color: "#2D4F1E" }}
