@@ -100,7 +100,7 @@ const RESULTS: Record<ResultType, {
       "長期靠咖啡撐著、睡了還是累、關節開始抗議、情緒容易斷線⋯⋯這不是妳的錯，也不是「年紀大了」的必然。這是現代生活的高消耗對身體造成的累積性損耗。妳值得比「撐過去」更好的狀態。",
     recommendation:
       "VEDA 建議妳：停止用意志力硬撐。從日常能量補充、維持良好睡眠品質與支持關節靈活度開始，讓身體重新找回屬於妳的主導權。專業的事交給 VEDA，妳只需要負責輕鬆地變好。",
-    cta: "立即與郝營養諮詢我的調養計畫",
+    cta: "立即與VEDA諮詢我的調養計畫",
   },
   warning: {
     level: "Level 2",
@@ -396,8 +396,8 @@ export default function WellnessQuiz() {
                 href={LINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-4 rounded-2xl font-bold text-base mb-4 transition-all duration-200 hover:opacity-90 hover:scale-[1.01] active:scale-[0.99]"
-                style={{ background: '#2D4F1E', color: '#ffffff', lineHeight: '1.5' }}
+                className="block w-full text-center py-4 rounded-2xl font-bold mb-4 transition-all duration-200 hover:opacity-90 hover:scale-[1.01] active:scale-[0.99]"
+                style={{ background: '#2D4F1E', color: '#ffffff', lineHeight: '1.5', fontSize: '14px', whiteSpace: 'nowrap' }}
               >
                 {result.cta}
               </a>
