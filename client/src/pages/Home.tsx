@@ -298,12 +298,12 @@ export default function Home() {
                   植萃機能補給
                 </p>
 
-                <h2 style={{fontSize:'1.5rem', fontWeight:700, color:'#1a1a1a', marginBottom:'20px', lineHeight:1.4, letterSpacing:'0.03em'}}>
-                  喝下底氣，贏回自己。
+                <h2 style={{fontSize:'clamp(1.15rem, 4.5vw, 1.5rem)', fontWeight:700, color:'#1a1a1a', marginBottom:'20px', lineHeight:1.4, letterSpacing:'0.03em'}}>
+                  喝下底氣，<br className="md:hidden" />贏回自己。
                 </h2>
 
                 <p style={{fontSize:'15px', fontWeight:600, color:'#2D4F1E', marginBottom:'6px'}}>
-                  腸胃友善配方，全素日常無負擔。
+                  腸胃友善配方，全素無負擔。
                 </p>
                 <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
                   長時間不吃、或吃不夠多的日子，<br />
