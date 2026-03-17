@@ -491,7 +491,9 @@ body {
 }
 
 .product-image-wrap {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .premium-img {
@@ -499,6 +501,9 @@ body {
   height: auto;
   margin-bottom: 40px;
   transition: transform 0.6s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .premium-img:hover {
