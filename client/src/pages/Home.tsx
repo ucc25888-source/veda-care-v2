@@ -251,30 +251,27 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Product Content */}
               <div>
-                <p className="text-sm font-medium text-primary/70 uppercase tracking-wide mb-3">
+                <p style={{fontSize:'11px', letterSpacing:'0.15em', color:'#8A9E6E', textTransform:'uppercase', marginBottom:'16px'}}>
                   植萃機能補給
                 </p>
-                
-                <h2 className="text-xl md:text-3xl font-sans font-bold text-foreground mb-6 leading-tight text-center" style={{ letterSpacing: '0.05em' }}>
+
+                <h2 style={{fontSize:'1.5rem', fontWeight:700, color:'#1a1a1a', marginBottom:'20px', lineHeight:1.4, letterSpacing:'0.03em'}}>
                   喝下底氣，贏回自己。
                 </h2>
-                
-                <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 mb-8 border border-primary/10">
-                  <p className="text-lg text-foreground leading-relaxed">
-                    <span className="font-bold text-primary">腸胃友善配方，全素日常無負擔。</span>植物 EAA 黃金比例，補充日常能量缺口。
-                  </p>
-                </div>
-                
-                <p className="text-foreground/80 mb-8 leading-relaxed">
-                  不必非要成為誰的榜樣，您只需要在每一個起身與邁步間，感受身體那份久違的輕盈與聽話。
+
+                <p style={{fontSize:'15px', fontWeight:600, color:'#2D4F1E', marginBottom:'6px'}}>
+                  腸胃友善配方，全素日常無負擔。
                 </p>
-                
-                <div className="bg-primary/5 rounded-lg p-6 mb-8 border border-primary/20">
-                  <p className="text-sm text-foreground/70 mb-3 font-medium">【規格提示】</p>
-                  <div className="space-y-2 text-foreground/80">
-                    <p>📦 <span className="font-medium">500g環保包裝</span> / 全家補給。</p>
-                    <p>📦 <span className="font-medium">15包單包攜帶</span> / 隨時補充。</p>
-                  </div>
+                <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
+                  植物 EAA 黃金比例，補充日常能量缺口。
+                </p>
+
+                <div style={{borderTop:'1px solid #e8e8e8', paddingTop:'16px', marginBottom:'28px'}}>
+                  <p style={{fontSize:'11px', color:'#bbb', letterSpacing:'0.1em', marginBottom:'10px'}}>規 格 提 示</p>
+                  <p style={{fontSize:'13px', color:'#666', fontWeight:300, lineHeight:2}}>
+                    500g 環保包裝・全家補給<br />
+                    15包單包攜帶・隨時補充
+                  </p>
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
