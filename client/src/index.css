@@ -458,12 +458,14 @@ body {
 .editorial-card {
   max-width: 580px;
   margin: 32px auto;
+  border-left: 3px solid #2D4F1E;
+  padding-left: 20px;
 }
 
 .inner-highlight {
   font-size: 18px;
   color: #4A5D23 !important;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 15px;
   line-height: 1.6;
 }
