@@ -273,7 +273,7 @@ export default function ProductDetail() {
             <span className="motto-text">喝下底氣，贏回自己。</span>
 
             <div className="philosophy-card editorial-card">
-              <h3 className="inner-highlight">遊刃有餘，來自穩健的生理基底。</h3>
+              <h3 className="inner-highlight">腸胃友善配方，全素日常無負擔。</h3>
               <p className="content-text">
                 植物 EAA 黃金比例，補充日常能量缺口。
               </p>
