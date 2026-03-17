@@ -128,43 +128,48 @@ export default function About() {
               事倍功半！三大誤區，妳中了嗎？
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               {MISCONCEPTIONS.map((item) => (
                 <div key={item.index}
-                  className="rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2"
-                  style={{ border: '1px solid rgba(45,79,30,0.12)' }}>
+                  style={{
+                    background: '#ffffff',
+                    borderRadius: 20,
+                    border: '1px solid rgba(45,79,30,0.12)',
+                    overflow: 'hidden',
+                    boxShadow: '0 2px 16px rgba(45,79,30,0.05)',
+                  }}>
 
-                  {/* Myth — warm tinted */}
-                  <div className="p-7 md:p-9" style={{ background: 'rgba(45,79,30,0.04)' }}>
-                    <div className="flex items-start gap-4">
-                      <span className="text-xs font-bold tracking-widest mt-1 shrink-0" style={{ color: 'rgba(45,79,30,0.35)' }}>
+                  {/* Myth */}
+                  <div style={{ background: 'rgba(45,79,30,0.035)', padding: '26px 32px 22px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+                      <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.3em', color: 'rgba(45,79,30,0.3)' }}>
                         {item.index}
                       </span>
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'rgba(45,79,30,0.5)' }}>
-                          誤 區
-                        </p>
-                        <p className="text-base font-semibold" style={{ color: '#2D4F1E', lineHeight: '1.8' }}>
-                          {item.myth}
-                        </p>
-                      </div>
+                      <span style={{ width: 20, height: 1, background: 'rgba(45,79,30,0.18)', display: 'inline-block' }} />
+                      <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.25em', color: 'rgba(45,79,30,0.45)', textTransform: 'uppercase' }}>
+                        誤 區
+                      </span>
                     </div>
+                    <p style={{ fontSize: 15, fontWeight: 600, color: '#2D4F1E', lineHeight: 1.8 }}>
+                      {item.myth}
+                    </p>
                   </div>
 
-                  {/* Truth — clean white */}
-                  <div className="p-7 md:p-9 bg-white">
-                    <div className="flex items-start gap-4">
-                      <span className="text-lg shrink-0 mt-0.5">✦</span>
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#2D4F1E' }}>
-                          真 相
-                        </p>
-                        <p className="text-base" style={{ color: '#4A4A4A', lineHeight: '1.9' }}>
-                          {item.truth}
-                        </p>
-                        <InsightTooltip text={item.insight} />
-                      </div>
-                    </div>
+                  {/* Connector */}
+                  <div style={{ display: 'flex', alignItems: 'center', padding: '0 32px', background: '#fff', height: 36 }}>
+                    <div style={{ flex: 1, height: 1, background: 'rgba(45,79,30,0.1)' }} />
+                    <span style={{ padding: '0 14px', fontSize: 10, color: 'rgba(45,79,30,0.45)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
+                      ✦ &nbsp;真 相
+                    </span>
+                    <div style={{ flex: 1, height: 1, background: 'rgba(45,79,30,0.1)' }} />
+                  </div>
+
+                  {/* Truth */}
+                  <div style={{ padding: '18px 32px 28px', background: '#fff' }}>
+                    <p style={{ fontSize: 14, color: '#555', lineHeight: 1.95, fontWeight: 300 }}>
+                      {item.truth}
+                    </p>
+                    <InsightTooltip text={item.insight} />
                   </div>
 
                 </div>
