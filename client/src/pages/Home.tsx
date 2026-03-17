@@ -237,32 +237,45 @@ export default function Home() {
                 style={{ background: 'rgba(45,79,30,0.12)' }} />
 
               {[
-                { step: "01", label: "覺察", sub: "發現漏電點", active: true },
-                { step: "02", label: "深解", sub: "了解根本原因", active: false },
-                { step: "03", label: "精準匹配", sub: "獲取科研方案", active: false },
-              ].map((s) => (
-                <div key={s.step} className="flex-1 flex flex-col items-center text-center relative z-10">
-                  <div
-                    className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold mb-2 transition-all duration-300"
-                    style={{
-                      background: s.active ? '#2D4F1E' : '#ffffff',
-                      border: s.active ? '2px solid #2D4F1E' : '2px solid rgba(45,79,30,0.18)',
-                      color: s.active ? '#ffffff' : 'rgba(45,79,30,0.4)',
-                      boxShadow: s.active ? '0 0 0 5px rgba(45,79,30,0.10)' : 'none',
-                      animation: s.active ? 'scanPulse 2.2s ease-in-out infinite' : 'none',
-                    }}
-                  >
-                    {s.step}
-                  </div>
-                  <p className="text-xs font-bold mb-0.5"
-                    style={{ color: s.active ? '#2D4F1E' : 'rgba(45,79,30,0.45)' }}>
-                    {s.label}
-                  </p>
-                  <p className="text-[10px]" style={{ color: 'rgba(45,79,30,0.35)' }}>
-                    {s.sub}
-                  </p>
-                </div>
-              ))}
+                { step: "01", label: "覺察", sub: "發現漏電點", active: true, href: "/awareness-check" },
+                { step: "02", label: "深解", sub: "了解根本原因", active: false, href: "/quiz" },
+                { step: "03", label: "精準匹配", sub: "獲取科研方案", active: false, href: LINE_OFFICIAL_URL, external: true },
+              ].map((s) => {
+                const inner = (
+                  <>
+                    <div
+                      className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold mb-2 transition-all duration-300"
+                      style={{
+                        background: s.active ? '#2D4F1E' : '#ffffff',
+                        border: s.active ? '2px solid #2D4F1E' : '2px solid rgba(45,79,30,0.18)',
+                        color: s.active ? '#ffffff' : 'rgba(45,79,30,0.4)',
+                        boxShadow: s.active ? '0 0 0 5px rgba(45,79,30,0.10)' : 'none',
+                        animation: s.active ? 'scanPulse 2.2s ease-in-out infinite' : 'none',
+                      }}
+                    >
+                      {s.step}
+                    </div>
+                    <p className="text-xs font-bold mb-0.5"
+                      style={{ color: s.active ? '#2D4F1E' : 'rgba(45,79,30,0.45)' }}>
+                      {s.label}
+                    </p>
+                    <p className="text-[10px]" style={{ color: 'rgba(45,79,30,0.35)' }}>
+                      {s.sub}
+                    </p>
+                  </>
+                );
+                return s.external ? (
+                  <a key={s.step} href={s.href} target="_blank" rel="noopener noreferrer"
+                    className="flex-1 flex flex-col items-center text-center relative z-10 hover:opacity-80 transition-opacity">
+                    {inner}
+                  </a>
+                ) : (
+                  <Link key={s.step} href={s.href}
+                    className="flex-1 flex flex-col items-center text-center relative z-10 hover:opacity-80 transition-opacity">
+                    {inner}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>
