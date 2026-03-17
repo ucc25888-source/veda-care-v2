@@ -446,13 +446,13 @@ export default function Home() {
               </p>
 
               <div className="space-y-6 mb-10">
-                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em' }}>
                   妳不是不在乎健康，只是被太多選擇<strong style={{ color: '#2D4F1E', fontWeight: 700 }}>累壞了</strong>。每次想開始，就先卡在「不知道從哪裡補起」。
                 </p>
-                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em' }}>
                   我在保健領域深耕逾 20 年，只做一件事：替妳把<strong style={{ color: '#2D4F1E', fontWeight: 700 }}>值得信任的留下來</strong>，把多餘的都篩掉。
                 </p>
-                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em' }}>
                   繁瑣的成分研究，是我的工作；找回生活的從容，才是妳最重要的事。
                 </p>
               </div>
