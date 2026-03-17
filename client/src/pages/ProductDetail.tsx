@@ -322,14 +322,16 @@ export default function ProductDetail() {
           </section>
         )}
 
-        {/* Disclaimer */}
-        <section className="py-8 md:py-12 border-t border-border bg-muted/30">
-          <div className="container max-w-3xl">
-            <p className="text-sm text-foreground/60 leading-relaxed">
-              <span className="font-medium">備註：</span>本產品為日常營養補充品，非藥品，不具醫療效能。
-            </p>
-          </div>
-        </section>
+        {/* Disclaimer — only for food products, not services */}
+        {product.category !== 'veda-advisor' && (
+          <section className="py-8 md:py-12 border-t border-border bg-muted/30">
+            <div className="container max-w-3xl">
+              <p className="text-sm text-foreground/60 leading-relaxed">
+                <span className="font-medium">備註：</span>本產品為日常營養補充品，非藥品，不具醫療效能。
+              </p>
+            </div>
+          </section>
+        )}
       </main>
 
       <Footer />
