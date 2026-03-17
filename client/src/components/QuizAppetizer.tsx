@@ -146,15 +146,12 @@ export default function QuizAppetizer() {
         onClick={() => setPhase("quiz")}
       >
         <div className="px-8 py-10 md:px-12 md:py-14 text-center">
-          <div className="flex items-center justify-center gap-3 mb-7">
+          <div className="flex items-center justify-center mb-7">
             <span
               className="text-xs font-bold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full"
               style={{ background: "rgba(255,255,255,0.13)", color: "rgba(255,255,255,0.9)", whiteSpace: "nowrap" }}
             >
               Route A · 覺察檢測
-            </span>
-            <span className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
-              4 題 · 60 秒
             </span>
           </div>
 
