@@ -58,27 +58,29 @@ export default function ProductDetail() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Product Image */}
-              <div className="relative flex items-center justify-center bg-[#f8f7f5] rounded-xl overflow-hidden h-64 sm:h-96 md:h-[500px] p-4 md:p-8">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-contain"
-                />
-                {product.category === "veda-advisor" && (
-                  <div className="absolute top-4 left-4"
-                    style={{
-                      background: '#B59A6D',
-                      color: '#fff',
-                      fontSize: '13px',
-                      fontWeight: 800,
-                      letterSpacing: '0.3em',
-                      padding: '6px 14px',
-                      borderRadius: '4px',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
-                    }}>
-                    限　量
-                  </div>
-                )}
+              <div className="flex items-center justify-center bg-[#f8f7f5] rounded-xl overflow-hidden h-64 sm:h-96 md:h-[500px] p-4 md:p-8">
+                <div className="relative w-full h-full">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-contain"
+                  />
+                  {product.category === "veda-advisor" && (
+                    <div className="absolute top-2 left-2"
+                      style={{
+                        background: '#B59A6D',
+                        color: '#fff',
+                        fontSize: '13px',
+                        fontWeight: 800,
+                        letterSpacing: '0.3em',
+                        padding: '6px 14px',
+                        borderRadius: '4px',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
+                      }}>
+                      限　量
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Product Info */}
