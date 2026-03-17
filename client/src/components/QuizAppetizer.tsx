@@ -149,7 +149,7 @@ export default function QuizAppetizer() {
           <div className="flex items-center justify-center gap-3 mb-7">
             <span
               className="text-xs font-bold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full"
-              style={{ background: "rgba(255,255,255,0.13)", color: "rgba(255,255,255,0.9)" }}
+              style={{ background: "rgba(255,255,255,0.13)", color: "rgba(255,255,255,0.9)", whiteSpace: "nowrap" }}
             >
               Route A · 覺察檢測
             </span>
