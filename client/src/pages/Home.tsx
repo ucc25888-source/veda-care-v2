@@ -182,16 +182,16 @@ export default function Home() {
                         className="p-6 md:p-8 rounded-2xl h-full flex flex-col transition-all duration-300"
                         style={{
                           background: '#ffffff',
-                          border: '1px solid rgba(45,79,30,0.10)',
-                          boxShadow: 'inset 0 2px 0 rgba(181,154,109,0.35), 0 2px 12px rgba(45,79,30,0.04)',
+                          border: '1.5px solid rgba(181,154,109,0.50)',
+                          boxShadow: 'inset 0 2px 0 rgba(181,154,109,0.55), 0 2px 14px rgba(181,154,109,0.08)',
                         }}
                         onMouseEnter={e => {
-                          (e.currentTarget as HTMLDivElement).style.boxShadow = 'inset 0 2px 0 rgba(181,154,109,0.6), 0 10px 32px rgba(45,79,30,0.10)';
-                          (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(181,154,109,0.35)';
+                          (e.currentTarget as HTMLDivElement).style.boxShadow = 'inset 0 2px 0 rgba(181,154,109,0.8), 0 10px 32px rgba(45,79,30,0.10)';
+                          (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(181,154,109,0.80)';
                         }}
                         onMouseLeave={e => {
-                          (e.currentTarget as HTMLDivElement).style.boxShadow = 'inset 0 2px 0 rgba(181,154,109,0.35), 0 2px 12px rgba(45,79,30,0.04)';
-                          (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(45,79,30,0.10)';
+                          (e.currentTarget as HTMLDivElement).style.boxShadow = 'inset 0 2px 0 rgba(181,154,109,0.55), 0 2px 14px rgba(181,154,109,0.08)';
+                          (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(181,154,109,0.50)';
                         }}
                       >
                         {/* SVG icon */}
