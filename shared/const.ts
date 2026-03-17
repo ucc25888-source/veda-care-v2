@@ -137,7 +137,7 @@ export const PRODUCTS: Product[] = [
     name: "健康校準 1對1",
     category: "veda-advisor",
     price: 399,
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/veda-experience-price_5e65f480.png",
+    image: "/service-consultation.png",
     description: "每個人的身體，都有一份只屬於自己的節奏。30 分鐘，由 VEDA 親自與妳深度梳理現況——哪些補充是真正值得的，哪些只是徒增負擔。我們不開藥方，只幫妳整理出一份最清晰的「個人補充清單」，讓妳帶著具體答案離開。",
     benefits: [
       "深度梳理身體現況，找回屬於妳的補充節奏",
