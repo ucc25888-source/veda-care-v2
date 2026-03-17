@@ -287,14 +287,14 @@ export default function ProductDetail() {
         {/* Wellness Philosophy */}
         <section className="py-12 md:py-16">
           <div className="container max-w-3xl">
-            <div className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg border border-border">
-              <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-3">
+            <div className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg border border-border" style={{textAlign:'center'}}>
+              <h3 className="font-display font-bold text-xl md:text-2xl mb-3" style={{color:'#2D4F1E', maxWidth:'600px', margin:'0 auto 12px'}}>
                 維護，從減法開始
               </h3>
-              <p className="text-foreground/50 text-sm mb-4">
+              <p className="text-sm mb-5" style={{color:'#AAAAAA', maxWidth:'600px', margin:'0 auto 20px', lineHeight:'2.2'}}>
                 真正的健康管理不是「加法」，而是「優化」。
               </p>
-              <p className="text-foreground/70 leading-relaxed">
+              <p style={{color:'rgba(0,0,0,0.65)', maxWidth:'600px', margin:'0 auto', lineHeight:'2.2', textAlign:'center'}}>
                 妳需要的不是更多的補給品，而是一個清楚的標竿。<br />
                 幫妳在極致忙碌中，找回對身體的主導權——<br />
                 不靠感覺，靠的是清晰的邏輯。
