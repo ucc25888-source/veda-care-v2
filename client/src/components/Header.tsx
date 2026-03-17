@@ -14,11 +14,27 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png" alt="VEDA CARE" className="h-12 w-auto" />
-            <div>
-              <div className="text-lg font-display font-bold text-primary">
+            <div style={{ whiteSpace: 'nowrap' }}>
+              <div style={{
+                fontFamily: "'PingFang TC', 'Noto Sans TC', sans-serif",
+                fontSize: 'clamp(1.2rem, 5vw, 2.5rem)',
+                fontWeight: 300,
+                letterSpacing: '0.15em',
+                color: '#4A5D23',
+                lineHeight: 1.2,
+                whiteSpace: 'nowrap',
+              }}>
                 VEDA
               </div>
-              <div className="text-xs font-medium text-foreground/60 leading-tight">
+              <div style={{
+                fontFamily: "'PingFang TC', 'Noto Sans TC', sans-serif",
+                fontSize: 'clamp(0.6rem, 1.8vw, 0.75rem)',
+                fontWeight: 300,
+                letterSpacing: '0.18em',
+                color: '#4A5D23',
+                opacity: 0.7,
+                whiteSpace: 'nowrap',
+              }}>
                 全人健康
               </div>
             </div>
