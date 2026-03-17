@@ -242,10 +242,13 @@ export default function Home() {
         </section>
 
         {/* Route A — Appetizer Quiz */}
-        <section className="py-10 md:py-16 bg-[#f9f8f5]">
-          <div className="container max-w-xl">
+        <section className="py-16 md:py-28 relative overflow-hidden" style={{ background: '#1a2e12' }}>
+          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 700, height: 500, background: 'radial-gradient(ellipse at center, rgba(61,99,40,0.5) 0%, transparent 70%)', pointerEvents: 'none' }} />
+          <div style={{ width: 40, height: 1, background: '#B59A6D', margin: '0 auto 28px' }} />
+          <div className="container max-w-xl relative" style={{ zIndex: 1 }}>
             <QuizAppetizer />
           </div>
+          <div style={{ width: 40, height: 1, background: 'rgba(181,154,109,0.25)', margin: '28px auto 0' }} />
         </section>
 
         {/* Featured Products Carousel */}

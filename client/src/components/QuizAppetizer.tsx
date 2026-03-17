@@ -140,8 +140,8 @@ export default function QuizAppetizer() {
       <div
         className="rounded-3xl overflow-hidden cursor-pointer group transition-transform duration-300 hover:scale-[1.01]"
         style={{
-          background: "linear-gradient(135deg, #1a2e12 0%, #2D4F1E 100%)",
-          boxShadow: "0 24px 64px rgba(45,79,30,0.28)",
+          background: "linear-gradient(135deg, #243d18 0%, #3a6226 100%)",
+          boxShadow: "0 0 0 1px rgba(181,154,109,0.35), 0 24px 64px rgba(0,0,0,0.35)",
         }}
         onClick={() => setPhase("quiz")}
       >
