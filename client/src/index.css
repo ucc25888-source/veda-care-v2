@@ -287,9 +287,11 @@
 
 .philosophy-desc {
   font-size: 0.9rem;
+  font-weight: 300;
   color: #666;
   letter-spacing: 0.12em;
   line-height: 2;
+  text-align: center;
 }
 
 .intro-text-refined {
