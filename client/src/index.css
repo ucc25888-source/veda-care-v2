@@ -261,11 +261,12 @@
 }
 
 .philosophy-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(181, 154, 109, 0.2);
-  padding: 25px 15px;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(181, 154, 109, 0.25) !important;
+  padding: 40px 20px;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 4px !important;
+  box-shadow: none !important;
   transition: all 0.3s ease;
 }
 
@@ -362,4 +363,48 @@
 @keyframes unlockFadeIn {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 全域精品氛圍 ── */
+body {
+  background-color: #FDFDFB;
+  color: #4A4A4A;
+  line-height: 2;
+  letter-spacing: 0.15em;
+}
+
+/* 格言化文字 */
+.motto-text {
+  color: #4A5D23 !important;
+  font-size: 0.95rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.3em !important;
+  margin: 40px 0;
+  display: block;
+}
+
+/* 移除裝飾性圖標 */
+.decoration-icon,
+.character-icon,
+.extra-adornment {
+  display: none !important;
+}
+
+/* 香檳金 CTA 按鈕 */
+.cta-button {
+  background: linear-gradient(135deg, #B59A6D 0%, #D4C19E 100%);
+  color: #FFF !important;
+  border: none;
+  padding: 16px 50px;
+  border-radius: 50px;
+  letter-spacing: 0.25em;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(181, 154, 109, 0.2);
+  transition: all 0.4s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(181, 154, 109, 0.32);
 }
