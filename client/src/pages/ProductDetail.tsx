@@ -222,7 +222,7 @@ export default function ProductDetail() {
                   <p className="text-sm font-medium text-foreground mb-1">
                     適合：
                   </p>
-                  <p className="text-foreground/70">{product.suitableFor}</p>
+                  <p className="text-foreground/70 text-sm">{product.suitableFor}</p>
                 </div>
               </div>
             </div>
