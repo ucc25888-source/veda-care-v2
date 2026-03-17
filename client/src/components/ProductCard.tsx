@@ -31,17 +31,35 @@ export default function ProductCard({ product }: ProductCardProps) {
     <Link href={`/product/${product.id}`} className="group block">
         <div className="card-wellness overflow-hidden">
           {/* Product Image */}
-          <div className="relative overflow-hidden bg-[#f8f7f5] h-40 md:h-56 flex items-center justify-center px-3 py-4">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-            />
-            {product.featured && (
-              <div className="absolute top-3 right-3 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">
-                Featured
-              </div>
-            )}
+          <div className="overflow-hidden bg-[#f8f7f5] h-40 md:h-56 flex items-center justify-center px-3 py-4">
+            <div className="relative w-full h-full">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              />
+              {product.featured && (
+                <div className="absolute top-2 right-2 bg-primary text-primary-foreground px-2.5 py-1 rounded-full text-xs font-medium">
+                  Featured
+                </div>
+              )}
+              {product.category === "veda-advisor" && (
+                <div className="absolute top-2 left-2"
+                  style={{
+                    background: '#B59A6D',
+                    color: '#fff',
+                    fontSize: '10px',
+                    fontWeight: 800,
+                    letterSpacing: '0.25em',
+                    padding: '3px 8px',
+                    borderRadius: '3px',
+                    boxShadow: '0 1px 6px rgba(0,0,0,0.18)',
+                    whiteSpace: 'nowrap',
+                  }}>
+                  限　量
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Product Info */}
