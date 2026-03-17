@@ -78,7 +78,7 @@ export default function AIChatbot() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
+    <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50">
       {isOpen && (
         <Card className="w-full max-w-sm md:w-96 h-[70vh] md:h-96 flex flex-col shadow-2xl border-primary/20 mb-4 rounded-lg">
           {/* Header */}
