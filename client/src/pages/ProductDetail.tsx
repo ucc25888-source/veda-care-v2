@@ -294,9 +294,11 @@ export default function ProductDetail() {
               <p className="text-sm mb-5" style={{color:'#AAAAAA', maxWidth:'600px', margin:'0 auto 20px', lineHeight:'2.2'}}>
                 真正的健康管理不是「加法」，而是「優化」。
               </p>
-              <p style={{color:'rgba(0,0,0,0.65)', maxWidth:'600px', margin:'0 auto', lineHeight:'2.2', textAlign:'center'}}>
-                妳需要的不是更多的補給品，而是一個清楚的標竿。<br />
-                幫妳在極致忙碌中，找回對身體的主導權——<br />
+              <p style={{color:'rgba(0,0,0,0.65)', maxWidth:'600px', margin:'0 auto', lineHeight:'2.6', textAlign:'center'}}>
+                妳需要的不是更多的補給品，<br />
+                而是一個清楚的標竿。<br />
+                幫妳在極致忙碌中，<br />
+                找回對身體的主導權——<br />
                 不靠感覺，靠的是清晰的邏輯。
               </p>
             </div>
