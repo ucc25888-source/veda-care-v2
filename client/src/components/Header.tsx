@@ -25,8 +25,8 @@ export default function Header() {
               }}>
                 VEDA CARE
               </span>
-              <span style={{ color: 'rgba(74,93,35,0.35)', fontWeight: 200, fontSize: '0.9em' }}>|</span>
-              <span style={{
+              <span className="hidden sm:inline" style={{ color: 'rgba(74,93,35,0.35)', fontWeight: 200, fontSize: '0.9em' }}>|</span>
+              <span className="hidden sm:inline" style={{
                 fontFamily: "'PingFang TC', 'Noto Sans TC', sans-serif",
                 fontSize: 'clamp(0.6rem, 2vw, 0.8rem)',
                 fontWeight: 300,
