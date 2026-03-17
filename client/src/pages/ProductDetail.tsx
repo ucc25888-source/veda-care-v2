@@ -72,7 +72,8 @@ export default function ProductDetail() {
                   {product.category.replace("-", " ")}
                 </p>
 
-                <h1 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-1">
+                <h1 className="font-display font-bold text-foreground mb-1"
+                  style={{ fontSize: 'clamp(1.15rem, 5vw, 2.5rem)', lineHeight: 1.3 }}>
                   {product.name}
                 </h1>
 
@@ -83,7 +84,7 @@ export default function ProductDetail() {
                 )}
 
                 {product.subtitle && (
-                  <p className="text-base md:text-lg font-medium italic mb-4"
+                  <p className="text-sm md:text-lg font-medium italic mb-4"
                     style={{ color: '#2D4F1E' }}>
                     「{product.subtitle}」
                   </p>
