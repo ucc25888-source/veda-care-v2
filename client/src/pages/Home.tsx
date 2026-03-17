@@ -390,16 +390,16 @@ export default function Home() {
               </p>
 
               <div className="space-y-5 mb-10">
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Noto Sans TC',sans-serif", color: '#444', lineHeight: '2.0', fontWeight: 500, letterSpacing: '0.15em' }}>
+                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.2', fontWeight: 400, letterSpacing: '0.12em', wordBreak: 'keep-all' }}>
                   多年來，我深耕在專業保健領域與受邀出席的各種健康講座中，聽過無數對生活的焦慮。我發現大家最累的，其實不是缺乏營養，而是<strong style={{ color: '#2D4F1E', fontWeight: 700 }}>「選得太累」</strong>。
                 </p>
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Noto Sans TC',sans-serif", color: '#444', lineHeight: '2.0', fontWeight: 500, letterSpacing: '0.15em' }}>
+                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.2', fontWeight: 400, letterSpacing: '0.12em', wordBreak: 'keep-all' }}>
                   因為不忍心看妳盲目地「看到什麼補什麼」，我決定發揮我對成分的挑剔、以及這 20 年累積的嚴謹經驗，為妳過濾掉不必要的雜質與負擔。
                 </p>
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Noto Sans TC',sans-serif", color: '#444', lineHeight: '2.0', fontWeight: 500, letterSpacing: '0.15em' }}>
+                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.2', fontWeight: 400, letterSpacing: '0.12em', wordBreak: 'keep-all' }}>
                   我深信，身體是有靈性的，它聽得懂妳給了它什麼。這些年，我只讓家人和我自己補充這份經由時間驗證、專業篩選出的精準植萃精華，用最純粹的方式，支持妳每天滿滿的動能。
                 </p>
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Noto Sans TC',sans-serif", color: '#444', lineHeight: '2.0', fontWeight: 500, letterSpacing: '0.15em' }}>
+                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.2', fontWeight: 400, letterSpacing: '0.12em', wordBreak: 'keep-all' }}>
                   那些繁瑣的科研數據，交給我的經驗就好；而這份「隨心所欲」的從容，我幫妳完整地留下來。
                 </p>
               </div>
