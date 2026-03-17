@@ -198,7 +198,7 @@ export default function Footer() {
                 <summary
                   style={{ listStyle: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '9px 0', cursor: 'pointer' }}
                 >
-                  <span style={{ fontSize: 12, fontWeight: 400, color: '#4A4A4A', letterSpacing: '0.08em' }}>{q}</span>
+                  <span style={{ fontSize: 12, fontWeight: 400, color: '#999', letterSpacing: '0.08em' }}>{q}</span>
                   <svg
                     className="group-open:rotate-180 transition-transform duration-200"
                     width="11"
