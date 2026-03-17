@@ -461,7 +461,7 @@ export default function Home() {
               <div className="pt-6 border-t border-[#2D4F1E]/12">
                 <p className="text-base font-semibold italic"
                   style={{ color: '#2D4F1E', lineHeight: '1.8', letterSpacing: '0.05em' }}>
-                  <span style={{ color: '#B59A6D', marginRight: '8px', fontStyle: 'normal' }}>✦</span>找我，就是把複雜留給我，把從容還給妳。
+                  <span style={{ color: '#B59A6D', marginRight: '8px', fontStyle: 'normal' }}>✦</span>專業我來，妳負責精彩。
                 </p>
               </div>
             </div>
