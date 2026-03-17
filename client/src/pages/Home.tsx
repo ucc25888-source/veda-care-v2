@@ -114,7 +114,9 @@ export default function Home() {
                     {pillar.title}
                   </h3>
                   <p className="philosophy-desc">
-                    {pillar.description}
+                    {pillar.description.split('\n').map((line, i, arr) => (
+                      <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
+                    ))}
                   </p>
                 </div>
               ))}
