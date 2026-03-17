@@ -323,23 +323,28 @@ export default function Home() {
               
               {/* Product Content */}
               <div>
-                <p className="text-sm font-medium text-primary/70 uppercase tracking-wide mb-3">
+                <p style={{fontSize:'11px', letterSpacing:'0.15em', color:'#8A9E6E', textTransform:'uppercase', marginBottom:'16px'}}>
                   植萃機能補給
                 </p>
-                
-                <h2 className="text-xl md:text-3xl font-sans font-bold text-foreground mb-6 leading-tight text-center" style={{ letterSpacing: '0.05em' }}>
+
+                <h2 style={{fontSize:'1.5rem', fontWeight:700, color:'#1a1a1a', marginBottom:'20px', lineHeight:1.4, letterSpacing:'0.03em'}}>
                   身體不卡頓，生活更流暢
                 </h2>
-                
-                <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 mb-8 border border-primary/10">
-                  <p className="text-lg text-foreground leading-relaxed">
-                    <span className="font-bold text-primary">心之所向，身體就該無縫跟上。</span>敏捷素專為渴望「流暢生活」的您打造。頂級純粹的機能補給，為日常的每一個起身、邁步注入靈活的支持。
+
+                <p style={{fontSize:'15px', fontWeight:600, color:'#2D4F1E', marginBottom:'6px'}}>
+                  心之所向，身體無縫跟上。
+                </p>
+                <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
+                  MSM、薑黃、植萃胜肽，支持日常行動輕盈自如。
+                </p>
+
+                <div style={{borderTop:'1px solid #e8e8e8', paddingTop:'16px', marginBottom:'28px'}}>
+                  <p style={{fontSize:'11px', color:'#bbb', letterSpacing:'0.1em', marginBottom:'10px'}}>關 鍵 成 分</p>
+                  <p style={{fontSize:'13px', color:'#666', fontWeight:300, lineHeight:2}}>
+                    MSM・薑黃萃取・植物性葡萄糖胺<br />
+                    小分子植萃胜肽・維生素 K2
                   </p>
                 </div>
-                
-                <p className="text-foreground/80 mb-8 leading-relaxed">
-                  把身體交給精準的植萃守護，把說走就走的自由，還給自己。
-                </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/product/product-3" className="btn-primary text-center font-bold">
