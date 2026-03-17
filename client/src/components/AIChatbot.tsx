@@ -78,16 +78,16 @@ export default function AIChatbot() {
   };
 
   return (
-    <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
       {isOpen && (
         <Card className="w-full max-w-sm md:w-96 h-[70vh] md:h-96 flex flex-col shadow-2xl border-primary/20 mb-4 rounded-lg">
           {/* Header */}
           <div className="bg-gradient-to-r from-primary to-primary/80 text-white p-3 md:p-4 rounded-t-lg flex items-center justify-between flex-shrink-0">
             <div className="flex items-center gap-3">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png"
+                src="/hao-avatar.png"
                 alt="郝營養"
-                className="w-8 h-8 rounded-full"
+                className="w-8 h-8 rounded-full object-cover"
               />
               <div>
                 <h3 className="font-semibold">VEDA 客服</h3>
@@ -187,16 +187,21 @@ export default function AIChatbot() {
       )}
 
       {/* Floating Button */}
-      <Button
+      <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 rounded-full bg-primary hover:bg-primary/90 shadow-lg"
+        className="w-16 h-16 rounded-full shadow-xl overflow-hidden border-2 border-white/30 transition-transform duration-200 hover:scale-105 active:scale-95 flex items-center justify-center"
+        style={{ background: "#2D4F1E" }}
       >
         {isOpen ? (
-          <X className="w-6 h-6" />
+          <X className="w-6 h-6 text-white" />
         ) : (
-          <MessageCircle className="w-6 h-6" />
+          <img
+            src="/hao-avatar.png"
+            alt="郝營養客服"
+            className="w-full h-full object-cover scale-[1.15]"
+          />
         )}
-      </Button>
+      </button>
     </div>
   );
 }
