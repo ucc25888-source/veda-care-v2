@@ -267,7 +267,8 @@ export default function Home() {
                   腸胃友善配方，全素日常無負擔。
                 </p>
                 <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
-                  植物 EAA 黃金比例，補充日常能量缺口。
+                  長時間不吃、或吃不夠多的日子，<br />
+                  就是蛋白質缺口最大的時候。
                 </p>
 
                 <div style={{borderTop:'1px solid #e8e8e8', paddingTop:'16px', marginBottom:'28px'}}>
@@ -343,7 +344,8 @@ export default function Home() {
                   心之所向，身體無縫跟上。
                 </p>
                 <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
-                  MSM、薑黃、植萃胜肽，支持日常行動輕盈自如。
+                  專為久坐、久站、偶爾蹲下就卡一下的妳設計。<br />
+                  不是吃止痛，而是從源頭補充日常所需。
                 </p>
 
                 <div style={{borderTop:'1px solid #e8e8e8', paddingTop:'16px', marginBottom:'28px'}}>
