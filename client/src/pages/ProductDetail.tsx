@@ -252,6 +252,31 @@ export default function ProductDetail() {
           </div>
         </section>
 
+        {/* EAA Editorial Section */}
+        {(product.id === "product-1" || product.id === "product-2") && (
+          <section className="product-section">
+            <div className="product-image-wrap">
+              <img src={product.image} alt={product.name} className="premium-img" />
+            </div>
+
+            <div className="category-tag">植萃機能補給</div>
+
+            <h2 className="main-title">身體不卡頓，生活更流暢</h2>
+
+            <span className="motto-text">喝下底氣，贏回自己。</span>
+
+            <div className="philosophy-card editorial-card">
+              <h3 className="inner-highlight">真正的遊刃有餘，來自穩健的生理基底。</h3>
+              <p className="content-text">
+                EAA 完美互補植物蛋白，摒棄多餘負擔，<br />
+                以黃金比例植萃精華，精準填補您日常消耗的能量缺口。
+              </p>
+            </div>
+
+            <span className="motto-text">不必成為誰的榜樣，您只需要在每一個起身，感受輕盈與聽話。</span>
+          </section>
+        )}
+
         {/* Wellness Philosophy */}
         <section className="py-12 md:py-16">
           <div className="container max-w-3xl">
