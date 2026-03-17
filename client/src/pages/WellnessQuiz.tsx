@@ -333,7 +333,7 @@ export default function WellnessQuiz() {
                 style={{ background: 'linear-gradient(to bottom, rgba(45,79,30,0) 40%, rgba(45,79,30,0.55) 100%)' }}
               />
               <div className="absolute bottom-4 left-6">
-                <p className="text-white text-xs font-medium tracking-widest">郝營養 ｜ VEDA CARE</p>
+                <p className="text-white text-xs font-medium tracking-widest">VEDA CARE ｜ 郝營養</p>
               </div>
             </div>
 
