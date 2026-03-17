@@ -230,14 +230,14 @@ export default function ProductDetail() {
               {/* Ingredients */}
               {product.ingredients && (
                 <div>
-                  <h3 className="font-display font-bold text-lg text-foreground mb-4">
+                  <h3 className="font-display font-bold mb-4" style={{ color: '#4A5D23', letterSpacing: '0.2em', fontSize: '15px' }}>
                     主要成分
                   </h3>
-                  <ul className="space-y-2">
+                  <ul style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
                     {product.ingredients.map((ingredient, index) => (
-                      <li key={index} className="text-foreground/70 flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span>{ingredient}</span>
+                      <li key={index} className="flex items-baseline gap-3">
+                        <span style={{ color: '#A8B89A', flexShrink: 0, fontSize: '10px' }}>—</span>
+                        <span style={{ fontSize: '13px', fontWeight: 300, color: '#555', letterSpacing: '0.08em', lineHeight: '1.5' }}>{ingredient}</span>
                       </li>
                     ))}
                   </ul>
