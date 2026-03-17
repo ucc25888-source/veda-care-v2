@@ -104,6 +104,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "product-3",
     name: "GOOD JOINT 敏捷素",
+    variant: "盒裝・20g × 10包",
     subtitle: "靈活，是給身體最優雅的底氣。",
     category: "plant-nutrition",
     price: 1200,
