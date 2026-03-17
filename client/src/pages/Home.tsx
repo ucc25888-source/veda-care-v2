@@ -403,26 +403,23 @@ export default function Home() {
                 「最好的狀態，從來不是無止盡的堆疊。」
               </p>
 
-              <div className="space-y-5 mb-10">
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.2', fontWeight: 400, letterSpacing: '0.12em', wordBreak: 'keep-all' }}>
-                  多年來，我深耕在專業保健領域與受邀出席的各種健康講座中，聽過無數對生活的焦慮。我發現大家最累的，其實不是缺乏營養，而是<strong style={{ color: '#2D4F1E', fontWeight: 700 }}>「選得太累」</strong>。
+              <div className="space-y-6 mb-10">
+                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                  妳不是不在乎健康，只是被太多選擇<strong style={{ color: '#2D4F1E', fontWeight: 700 }}>累壞了</strong>。每次想開始，就先卡在「不知道從哪裡補起」。
                 </p>
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.2', fontWeight: 400, letterSpacing: '0.12em', wordBreak: 'keep-all' }}>
-                  因為不忍心看妳盲目地「看到什麼補什麼」，我決定發揮我對成分的挑剔、以及這 20 年累積的嚴謹經驗，為妳過濾掉不必要的雜質與負擔。
+                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                  我在保健領域深耕逾 20 年，只做一件事：替妳把<strong style={{ color: '#2D4F1E', fontWeight: 700 }}>值得信任的留下來</strong>，把多餘的都篩掉。
                 </p>
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.2', fontWeight: 400, letterSpacing: '0.12em', wordBreak: 'keep-all' }}>
-                  我深信，身體是有靈性的，它聽得懂妳給了它什麼。這些年，我只讓家人和我自己補充這份經由時間驗證、專業篩選出的精準植萃精華，用最純粹的方式，支持妳每天滿滿的動能。
-                </p>
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.2', fontWeight: 400, letterSpacing: '0.12em', wordBreak: 'keep-all' }}>
-                  那些繁瑣的科研數據，交給我的經驗就好；而這份「隨心所欲」的從容，我幫妳完整地留下來。
+                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                  繁瑣的成分研究，是我的工作；找回生活的從容，才是妳最重要的事。
                 </p>
               </div>
 
               {/* Closing Signature */}
-              <div className="mt-2 pt-8 border-t border-[#2D4F1E]/12 text-center">
-                <p className="text-base italic"
-                  style={{ color: '#666666', lineHeight: '2.0', letterSpacing: '0.03em', whiteSpace: 'nowrap' }}>
-                  我深信，身體是有靈性的，它能懂妳給了什麼。
+              <div className="mt-2 pt-8 border-t border-[#2D4F1E]/12">
+                <p className="text-sm italic"
+                  style={{ color: '#888', lineHeight: '1.9', letterSpacing: '0.05em' }}>
+                  找我，就是找一個真正替妳想清楚的人。
                 </p>
               </div>
             </div>
