@@ -46,15 +46,17 @@ export default function Home() {
               {/* Eyebrow label */}
               <p className="text-xs tracking-[0.3em] uppercase font-semibold mb-5"
                 style={{ color: '#2D4F1E' }}>
-                VEDA CARE &nbsp;｜&nbsp; 全人健康
+                VEDA CARE &nbsp;｜&nbsp; 科研級精粹
               </p>
 
-              <h1 className="text-xl sm:text-2xl md:text-3xl font-display font-black mb-6"
-                style={{ color: '#2D4F1E', lineHeight: '1.55', letterSpacing: '0.04em' }}>
-                妳以為是老了，<br />
-                其實只是營養<br />
-                「走錯路」了。
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-display font-black mb-2"
+                style={{ color: '#2D4F1E', lineHeight: '1.35', letterSpacing: '0.04em' }}>
+                精準植萃補給
               </h1>
+              <h2 className="text-lg sm:text-xl md:text-2xl font-display font-light mb-6"
+                style={{ color: '#4A5D23', lineHeight: '1.5', letterSpacing: '0.08em', opacity: 0.8 }}>
+                重塑生命平衡
+              </h2>
 
               <p className="text-sm md:text-base mb-8"
                 style={{ color: '#4A4A4A', lineHeight: '2.0' }}>
@@ -62,18 +64,20 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/about" className="btn-secondary text-center font-semibold">
-                  認識我們
-                </Link>
-                <Link href="/shop"
-                  className="inline-flex items-center justify-center text-center font-semibold text-sm px-7 py-3 transition-all duration-200 active:scale-95"
+                <Link href="/quiz"
+                  className="inline-flex items-center justify-center text-center font-bold text-sm px-7 py-3.5 transition-all duration-200 active:scale-95 hover:scale-[1.02]"
                   style={{
-                    background: '#2D4F1E',
+                    background: 'linear-gradient(135deg, #2D4F1E 0%, #4A5D23 100%)',
                     color: '#ffffff',
                     borderRadius: '1.25rem',
-                    boxShadow: '0 4px 16px rgba(45,79,30,0.22)',
+                    boxShadow: '0 4px 20px rgba(45,79,30,0.30)',
+                    letterSpacing: '0.06em',
+                    animation: 'ctaGlow 3s ease-in-out infinite',
                   }}>
-                  探索純粹植萃 →
+                  🔓 解鎖專屬營養配方
+                </Link>
+                <Link href="/about" className="btn-secondary text-center font-semibold">
+                  認識我們
                 </Link>
               </div>
             </div>

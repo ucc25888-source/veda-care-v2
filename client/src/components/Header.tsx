@@ -14,29 +14,28 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png" alt="VEDA CARE" className="h-12 w-auto" />
-            <div style={{ whiteSpace: 'nowrap' }}>
-              <div style={{
+            <div className="flex items-center gap-2" style={{ whiteSpace: 'nowrap' }}>
+              <span style={{
                 fontFamily: "'PingFang TC', 'Noto Sans TC', sans-serif",
-                fontSize: 'clamp(1.2rem, 5vw, 2.5rem)',
+                fontSize: 'clamp(1rem, 3.5vw, 1.5rem)',
                 fontWeight: 300,
                 letterSpacing: '0.15em',
                 color: '#4A5D23',
                 lineHeight: 1.2,
-                whiteSpace: 'nowrap',
               }}>
-                VEDA
-              </div>
-              <div style={{
+                VEDA CARE
+              </span>
+              <span style={{ color: 'rgba(74,93,35,0.35)', fontWeight: 200, fontSize: '0.9em' }}>|</span>
+              <span style={{
                 fontFamily: "'PingFang TC', 'Noto Sans TC', sans-serif",
-                fontSize: 'clamp(0.6rem, 1.8vw, 0.75rem)',
+                fontSize: 'clamp(0.6rem, 2vw, 0.8rem)',
                 fontWeight: 300,
-                letterSpacing: '0.18em',
+                letterSpacing: '0.2em',
                 color: '#4A5D23',
-                opacity: 0.7,
-                whiteSpace: 'nowrap',
+                opacity: 0.65,
               }}>
-                全人健康
-              </div>
+                科研級精粹
+              </span>
             </div>
           </Link>
 
