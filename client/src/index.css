@@ -294,6 +294,41 @@
   text-align: center;
 }
 
+/* Dark forest variant — used when section bg is #1a2e12 */
+.philosophy-card-dark {
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(181, 154, 109, 0.28) !important;
+  padding: 36px 20px;
+  text-align: center;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+
+.philosophy-card-dark:hover {
+  border-color: rgba(181,154,109,0.55);
+  background: rgba(255,255,255,0.08) !important;
+  transform: translateY(-4px);
+}
+
+.philosophy-title-dark {
+  font-family: 'PingFang TC', sans-serif;
+  font-size: 1.1rem;
+  color: #C8A97A;
+  letter-spacing: 0.22em;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.philosophy-desc-dark {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.58);
+  letter-spacing: 0.1em;
+  line-height: 2;
+  text-align: center;
+}
+
 .intro-text-refined {
   font-family: 'PingFang TC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;

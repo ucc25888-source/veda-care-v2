@@ -94,26 +94,37 @@ export default function Home() {
         </section>
 
         {/* Brand Introduction Section */}
-        <section className="py-10 md:py-16 bg-gradient-to-b from-background via-orange-50/20 to-background">
-          <div className="container max-w-3xl">
-            <div className="text-center mb-6 md:mb-12">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png" alt="VEDA CARE" className="h-16 w-auto mx-auto mb-5" />
-              <h2 className="text-xl md:text-3xl lg:text-4xl font-display font-bold text-primary mb-4">
-                <span className="block">歡迎來到</span>
-                <span className="block">VEDA CARE</span>
+        <section className="py-16 md:py-28 relative overflow-hidden" style={{ background: '#1a2e12' }}>
+          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 700, height: 500, background: 'radial-gradient(ellipse at center, rgba(61,99,40,0.45) 0%, transparent 70%)', pointerEvents: 'none' }} />
+
+          <div className="container max-w-3xl relative" style={{ zIndex: 1 }}>
+            <div className="text-center mb-10 md:mb-16">
+              <div style={{ width: 40, height: 1, background: '#B59A6D', margin: '0 auto 28px' }} />
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png"
+                alt="VEDA CARE"
+                className="h-12 w-auto mx-auto mb-6"
+                style={{ filter: 'brightness(0) invert(1)', opacity: 0.82 }}
+              />
+              <p style={{ fontSize: 11, letterSpacing: '0.32em', textTransform: 'uppercase', color: 'rgba(181,154,109,0.88)', fontWeight: 600, marginBottom: 14 }}>
+                歡迎來到
+              </p>
+              <h2 style={{ fontSize: 'clamp(28px, 6vw, 42px)', fontWeight: 700, color: '#ffffff', letterSpacing: '0.08em', marginBottom: 24, lineHeight: 1.2 }}>
+                VEDA CARE
               </h2>
-              <p className="intro-text-refined text-base md:text-lg">
-                我們相信真正的健康遠超越身體層面。它關乎心靈、身體與精神的和諧——這份平衡經常被現代生活所破壞。
+              <div style={{ width: 40, height: 1, background: 'rgba(181,154,109,0.28)', margin: '0 auto 22px' }} />
+              <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.56)', lineHeight: 2.1, fontStyle: 'italic', letterSpacing: '0.05em', maxWidth: 440, margin: '0 auto' }}>
+                我們相信真正的健康，是心靈、身體與精神的和諧共生。<br />這份平衡，值得被認真對待。
               </p>
             </div>
 
             <div className="veda-philosophy-grid">
               {BRAND_PHILOSOPHY.pillars.map((pillar) => (
-                <div key={pillar.title} className="philosophy-card">
-                  <h3 className="philosophy-title">
+                <div key={pillar.title} className="philosophy-card-dark">
+                  <h3 className="philosophy-title-dark">
                     {pillar.title}
                   </h3>
-                  <p className="philosophy-desc">
+                  <p className="philosophy-desc-dark">
                     {pillar.description.split('\n').map((line, i, arr) => (
                       <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
                     ))}
@@ -125,16 +136,15 @@ export default function Home() {
         </section>
 
         {/* Wellness Categories Section */}
-        <section className="pt-0 pb-10 md:pb-32">
-          {/* Divider between Brand Philosophy and Precision Strategy */}
-          <div className="container mb-10 md:mb-16">
-            <div className="h-px w-full" style={{ background: 'rgba(45,79,30,0.12)' }} />
-          </div>
-
+        <section className="py-14 md:py-28">
           <div className="container">
-            <h2 className="text-xl md:text-4xl font-display font-bold text-primary mb-10 md:mb-14 text-center">
-              精準對策
-            </h2>
+            <div className="text-center mb-10 md:mb-14">
+              <div style={{ width: 40, height: 1, background: 'rgba(181,154,109,0.55)', margin: '0 auto 18px' }} />
+              <h2 style={{ fontSize: 'clamp(22px, 5vw, 34px)', fontWeight: 700, color: '#1a2e12', letterSpacing: '0.1em', lineHeight: 1.3, display: 'inline-block' }}>
+                精準對策
+              </h2>
+              <div style={{ width: 40, height: 1, background: 'rgba(181,154,109,0.55)', margin: '18px auto 0' }} />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {CATEGORIES.map((category) => {
