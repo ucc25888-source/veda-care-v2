@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { CartProvider } from "./contexts/CartContext";
-import AIChatbot from "./components/AIChatbot";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import ProductDetail from "./pages/ProductDetail";
@@ -65,7 +64,6 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <Router />
-            <AIChatbot />
           </TooltipProvider>
         </CartProvider>
       </ThemeProvider>
