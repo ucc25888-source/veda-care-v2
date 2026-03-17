@@ -439,22 +439,22 @@ export default function Home() {
               </p>
 
               <div className="space-y-6 mb-10">
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
                   妳不是不在乎健康，只是被太多選擇<strong style={{ color: '#2D4F1E', fontWeight: 700 }}>累壞了</strong>。每次想開始，就先卡在「不知道從哪裡補起」。
                 </p>
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
                   我在保健領域深耕逾 20 年，只做一件事：替妳把<strong style={{ color: '#2D4F1E', fontWeight: 700 }}>值得信任的留下來</strong>，把多餘的都篩掉。
                 </p>
-                <p className="text-base" style={{ fontFamily: "'PingFang TC','Helvetica Neue',Helvetica,Arial,sans-serif", color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
+                <p className="text-base" style={{ color: '#555', lineHeight: '2.1', fontWeight: 400, letterSpacing: '0.08em', wordBreak: 'keep-all' }}>
                   繁瑣的成分研究，是我的工作；找回生活的從容，才是妳最重要的事。
                 </p>
               </div>
 
               {/* Closing Signature */}
-              <div className="mt-2 pt-8 border-t border-[#2D4F1E]/12">
-                <p className="text-sm italic"
-                  style={{ color: '#888', lineHeight: '1.9', letterSpacing: '0.05em' }}>
-                  找我，就是找一個真正替妳想清楚的人。
+              <div className="pt-6 border-t border-[#2D4F1E]/12">
+                <p className="text-base font-semibold italic"
+                  style={{ color: '#2D4F1E', lineHeight: '1.8', letterSpacing: '0.05em' }}>
+                  找我，就是把複雜留給我，把從容還給妳。
                 </p>
               </div>
             </div>
