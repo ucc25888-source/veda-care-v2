@@ -146,54 +146,77 @@ export default function Home() {
               <div style={{ width: 40, height: 1, background: 'rgba(181,154,109,0.55)', margin: '18px auto 0' }} />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {CATEGORIES.map((category) => {
-                const copy: Record<string, string> = {
-                  "plant-nutrition": "精準補充每日所需原料，為身體預約明天的從容。",
-                  "frequency-resonance": "維持情緒平衡與良好睡眠品質，找回游刃有餘的生活節奏。",
-                  "veda-advisor": "由 Veda 親自為您規劃，最適合您的精準健康方案。",
-                };
-                return (
-                  <Link key={category.id} href={`/shop?category=${category.id}`} className="group block">
-                    <div
-                      className="p-6 md:p-8 rounded-2xl h-full flex flex-col transition-all duration-300"
-                      style={{
-                        background: 'rgba(45,79,30,0.05)',
-                        border: '1.5px solid rgba(45,79,30,0.10)',
-                        boxShadow: '0 1px 3px rgba(45,79,30,0.04)',
-                      }}
-                      onMouseEnter={e => {
-                        (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 28px rgba(45,79,30,0.13)';
-                        (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(45,79,30,0.22)';
-                        (e.currentTarget as HTMLDivElement).style.background = 'rgba(45,79,30,0.08)';
-                      }}
-                      onMouseLeave={e => {
-                        (e.currentTarget as HTMLDivElement).style.boxShadow = '0 1px 3px rgba(45,79,30,0.04)';
-                        (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(45,79,30,0.10)';
-                        (e.currentTarget as HTMLDivElement).style.background = 'rgba(45,79,30,0.05)';
-                      }}
-                    >
-                      <div className="text-4xl md:text-5xl mb-4" style={{ lineHeight: 1 }}>{category.icon}</div>
-                      <h3 className="font-display font-bold text-base md:text-xl mb-2 transition-colors"
-                        style={{ color: '#2D4F1E' }}>
-                        {category.name}
-                      </h3>
-                      <p className="text-sm flex-1 leading-relaxed" style={{ color: '#555555', lineHeight: '1.8' }}>
-                        {copy[category.id] ?? "探索精選產品"}
-                      </p>
-                      <div className="mt-5 flex justify-end">
-                        <span
-                          className="text-xs font-semibold flex items-center gap-1 transition-all duration-200 group-hover:gap-2"
-                          style={{ color: '#2D4F1E' }}
-                        >
-                          了解更多 <span className="text-sm">→</span>
-                        </span>
+            {(() => {
+              const copy: Record<string, string> = {
+                "plant-nutrition":    "精準補充每日所需原料，為身體預約明天的從容。",
+                "frequency-resonance":"維持情緒平衡與良好睡眠品質，找回游刃有餘的生活節奏。",
+                "veda-advisor":       "由 Veda 親自為妳梳理，最值得優先關注的精準健康方案。",
+              };
+              const icons: Record<string, JSX.Element> = {
+                "plant-nutrition": (
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B59A6D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                  </svg>
+                ),
+                "frequency-resonance": (
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B59A6D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                  </svg>
+                ),
+                "veda-advisor": (
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B59A6D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                  </svg>
+                ),
+              };
+              return (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {CATEGORIES.map((category) => (
+                    <Link key={category.id} href={`/shop?category=${category.id}`} className="group block">
+                      <div
+                        className="p-6 md:p-8 rounded-2xl h-full flex flex-col transition-all duration-300"
+                        style={{
+                          background: '#ffffff',
+                          border: '1px solid rgba(45,79,30,0.10)',
+                          boxShadow: 'inset 0 2px 0 rgba(181,154,109,0.35), 0 2px 12px rgba(45,79,30,0.04)',
+                        }}
+                        onMouseEnter={e => {
+                          (e.currentTarget as HTMLDivElement).style.boxShadow = 'inset 0 2px 0 rgba(181,154,109,0.6), 0 10px 32px rgba(45,79,30,0.10)';
+                          (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(181,154,109,0.35)';
+                        }}
+                        onMouseLeave={e => {
+                          (e.currentTarget as HTMLDivElement).style.boxShadow = 'inset 0 2px 0 rgba(181,154,109,0.35), 0 2px 12px rgba(45,79,30,0.04)';
+                          (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(45,79,30,0.10)';
+                        }}
+                      >
+                        {/* SVG icon */}
+                        <div className="mb-5" style={{ width: 44, height: 44, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(181,154,109,0.08)', borderRadius: 10 }}>
+                          {icons[category.id]}
+                        </div>
+
+                        <h3 className="font-display font-bold text-base md:text-lg mb-2 transition-colors"
+                          style={{ color: '#1a2e12' }}>
+                          {category.name}
+                        </h3>
+                        <p className="text-sm flex-1" style={{ color: '#666', lineHeight: '1.9' }}>
+                          {copy[category.id] ?? "探索精選產品"}
+                        </p>
+                        <div className="mt-5 flex justify-end">
+                          <span
+                            className="text-xs font-semibold flex items-center gap-1 transition-all duration-200 group-hover:gap-2"
+                            style={{ color: '#2D4F1E' }}
+                          >
+                            了解更多 <span className="text-sm">→</span>
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
+                    </Link>
+                  ))}
+                </div>
+              );
+            })()}
           </div>
         </section>
 
