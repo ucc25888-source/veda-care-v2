@@ -125,7 +125,6 @@ export default function Footer() {
                 {[
                   { label: 'LINE@', href: SOCIAL_LINKS.lineOfficial },
                   { label: 'Facebook', href: SOCIAL_LINKS.facebook },
-                  { label: 'Instagram', href: SOCIAL_LINKS.instagram },
                   { label: 'Mail', href: 'mailto:ucc25888@gmail.com' },
                 ].map(({ label, href }) => (
                   <li key={label}>
