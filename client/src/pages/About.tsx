@@ -82,7 +82,7 @@ export default function About() {
                 <span style={{ display: 'block', whiteSpace: 'nowrap', fontSize: 'clamp(18px, 5vw, 30px)' }}>是妳一聽就懂的日常。</span>
               </h1>
 
-              <p className="text-base font-semibold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
+              <p className="font-semibold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9', fontSize: '15px', whiteSpace: 'nowrap' }}>
                 「健康，應該是妳說走就走的底氣。」
               </p>
 
