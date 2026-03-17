@@ -77,12 +77,13 @@ export default function About() {
                 VEDA CARE &nbsp;｜&nbsp; 郝營養
               </p>
 
-              <h1 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: '#2D4F1E', lineHeight: '1.5' }}>
-                最好的營養學，<br />是妳一聽就懂的日常。
+              <h1 className="font-bold mb-8" style={{ color: '#2D4F1E', lineHeight: '1.55' }}>
+                <span style={{ display: 'block', whiteSpace: 'nowrap', fontSize: 'clamp(18px, 5vw, 30px)' }}>最好的營養學，</span>
+                <span style={{ display: 'block', whiteSpace: 'nowrap', fontSize: 'clamp(18px, 5vw, 30px)' }}>是妳一聽就懂的日常。</span>
               </h1>
 
               <p className="text-base font-semibold mb-10 pb-10 border-b border-[#2D4F1E]/20" style={{ color: '#2D4F1E', lineHeight: '1.9' }}>
-                「健康不該是一道算不完的題——<br className="hidden md:block" />它應該是妳說走就走的底氣。」
+                「健康，應該是妳說走就走的底氣。」
               </p>
 
               <div className="space-y-5">
