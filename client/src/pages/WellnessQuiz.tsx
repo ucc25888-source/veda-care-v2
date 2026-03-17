@@ -144,6 +144,16 @@ export default function WellnessQuiz() {
 
   function handleSelect(key: string) {
     setSelectedKey(key);
+    const isLast = current + 1 >= QUESTIONS.length;
+    if (!isLast) {
+      setTimeout(() => {
+        const newAnswers = [...answers, key];
+        setAnswers(newAnswers);
+        setSelectedKey(null);
+        setAnimKey((k) => k + 1);
+        setCurrent((c) => c + 1);
+      }, 420);
+    }
   }
 
   function handleNext() {
@@ -151,12 +161,7 @@ export default function WellnessQuiz() {
     const newAnswers = [...answers, selectedKey];
     setAnswers(newAnswers);
     setSelectedKey(null);
-    if (current + 1 >= QUESTIONS.length) {
-      setDone(true);
-    } else {
-      setAnimKey((k) => k + 1);
-      setCurrent(current + 1);
-    }
+    setDone(true);
   }
 
   function handleRestart() {
@@ -282,20 +287,28 @@ export default function WellnessQuiz() {
                   })}
                 </div>
 
-                {/* Confirm */}
-                <button
-                  onClick={handleNext}
-                  disabled={!selectedKey}
-                  className="w-full py-4 rounded-xl font-bold text-base transition-all duration-200"
-                  style={{
-                    background: selectedKey ? '#2D4F1E' : 'rgba(45,79,30,0.18)',
-                    color: '#ffffff',
-                    cursor: selectedKey ? 'pointer' : 'not-allowed',
-                    letterSpacing: '0.04em',
-                  }}
-                >
-                  {current + 1 === QUESTIONS.length ? "生成我的專屬科研報告 →" : "確認，進入下一項分析 →"}
-                </button>
+                {/* Confirm — only on last question */}
+                {current + 1 === QUESTIONS.length ? (
+                  <button
+                    onClick={handleNext}
+                    disabled={!selectedKey}
+                    className="w-full py-4 rounded-xl font-bold transition-all duration-200"
+                    style={{
+                      background: selectedKey ? '#2D4F1E' : 'rgba(45,79,30,0.18)',
+                      color: '#ffffff',
+                      cursor: selectedKey ? 'pointer' : 'not-allowed',
+                      letterSpacing: '0.04em',
+                      fontSize: '14px',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    🔓 解鎖我的專屬報告
+                  </button>
+                ) : (
+                  <p className="text-center text-xs" style={{ color: 'rgba(45,79,30,0.4)', letterSpacing: '0.05em' }}>
+                    點選選項後自動前進
+                  </p>
+                )}
               </div>
 
             </div>
