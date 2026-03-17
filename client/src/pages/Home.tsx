@@ -350,7 +350,7 @@ export default function Home() {
         {/* Agility Product Section */}
         <section className="py-10 md:py-28 bg-gradient-to-r from-amber-50/30 via-background to-amber-50/30 relative overflow-hidden">
           <div className="container max-w-4xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-center">
               {/* Product Image */}
               <div className="flex justify-center">
                 <div className="w-3/4 sm:w-full max-w-sm">
@@ -380,8 +380,7 @@ export default function Home() {
                   心之所向，身體無縫跟上。
                 </p>
                 <p style={{fontSize:'14px', color:'#777', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
-                  專為久坐久站、肌肉量偏少、或偶爾蹲下就卡一下的妳設計。<br />
-                  不是吃止痛，而是從源頭補充日常所需。
+                  專為久坐久站、肌肉量偏少、或偶爾蹲下就卡一下的妳設計。不是吃止痛，而是從源頭補充日常所需。
                 </p>
 
                 <div style={{borderTop:'1px solid #e8e8e8', paddingTop:'16px', marginBottom:'28px'}}>
