@@ -186,8 +186,9 @@ export default function ProductDetail() {
                       className={`flex-1 btn-primary flex items-center justify-center gap-2 ${
                         added ? "bg-primary/20 text-primary" : ""
                       }`}
+                      style={{ whiteSpace: 'nowrap', fontSize: '14px' }}
                     >
-                      <ShoppingCart className="w-5 h-5" />
+                      <ShoppingCart className="w-5 h-5 flex-shrink-0" />
                       {added ? "已加入購物車" : "加入購物車"}
                     </button>
                   </div>
