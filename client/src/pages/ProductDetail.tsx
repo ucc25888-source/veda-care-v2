@@ -290,7 +290,11 @@ export default function ProductDetail() {
               </p>
             </div>
 
-            <span className="motto-text">不必成為誰的榜樣，您只需要在每一個起身，感受輕盈與聽話。</span>
+            <span className="motto-text" style={{ display: 'block', textAlign: 'center' }}>
+              不必成為誰的榜樣，<br />
+              您只需要在每一個起身，<br />
+              感受輕盈與聽話。
+            </span>
           </section>
         )}
 
