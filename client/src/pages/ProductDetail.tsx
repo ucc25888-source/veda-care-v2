@@ -119,11 +119,11 @@ export default function ProductDetail() {
                   <h3 className="font-display font-bold mb-4" style={{ color: '#4A5D23', letterSpacing: '0.2em' }}>
                     主要效益
                   </h3>
-                  <ul className="space-y-3">
+                  <ul style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                     {product.benefits.map((benefit, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <span style={{ color: '#4A5D23', flexShrink: 0, marginTop: '2px' }}>·</span>
-                        <span style={{ fontSize: '14px', fontWeight: 300, color: '#666', letterSpacing: '0.12em', lineHeight: '1.9' }}>{benefit}</span>
+                      <li key={index} className="flex items-baseline gap-3">
+                        <span style={{ color: '#A8B89A', flexShrink: 0, fontSize: '10px', letterSpacing: '0.05em' }}>—</span>
+                        <span style={{ fontSize: '13px', fontWeight: 300, color: '#555', letterSpacing: '0.08em', lineHeight: '1.6' }}>{benefit}</span>
                       </li>
                     ))}
                   </ul>
