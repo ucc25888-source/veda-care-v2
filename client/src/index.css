@@ -411,27 +411,36 @@ body {
 
 /* ── 產品頁 Editorial Section ── */
 .product-section {
-  padding: 60px 24px;
-  max-width: 680px;
+  padding: 80px 20px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  border-bottom: 1px solid #F0EFEA;
 }
 
 .product-image-wrap {
-  display: none;
+  text-align: center;
+}
+
+.premium-img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 40px;
+  transition: transform 0.6s ease;
+}
+
+.premium-img:hover {
+  transform: scale(1.02);
 }
 
 .category-tag {
   display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.32em;
-  color: rgba(74, 93, 35, 0.6);
+  font-size: 12px;
+  color: #4A5D23;
+  opacity: 0.7;
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  border: 1px solid rgba(181, 154, 109, 0.35);
-  padding: 5px 18px;
-  border-radius: 50px;
 }
 
 .main-title {
@@ -450,13 +459,11 @@ body {
 }
 
 .inner-highlight {
-  font-family: 'PingFang TC', sans-serif;
-  font-size: 1rem;
+  font-size: 18px;
+  color: #4A5D23 !important;
   font-weight: 500;
-  color: #4A5D23;
-  letter-spacing: 0.18em;
-  line-height: 1.9;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
 .content-text {
