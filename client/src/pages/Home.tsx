@@ -53,9 +53,9 @@ export default function Home() {
                 style={{ color: '#2D4F1E', lineHeight: '1.35', letterSpacing: '0.04em' }}>
                 精準植萃補給
               </h1>
-              <p className="text-sm mb-6"
-                style={{ color: '#B59A6D', letterSpacing: '0.32em', fontWeight: 300, lineHeight: 1 }}>
-                重　塑　生　命　平　衡
+              <p className="text-base mb-6"
+                style={{ color: '#2D4F1E', letterSpacing: '0.18em', fontWeight: 400, fontStyle: 'italic', lineHeight: 1.2, opacity: 0.75 }}>
+                重塑生命平衡
               </p>
 
               <p className="text-sm md:text-base mb-8"
