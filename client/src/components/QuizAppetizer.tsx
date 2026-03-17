@@ -183,9 +183,9 @@ export default function QuizAppetizer() {
             style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(181,154,109,0.55)" }}
           >
             <span style={{ fontSize: "13px" }}>🔒</span>
-            <span className="text-xs" style={{ color: "rgba(255,255,255,0.55)", lineHeight: "1.5" }}>
-              完成覺察，解鎖
-              <span style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600 }}>「精準方案匹配」</span>
+            <span style={{ color: "rgba(255,255,255,0.55)", lineHeight: "1.6", fontSize: '13px', textAlign: 'center' }}>
+              <span style={{ display: 'block', whiteSpace: 'nowrap' }}>完成覺察，解鎖</span>
+              <span style={{ display: 'block', whiteSpace: 'nowrap', color: "rgba(255,255,255,0.85)", fontWeight: 600 }}>「精準方案匹配」</span>
             </span>
           </div>
 
