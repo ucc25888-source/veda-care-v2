@@ -253,12 +253,17 @@ export default function ProductDetail() {
               {/* How to Use */}
               {product.howToUse && (
                 <div>
-                  <h3 className="font-display font-bold text-lg text-foreground mb-4">
+                  <h3 className="font-display font-bold mb-4" style={{ color: '#4A5D23', letterSpacing: '0.2em', fontSize: '15px' }}>
                     使用方法
                   </h3>
-                  <p className="text-foreground/70 leading-relaxed">
-                    {product.howToUse}
-                  </p>
+                  <ul style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                    {product.howToUse.split('\n').map((line, i) => (
+                      <li key={i} className="flex items-baseline gap-3">
+                        <span style={{ color: '#A8B89A', flexShrink: 0, fontSize: '10px' }}>—</span>
+                        <span style={{ fontSize: '13px', fontWeight: 300, color: '#555', letterSpacing: '0.08em', lineHeight: '1.5' }}>{line}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
             </div>
