@@ -499,7 +499,7 @@ export default function Home() {
                 無需複雜的線上支付流程
               </p>
               <p className="text-base md:text-xl font-semibold text-white" style={{ lineHeight: '1.8', letterSpacing: '0.02em' }}>
-                加入 LINE@，我們一站式為妳處理。
+                加入 LINE@，<br className="md:hidden" />我們一站式為妳處理。
               </p>
             </div>
 
