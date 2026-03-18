@@ -9,10 +9,15 @@ import viteConfig from "../../vite.config";
 const BASE_URL = "https://veda-care.replit.app";
 
 const OG_CONFIGS: Record<string, { title: string; description: string; image: string }> = {
-  quiz: {
+  awarenessCheck: {
     title: "VEDA｜猜猜您現在的狀態",
     description: "CARE｜30秒解鎖專屬報告",
     image: `${BASE_URL}/quiz-hero.png`,
+  },
+  quiz: {
+    title: "VEDA｜深度探索您的狀態",
+    description: "CARE｜關於身體疲勞指數",
+    image: `${BASE_URL}/brand-hero-2.png`,
   },
   home: {
     title: "VEDA｜找到身體的減法",
@@ -22,9 +27,8 @@ const OG_CONFIGS: Record<string, { title: string; description: string; image: st
 };
 
 function getOgConfig(urlPath: string) {
-  if (urlPath.startsWith("/awareness-check") || urlPath.startsWith("/quiz")) {
-    return OG_CONFIGS.quiz;
-  }
+  if (urlPath.startsWith("/awareness-check")) return OG_CONFIGS.awarenessCheck;
+  if (urlPath.startsWith("/quiz")) return OG_CONFIGS.quiz;
   return OG_CONFIGS.home;
 }
 
