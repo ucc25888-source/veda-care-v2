@@ -28,7 +28,7 @@ function getOgConfig(urlPath: string) {
   return OG_CONFIGS.home;
 }
 
-function injectOgTags(html: string, urlPath: string): string {
+function injectOgTags(html: string, urlPath: string = ""): string {
   const og = getOgConfig(urlPath);
   return html
     .replace(/<meta property="og:title"[^>]*>/g,
@@ -77,7 +77,7 @@ export async function setupVite(app: Express, server: Server) {
         `src="/src/main.tsx"`,
         `src="/src/main.tsx?v=${nanoid()}"`
       );
-      template = injectOgTags(template, req.path);
+      template = injectOgTags(template, req.originalUrl.split('?')[0]);
       const page = await vite.transformIndexHtml(url, template);
       res.status(200).set({ "Content-Type": "text/html" }).end(page);
     } catch (e) {
@@ -104,7 +104,7 @@ export function serveStatic(app: Express) {
   app.use("*", (req, res) => {
     const indexPath = path.resolve(distPath, "index.html");
     let html = fs.readFileSync(indexPath, "utf-8");
-    html = injectOgTags(html, req.path);
+    html = injectOgTags(html, req.originalUrl.split('?')[0]);
     res.status(200).set({ "Content-Type": "text/html" }).end(html);
   });
 }
