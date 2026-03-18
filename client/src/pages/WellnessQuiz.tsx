@@ -421,7 +421,7 @@ export default function WellnessQuiz() {
                 className="block w-full text-center py-3 rounded-2xl font-medium mb-3 transition-colors hover:bg-[rgba(45,79,30,0.06)]"
                 style={{ color: '#2D4F1E', border: '1.5px solid rgba(45,79,30,0.25)', background: 'transparent', fontSize: '14px', textDecoration: 'none' }}
               >
-                回到首頁 · 看健康產品
+                首頁｜VEDA CARE 減法生活
               </a>
 
               <button
