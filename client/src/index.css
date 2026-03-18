@@ -2,6 +2,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+html {
+  font-size: 16px !important;
+  -webkit-text-size-adjust: none !important;
+  text-size-adjust: none !important;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
