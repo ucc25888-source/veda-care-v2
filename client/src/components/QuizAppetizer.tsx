@@ -402,7 +402,7 @@ export default function QuizAppetizer() {
                   letterSpacing: "0.03em",
                 }}
               >
-                進入 VEDA 科研精準方案匹配 →
+                深度覺察身體狀態
               </Link>
 
               {/* 回到首頁 */}
