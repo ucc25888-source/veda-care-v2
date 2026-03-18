@@ -120,7 +120,7 @@ const RESULTS: Record<ResultType, {
       "妳清楚知道自己的節奏，身體的流暢感與能量續航力都維持在理想狀態。這種「掌控感」正是 VEDA 所追求的核心——不是拼命補，而是精準給。但即使狀態穩健，環境壓力與季節變化仍會悄悄消耗健康儲備。",
     recommendation:
       "VEDA 建議妳：以「科學鞏固」取代過度補給。用最精準的植萃配方，持續支撐妳已建立的活力根基，讓這份從容走得更遠、更穩。",
-    cta: "了解適合我的精準鞏固方案",
+    cta: "官方LINE@| 適配專屬鞏固方案",
   },
 };
 
@@ -421,7 +421,7 @@ export default function WellnessQuiz() {
                 className="block w-full text-center py-3 rounded-2xl font-medium mb-3 transition-colors hover:bg-[rgba(45,79,30,0.06)]"
                 style={{ color: '#2D4F1E', border: '1.5px solid rgba(45,79,30,0.25)', background: 'transparent', fontSize: '14px', textDecoration: 'none' }}
               >
-                首頁｜VEDA CARE 減法生活
+                探索首頁 | VEDA CARE 減法生活
               </a>
 
               <button
