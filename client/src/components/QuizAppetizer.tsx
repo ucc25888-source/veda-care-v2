@@ -402,7 +402,7 @@ export default function QuizAppetizer() {
                   letterSpacing: "0.03em",
                 }}
               >
-                深度覺察身體狀態
+                深度覺察身體狀態 →
               </Link>
 
               {/* 回到首頁 */}
