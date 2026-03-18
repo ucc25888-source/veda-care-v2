@@ -404,6 +404,15 @@ export default function QuizAppetizer() {
               >
                 進入 VEDA 科研精準方案匹配 →
               </Link>
+
+              {/* 回到首頁 */}
+              <Link
+                href="/"
+                className="block w-full text-center py-3 rounded-2xl font-medium mb-1 transition-colors"
+                style={{ color: '#2D4F1E', border: '1.5px solid rgba(45,79,30,0.25)', background: 'transparent', fontSize: '14px', textDecoration: 'none' }}
+              >
+                回到首頁 · 看健康產品
+              </Link>
             </div>
           )}
 
@@ -412,7 +421,7 @@ export default function QuizAppetizer() {
             className="w-full text-center py-2 text-xs font-medium transition-opacity hover:opacity-60"
             style={{ color: "rgba(45,79,30,0.4)" }}
           >
-            重新測驗
+            再玩一次測驗
           </button>
         </div>
       </div>

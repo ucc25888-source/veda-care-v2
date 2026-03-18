@@ -409,18 +409,27 @@ export default function WellnessQuiz() {
                 href={LINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-4 rounded-2xl font-bold mb-4 transition-all duration-200 hover:opacity-90 hover:scale-[1.01] active:scale-[0.99]"
+                className="block w-full text-center py-4 rounded-2xl font-bold mb-3 transition-all duration-200 hover:opacity-90 hover:scale-[1.01] active:scale-[0.99]"
                 style={{ background: '#2D4F1E', color: '#ffffff', lineHeight: '1.5', fontSize: '14px', whiteSpace: 'nowrap' }}
               >
                 {result.cta}
               </a>
 
+              {/* 回到首頁 */}
+              <a
+                href="/"
+                className="block w-full text-center py-3 rounded-2xl font-medium mb-3 transition-colors hover:bg-[rgba(45,79,30,0.06)]"
+                style={{ color: '#2D4F1E', border: '1.5px solid rgba(45,79,30,0.25)', background: 'transparent', fontSize: '14px', textDecoration: 'none' }}
+              >
+                回到首頁 · 看健康產品
+              </a>
+
               <button
                 onClick={handleRestart}
-                className="w-full text-center py-3 rounded-2xl text-sm font-medium transition-colors hover:bg-[rgba(45,79,30,0.06)]"
-                style={{ color: '#2D4F1E', border: '1.5px solid rgba(45,79,30,0.25)', background: 'transparent' }}
+                className="w-full text-center py-3 rounded-2xl text-sm font-medium transition-colors hover:opacity-60"
+                style={{ color: 'rgba(45,79,30,0.4)', border: '1px solid rgba(45,79,30,0.15)', background: 'transparent' }}
               >
-                重新測驗
+                再玩一次測驗
               </button>
             </div>
 
