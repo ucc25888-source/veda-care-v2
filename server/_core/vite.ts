@@ -17,7 +17,7 @@ const OG_CONFIGS: Record<string, { title: string; description: string; image: st
   home: {
     title: "VEDA｜找到身體的減法",
     description: "CARE｜科研級精準解方",
-    image: `${BASE_URL}/quiz-hero.png`,
+    image: `${BASE_URL}/preview.png`,
   },
 };
 
