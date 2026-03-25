@@ -413,16 +413,15 @@ export default function WellnessQuiz() {
                   const count = answers.filter((a) => a === letter).length;
                   const isHighlight = count > 0 && count === Math.max(...["A","B","C"].map(l => answers.filter(a => a === l).length));
                   return (
-                    <div key={letter} className="flex-1 rounded-xl py-4 px-2 text-center"
+                    <div key={letter} className="flex-1 rounded-xl py-5 px-3 text-center flex flex-col items-center gap-1.5"
                       style={{
                         background: isHighlight ? 'rgba(45,79,30,0.12)' : 'rgba(45,79,30,0.05)',
                         border: isHighlight ? '1.5px solid rgba(45,79,30,0.25)' : '1.5px solid transparent',
                       }}>
-                      <p className="text-lg font-bold leading-none mb-1" style={{ color: '#2D4F1E' }}>{count}</p>
-                      <p className="text-xs font-semibold mb-1" style={{ color: '#2D4F1E' }}>
-                        <span style={{ opacity: 0.5 }}>選項 {letter}　</span>{label}
-                      </p>
-                      <p className="text-[10px] leading-tight" style={{ color: 'rgba(45,79,30,0.5)' }}>{desc}</p>
+                      <p className="text-2xl font-bold leading-none" style={{ color: '#2D4F1E' }}>{count}</p>
+                      <p className="text-xs" style={{ color: 'rgba(45,79,30,0.55)' }}>選項 {letter}</p>
+                      <p className="text-sm font-bold whitespace-nowrap" style={{ color: '#2D4F1E' }}>{label}</p>
+                      <p className="text-xs leading-snug" style={{ color: 'rgba(45,79,30,0.55)' }}>{desc}</p>
                     </div>
                   );
                 })}
