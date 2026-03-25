@@ -6,11 +6,15 @@ import ShareButton from "@/components/ShareButton";
 const LINE_URL = "https://lin.ee/10DnnGU";
 
 /*
-  Scoring logic (new):
-  Count the number of "A" answers.
-    A >= 4  →  Level 3: Power Crisis      (全面修復型)
-    A = 2–3 →  Level 2: Energy Warning    (主動調整型)
-    A <= 1  →  Level 1: Balanced Potential (活力掌控型)
+  Scoring logic:
+  Weighted points per answer: A = 3, B = 1, C = 0
+  Total score range: 0–18
+    score >= 12  →  Level 3: Power Crisis      (全面修復型)
+    score >= 4   →  Level 2: Energy Warning    (主動調整型)
+    score <  4   →  Level 1: Balanced Potential (活力掌控型)
+
+  This preserves the original A-only thresholds (4A=12pts, 2A=6pts, 1A=3pts)
+  while correctly placing all-B selections (6pts) at Level 2.
 */
 
 const QUESTIONS = [
@@ -124,9 +128,18 @@ const RESULTS: Record<ResultType, {
   },
 };
 
-function getResult(aCount: number): ResultType {
-  if (aCount >= 4) return "crisis";
-  if (aCount >= 2) return "warning";
+function getScore(answers: string[]): number {
+  return answers.reduce((sum, a) => {
+    if (a === "A") return sum + 3;
+    if (a === "B") return sum + 1;
+    return sum;
+  }, 0);
+}
+
+function getResult(answers: string[]): ResultType {
+  const score = getScore(answers);
+  if (score >= 12) return "crisis";
+  if (score >= 4) return "warning";
   return "balanced";
 }
 
@@ -138,7 +151,7 @@ export default function WellnessQuiz() {
   const [animKey, setAnimKey] = useState(0);
 
   const aCount = answers.filter((a) => a === "A").length;
-  const resultKey = getResult(aCount);
+  const resultKey = getResult(answers);
   const result = RESULTS[resultKey];
   const progress = ((current + (selectedKey ? 0.5 : 0)) / QUESTIONS.length) * 100;
 
