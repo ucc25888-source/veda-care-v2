@@ -405,13 +405,24 @@ export default function WellnessQuiz() {
 
               {/* A-count mini stats */}
               <div className="flex gap-3 mb-8">
-                {["A", "B", "C"].map((letter) => {
+                {([
+                  { letter: "A", label: "嚴重耗損", desc: "長期疲勞、難以恢復" },
+                  { letter: "B", label: "偶有乏力", desc: "偶爾疲憊、起伏不定" },
+                  { letter: "C", label: "精力充沛", desc: "狀態穩定、活力良好" },
+                ] as const).map(({ letter, label, desc }) => {
                   const count = answers.filter((a) => a === letter).length;
+                  const isHighlight = count > 0 && count === Math.max(...["A","B","C"].map(l => answers.filter(a => a === l).length));
                   return (
-                    <div key={letter} className="flex-1 rounded-xl py-3 text-center"
-                      style={{ background: letter === "A" && aCount >= 4 ? 'rgba(45,79,30,0.1)' : 'rgba(45,79,30,0.05)' }}>
-                      <p className="text-lg font-bold" style={{ color: '#2D4F1E' }}>{count}</p>
-                      <p className="text-xs mt-0.5" style={{ color: 'rgba(45,79,30,0.55)' }}>選項 {letter}</p>
+                    <div key={letter} className="flex-1 rounded-xl py-4 px-2 text-center"
+                      style={{
+                        background: isHighlight ? 'rgba(45,79,30,0.12)' : 'rgba(45,79,30,0.05)',
+                        border: isHighlight ? '1.5px solid rgba(45,79,30,0.25)' : '1.5px solid transparent',
+                      }}>
+                      <p className="text-lg font-bold leading-none mb-1" style={{ color: '#2D4F1E' }}>{count}</p>
+                      <p className="text-xs font-semibold mb-1" style={{ color: '#2D4F1E' }}>
+                        <span style={{ opacity: 0.5 }}>選項 {letter}　</span>{label}
+                      </p>
+                      <p className="text-[10px] leading-tight" style={{ color: 'rgba(45,79,30,0.5)' }}>{desc}</p>
                     </div>
                   );
                 })}
