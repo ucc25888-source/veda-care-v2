@@ -427,6 +427,29 @@ export default function WellnessQuiz() {
                 })}
               </div>
 
+              {/* 專屬重啟預覽 — YouTube Shorts */}
+              <div className="mb-8">
+                <p className="text-xs font-bold tracking-widest uppercase mb-4 flex items-center gap-2"
+                  style={{ color: '#2D4F1E' }}>
+                  <span>🔓</span>
+                  <span>已解鎖：專屬妳的重啟預覽</span>
+                </p>
+                <div className="relative w-full overflow-hidden rounded-2xl"
+                  style={{ paddingBottom: '56.25%', background: '#000' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/lizoLrUM4NA?rel=0&modestbranding=1"
+                    title="VEDA CARE 重啟預覽"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                    style={{ border: 'none' }}
+                  />
+                </div>
+                <p className="text-xs text-center mt-3" style={{ color: 'rgba(45,79,30,0.5)', letterSpacing: '0.05em' }}>
+                  30 秒，看見渴望的從容
+                </p>
+              </div>
+
               {/* LINE CTA */}
               <a
                 href={LINE_URL}
