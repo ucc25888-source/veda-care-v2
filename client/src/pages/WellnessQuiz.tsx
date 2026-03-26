@@ -434,15 +434,16 @@ export default function WellnessQuiz() {
                   <span>🔓</span>
                   <span>已解鎖：專屬妳的重啟預覽</span>
                 </p>
-                <div className="relative w-full overflow-hidden rounded-2xl"
-                  style={{ paddingBottom: '56.25%', background: '#000' }}>
+                <div className="w-full overflow-hidden rounded-2xl"
+                  style={{ aspectRatio: '9/16', maxWidth: '320px', margin: '0 auto', background: '#000' }}>
                   <iframe
-                    src="https://www.youtube.com/embed/lizoLrUM4NA?rel=0&modestbranding=1"
+                    src="https://www.youtube-nocookie.com/embed/lizoLrUM4NA?rel=0&modestbranding=1&playsinline=1"
                     title="VEDA CARE 重啟預覽"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
-                    className="absolute inset-0 w-full h-full"
-                    style={{ border: 'none' }}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 'none', display: 'block' }}
                   />
                 </div>
                 <p className="text-xs text-center mt-3" style={{ color: 'rgba(45,79,30,0.5)', letterSpacing: '0.05em' }}>
