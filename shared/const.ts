@@ -222,7 +222,7 @@ export const TESTIMONIALS: Testimonial[] = [
     problem: "",
     experience: "",
     improvement: "",
-    recommendation: "以前過中午後就得猛灌咖啡硬撐，本來以為自己只是老了。後來聽 VEDA 團隊建議換了保養方式，把以前亂吃的一堆瓶瓶罐罐停掉。現在最明顯的感覺是下午不再突然『斷電』，下班居然還有體力去運動，整個人狀態穩很多！"
+    recommendation: "以前過中午後就得猛灌咖啡硬撐，本來以為自己只是老了。後來聽 VEDA 團隊建議換了保養方式，把以前亂吃的一堆瓶瓶罐罐整理一遍。現在整個下午比較有精神，下班後還有心力去運動，整個人感覺輕鬆很多！"
   },
   {
     id: "testimonial-2",
@@ -233,7 +233,7 @@ export const TESTIMONIALS: Testimonial[] = [
     problem: "",
     experience: "",
     improvement: "",
-    recommendation: "這兩年只要在辦公室坐久一點，或者陪小孩蹲在地上玩，站起來那瞬間總覺得身體有點『卡卡的』，不像以前那麼俐落。後來開始吃 VEDA 的敏捷素，慢慢覺得日常活動順暢很多！現在上下樓梯或出門走一整天，那種討厭的『卡頓感』少了很多，終於找回身體輕盈的感覺了。"
+    recommendation: "這兩年只要在辦公室坐久一點，或者陪小孩蹲在地上玩，站起來那瞬間總覺得身體有點『卡卡的』，不像以前那麼俐落。後來調整日常保養習慣，加入了 VEDA 的敏捷素，身體慢慢感覺比較自在。現在上下樓梯或出門走一整天，那種卡卡的感覺比以前少，整體感覺輕盈了一些。"
   },
   {
     id: "testimonial-3",
@@ -244,7 +244,7 @@ export const TESTIMONIALS: Testimonial[] = [
     problem: "",
     experience: "",
     improvement: "",
-    recommendation: "我體質比較敏感，以前喝過幾款高蛋白或營養品，喝完肚子都會脹氣、咕嚕咕嚕叫，超級不舒服。後來試了 VEDA 的 EAA，口感順，最感動的是喝完肚子安安靜靜，完全沒有負擔感，現在每天一杯真的有差。"
+    recommendation: "我體質比較敏感，以前喝過幾款高蛋白或營養品，喝完肚子都會脹氣、咕嚕咕嚕叫，超級不舒服。後來試了 VEDA 的 EAA，口感順，最開心的是喝完肚子安安靜靜，完全沒有負擔感，現在已經成了每天的習慣。"
   }
 ];
 export const AXIOS_TIMEOUT_MS = 30_000;
