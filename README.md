@@ -364,6 +364,13 @@ git push origin main
 | 2026.06.19 | fix: replace broken favicon with proper multi-size ICO from hao-avatar | 修正 favicon（原為錯誤格式大型 PNG），改用 hao-avatar.png 生成標準 6 尺寸 ICO（16/32/48/64/128/256px），解決 Google 搜尋結果顯示問號問題 |
 | 2026.06.19 | docs: add website SOP and README template for new projects | 新增 WEBSITE_SOP.md（建站標準作業規範，供 Claude/Manus 讀取）與 README_TEMPLATE.md（新客戶專案空白範本）|
 | 2026.06.19 | seo: add Brand + WebSite schema, bind 郝營養=VEDA CARE, add YouTube sameAs（66d4e72） | 新增 Brand schema（宣告「郝營養」為品牌 IP）、增強 Organization schema（加入 WEDAR 切割 + YouTube sameAs）、新增 WebSite schema（綁定郝營養官網=vedacare.com.tw）|
+| 2026.06.19 | copy: compliance fix - 修護→沉靜底氣、聽話→自在、移除 GOOD JOINT | 依顧問宇梵姐合規建議修改產品文案，敏捷素移除英文名 |
+| 2026.06.19 | feat: replace logo with logo-new.png across header/footer/home | 全站 Logo 換新（3D 品牌識別） |
+| 2026.06.19 | style: darken footer gray text | Footer 灰字加深（#888→#555, #777→#444 等） |
+| 2026.06.19 | seo: add product JSON-LD schemas + expanded keywords | 新增三個 Product schema，擴充 SEO 關鍵字（植物蛋白/豌豆蛋白/EAA/敏捷素/關節等） |
+| 2026.06.19 | style: darken and enlarge home/about/header gray text | 首頁、關於頁、Header 多處灰字加深加大 |
+| 2026.06.19 | copy: compliance fix testimonials | 三則見證文案改寫，改用「個人感受」語言，降低衛福部廣告違規風險 |
+| 2026.06.19 | style: enlarge journey map circles and text | 發現旅程區塊圓圈與文字放大 |
 
 ---
 
