@@ -104,12 +104,36 @@
 
 ---
 
-## SEO 設定（2026.06.19 新增）
+## 🔐 數位資產與 Google 搜尋引擎點火紀錄
+
+為確保網站能被 Google 及最新 AI 搜尋引擎（ChatGPT Search, Perplexity）精準爬取並推薦，已完成 Google Search Console 雙重防線擁有權驗證。
+
+### 第一手驗證：HTML Meta Tag（代碼層）✅ 已啟用
+
+- **驗證狀態**：已啟用（2026.06.19 驗證成功）
+- **埋設位置**：`client/index.html` → `<head>` 區塊第 6 行
+- **身分證代碼**：
+
+```html
+<meta name="google-site-verification" content="bk9cztCI39etPz2PEl48GSSYMoSrWB_Xo9l-2nm6A8s" />
+```
+
+- **注意事項**：未來更新、重構或大幅修改首頁代碼時，**嚴禁刪除或覆蓋**此行 Meta 標籤，否則會導致 Google 搜尋後台斷線。
+
+### 第二手驗證：DNS TXT Record（網域層保險）
+
+- **驗證狀態**：待設定
+- **設定位置**：網域購買商 DNS 域名解析管理後台
+- **紀錄類型**：`TXT`
+- **主機紀錄**：`@`（或留空）
+- **注意事項**：此為最高權限之網域鎖定驗證，確保代碼層意外毀損時，後台仍能保持連線不中斷。
+
+---
+
+## SEO 基礎建設（2026.06.19 新增）
 
 | 項目 | 說明 |
 |------|------|
-| Google Search Console 驗證碼 | `84fa74b5db02c230` |
-| 驗證標籤位置 | `client/index.html` 第 6 行 |
 | Sitemap | https://www.vedacare.com.tw/sitemap.xml |
 | Robots.txt | https://www.vedacare.com.tw/robots.txt |
 | 結構化資料（JSON-LD） | Organization schema，描述品牌資訊 |
@@ -120,28 +144,4 @@
 - https://www.vedacare.com.tw/about
 - https://www.vedacare.com.tw/product/product-1
 - https://www.vedacare.com.tw/product/product-2
-- https://www.vedacare.com.tw/product/product-3
-- https://www.vedacare.com.tw/quiz
-- https://www.vedacare.com.tw/policies
-
----
-
-## 更新推送流程
-
-每次修改網站後，依照以下步驟推送：
-
-1. 用 Claude Cowork 修改 `C:\git\` 資料夾內的檔案
-2. 開啟 **GitHub Desktop**，確認 Current repository 是 `veda-care-v2`
-3. 在左下角填寫 Summary（說明這次改了什麼）
-4. 點 **Commit to main**
-5. 點 **Push origin**
-6. 等待約 1～2 分鐘，Vercel 自動重新部署完成
-
----
-
-## 版本記錄
-
-| 日期 | 更新內容 |
-|------|------|
-| 2026.06.02 | 網站正式生效，網址 www.vedacare.com.tw 上線 |
-| 2026.06.19 | 新增 Google Search Console 驗證、robots.txt、sitemap.xml、JSON-LD 結構化資料 |
+- https://www.vedaca
