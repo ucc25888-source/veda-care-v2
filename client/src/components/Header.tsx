@@ -29,10 +29,10 @@ export default function Header() {
               <span className="hidden md:inline" style={{
                 fontFamily: "'PingFang TC', 'Noto Sans TC', sans-serif",
                 fontSize: 'clamp(0.6rem, 2vw, 0.8rem)',
-                fontWeight: 300,
+                fontWeight: 400,
                 letterSpacing: '0.2em',
                 color: '#4A5D23',
-                opacity: 0.65,
+                opacity: 0.9,
               }}>
                 科研級精粹
               </span>

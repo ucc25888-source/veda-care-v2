@@ -227,7 +227,7 @@ export default function Home() {
         <section className="py-10 md:py-14 bg-[#f9f8f5]">
           <div className="container max-w-2xl">
             <p className="text-xs tracking-[0.3em] uppercase font-semibold text-center mb-8"
-              style={{ color: 'rgba(45,79,30,0.5)' }}>
+              style={{ color: 'rgba(45,79,30,0.8)', fontSize: '12px' }}>
               VEDA CARE &nbsp;｜&nbsp; 妳的發現旅程
             </p>
 
@@ -248,7 +248,7 @@ export default function Home() {
                       style={{
                         background: s.active ? '#2D4F1E' : '#ffffff',
                         border: s.active ? '2px solid #2D4F1E' : '2px solid rgba(45,79,30,0.18)',
-                        color: s.active ? '#ffffff' : 'rgba(45,79,30,0.4)',
+                        color: s.active ? '#ffffff' : 'rgba(45,79,30,0.65)',
                         boxShadow: s.active ? '0 0 0 5px rgba(45,79,30,0.10)' : 'none',
                         animation: s.active ? 'scanPulse 2.2s ease-in-out infinite' : 'none',
                       }}
@@ -256,10 +256,10 @@ export default function Home() {
                       {s.step}
                     </div>
                     <p className="text-xs font-bold mb-0.5"
-                      style={{ color: s.active ? '#2D4F1E' : 'rgba(45,79,30,0.45)' }}>
+                      style={{ color: s.active ? '#2D4F1E' : 'rgba(45,79,30,0.75)', fontSize: '13px' }}>
                       {s.label}
                     </p>
-                    <p className="text-[10px]" style={{ color: 'rgba(45,79,30,0.35)' }}>
+                    <p style={{ fontSize: '11px', color: 'rgba(45,79,30,0.6)' }}>
                       {s.sub}
                     </p>
                   </>
