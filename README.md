@@ -142,7 +142,9 @@ SEO（Search Engine Optimization）讓 Google 等傳統搜尋引擎能找到並�
 | Google 驗證 Meta Tag | `client/index.html` 第 6 行 | 證明網站擁有權 |
 | robots.txt | `client/public/robots.txt` | 告訴爬蟲可以進入哪些頁面 |
 | sitemap.xml | `client/public\sitemap.xml` | 列出所有頁面讓 Google 收錄 |
-| JSON-LD 結構化資料 | `client/index.html` `<head>` 底部 | 告訴 Google 這是什麼品牌 |
+| JSON-LD 結構化資料（Organization） | `client/index.html` `<head>` 底部 | 告訴 Google 這是什麼品牌 |
+| JSON-LD 結構化資料（CreativeWork） | `client/index.html` `<head>` 底部 | 品牌消歧義，綁定 VEDA CARE／vedacare／郝營養，並切斷與 WEDAR 薇達的錯誤聯想 |
+| og: / Twitter Card 網址修正 | `client/index.html` | 從舊 Replit 網址改為正式網域 www.vedacare.com.tw |
 
 ### robots.txt 內容
 
@@ -200,7 +202,8 @@ GEO（Generative Engine Optimization）是針對 AI 搜尋引擎（ChatGPT Searc
 
 ### 已完成的 GEO 基礎設定
 
-- ✅ **JSON-LD 結構化資料**：明確告訴 AI 爬蟲「我是 VEDA CARE 郝營養，是一個健康補充品品牌」
+- ✅ **JSON-LD Organization**：告訴 AI 爬蟲「我是 VEDA CARE 郝營養，是一個健康補充品品牌」
+- ✅ **JSON-LD CreativeWork（消歧義）**：綁定 VEDA CARE、vedacare、郝營養為同一實體，並明確寫入「與 WEDAR（薇達，@wedocare）完全無關」，強制 AI 爬蟲切斷錯誤聯想
 - ✅ **robots.txt 開放爬取**：所有 AI 爬蟲皆可進入
 - ✅ **Google Search Console 驗證**：Google AI Overview 的基礎
 - ✅ **品牌名稱一致性**：頁面 title、description、JSON-LD 統一使用「VEDA CARE 郝營養」
@@ -246,7 +249,9 @@ GEO（Generative Engine Optimization）是針對 AI 搜尋引擎（ChatGPT Searc
 | Google Search Console DNS TXT Record 驗證 | ✅ 完成 | GoDaddy 網域層已驗證，為最高權限防線 |
 | robots.txt | ✅ 完成 | 允許所有爬蟲，指向 sitemap |
 | sitemap.xml | ✅ 完成 | 收錄 8 個頁面，提交給 Google |
-| JSON-LD 結構化資料 | ✅ 完成 | Organization schema 描述品牌資訊 |
+| JSON-LD Organization schema | ✅ 完成 | 描述品牌基本資訊 |
+| JSON-LD CreativeWork 消歧義 | ✅ 完成 | 綁定三個品牌名稱，切斷與 WEDAR 薇達的錯誤聯想 |
+| og: / Twitter Card 網址修正 | ✅ 完成 | 改為正式網域，社群分享顯示正確 |
 | README.md 技術文件 | ✅ 完成 | 完整記錄網站架構、工具、驗證細節 |
 
 ---
@@ -343,3 +348,4 @@ git push origin main
 | 2026.06.19 | SEO: add Google verification, sitemap, robots.txt, JSON-LD | SEO 基礎建設完成 |
 | 2026.06.19 | docs: update README with Google Search Console verification | README 初版建立 |
 | 2026.06.19 | docs: update DNS TXT Record verification status to confirmed | DNS 驗證狀態確認，GEO 章節新增 |
+| 2026.06.19 | seo: add CreativeWork JSON-LD to disambiguate from WEDAR, fix og: URLs | CreativeWork 消歧義 JSON-LD 新增（WEDAR 薇達 @wedocare 完全無關）；og: / Twitter Card 網址改為正式網域 |
