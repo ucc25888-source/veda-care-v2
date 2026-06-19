@@ -349,3 +349,29 @@ git push origin main
 | 2026.06.19 | docs: update README with Google Search Console verification | README 初版建立 |
 | 2026.06.19 | docs: update DNS TXT Record verification status to confirmed | DNS 驗證狀態確認，GEO 章節新增 |
 | 2026.06.19 | seo: add CreativeWork JSON-LD to disambiguate from WEDAR, fix og: URLs | CreativeWork 消歧義 JSON-LD 新增（WEDAR 薇達 @wedocare 完全無關）；og: / Twitter Card 網址改為正式網域 |
+| 2026.06.19 | fix: replace broken favicon with proper multi-size ICO from hao-avatar | 修正 favicon（原為錯誤格式大型 PNG），改用 hao-avatar.png 生成標準 6 尺寸 ICO（16/32/48/64/128/256px），解決 Google 搜尋結果顯示問號問題 |
+| 2026.06.19 | docs: add website SOP and README template for new projects | 新增 WEBSITE_SOP.md（建站標準作業規範，供 Claude/Manus 讀取）與 README_TEMPLATE.md（新客戶專案空白範本）|
+
+---
+
+## 📋 2026.06.19 完整工作紀錄
+
+與 Claude（Cowork 模式）協作完成，從零到搜尋引擎點火全流程：
+
+| 時序 | 項目 | 結果 |
+|------|------|------|
+| 1 | 確認最新版原始碼位置（`C:\git\`） | ✅ 確認 |
+| 2 | 建立 robots.txt | ✅ 完成 |
+| 3 | 建立 sitemap.xml（8 頁） | ✅ 完成 |
+| 4 | 加入 JSON-LD Organization schema | ✅ 完成 |
+| 5 | Google Search Console HTML Meta Tag 驗證 | ✅ 2026.06.19 綠勾 |
+| 6 | 確認 DNS TXT Record 驗證（GoDaddy，早已啟用） | ✅ 已啟用 |
+| 7 | 修正 og: / Twitter Card 網址（舊 Replit → 正式網域） | ✅ 完成 |
+| 8 | 加入 JSON-LD CreativeWork 消歧義（切斷與 WEDAR 薇達 @wedocare 的錯誤聯想） | ✅ 完成 |
+| 9 | 修正 favicon（問號 → 品牌頭像，6 尺寸標準 ICO） | ✅ 完成 |
+| 10 | Google Search Console 手動要求建立索引 | ✅ 完成，今天 13:50 已爬取 |
+| 11 | 建立 README.md 完整技術文件 | ✅ 完成 |
+| 12 | 建立 WEBSITE_SOP.md（AI 建站規則書） | ✅ 完成 |
+| 13 | 建立 README_TEMPLATE.md（新客戶範本） | ✅ 完成 |
+| 14 | Google 行事曆每月 19 日維護提醒 | ✅ 已建立 |
+| 15 | 所有變更 Push 到 GitHub，Vercel 自動部署 | ✅ 完成 |
