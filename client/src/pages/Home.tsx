@@ -318,14 +318,14 @@ export default function Home() {
                 <p style={{fontSize:'15px', fontWeight:600, color:'#2D4F1E', marginBottom:'6px'}}>
                   腸胃友善配方，全素無負擔。
                 </p>
-                <p style={{fontSize:'14px', color:'#444', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
+                <p style={{fontSize:'16px', color:'#444', fontWeight:300, marginBottom:'28px', lineHeight:1.8}}>
                   長時間不吃、或吃不夠多的日子，<br />
                   就是蛋白質缺口最大的時候。
                 </p>
 
                 <div style={{borderTop:'1px solid #e8e8e8', paddingTop:'16px', marginBottom:'28px'}}>
-                  <p style={{fontSize:'11px', color:'#777', letterSpacing:'0.1em', marginBottom:'10px'}}>規 格 提 示</p>
-                  <p style={{fontSize:'13px', color:'#444', fontWeight:300, lineHeight:2}}>
+                  <p style={{fontSize:'13px', color:'#777', letterSpacing:'0.1em', marginBottom:'10px'}}>規 格 提 示</p>
+                  <p style={{fontSize:'15px', color:'#444', fontWeight:300, lineHeight:2}}>
                     500g 環保包裝・全家補給<br />
                     15包單包攜帶・隨時補充
                   </p>
