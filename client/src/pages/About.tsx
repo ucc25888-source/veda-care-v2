@@ -143,11 +143,11 @@ export default function About() {
                   {/* Myth */}
                   <div style={{ background: 'rgba(45,79,30,0.035)', padding: '26px 32px 22px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
-                      <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.3em', color: 'rgba(45,79,30,0.3)' }}>
+                      <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.3em', color: 'rgba(45,79,30,0.6)' }}>
                         {item.index}
                       </span>
                       <span style={{ width: 20, height: 1, background: 'rgba(45,79,30,0.18)', display: 'inline-block' }} />
-                      <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.25em', color: 'rgba(45,79,30,0.45)', textTransform: 'uppercase' }}>
+                      <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.25em', color: 'rgba(45,79,30,0.75)', textTransform: 'uppercase' }}>
                         誤 區
                       </span>
                     </div>
@@ -159,7 +159,7 @@ export default function About() {
                   {/* Connector */}
                   <div style={{ display: 'flex', alignItems: 'center', padding: '0 32px', background: '#fff', height: 36 }}>
                     <div style={{ flex: 1, height: 1, background: 'rgba(45,79,30,0.1)' }} />
-                    <span style={{ padding: '0 14px', fontSize: 10, color: 'rgba(45,79,30,0.45)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
+                    <span style={{ padding: '0 14px', fontSize: 10, color: 'rgba(45,79,30,0.75)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
                       ✦ &nbsp;真 相
                     </span>
                     <div style={{ flex: 1, height: 1, background: 'rgba(45,79,30,0.1)' }} />
@@ -167,7 +167,7 @@ export default function About() {
 
                   {/* Truth */}
                   <div style={{ padding: '18px 32px 28px', background: '#fff' }}>
-                    <p style={{ fontSize: 14, color: '#555', lineHeight: 1.95, fontWeight: 300 }}>
+                    <p style={{ fontSize: 14, color: '#444', lineHeight: 1.95, fontWeight: 400 }}>
                       {item.truth}
                     </p>
                     <InsightTooltip text={item.insight} />
