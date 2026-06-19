@@ -315,7 +315,7 @@ export default function ProductDetail() {
             <span className="motto-text" style={{ display: 'block', textAlign: 'center' }}>
               不必成為誰的榜樣，<br />
               您只需要在每一個起身，<br />
-              感受輕盈與聽話。
+              感受輕盈與自在。
             </span>
           </section>
         )}
