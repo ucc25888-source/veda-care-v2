@@ -226,8 +226,8 @@ export default function Home() {
         {/* Journey Map — Discovery Path */}
         <section className="py-10 md:py-14 bg-[#f9f8f5]">
           <div className="container max-w-2xl">
-            <p className="text-xs tracking-[0.3em] uppercase font-semibold text-center mb-8"
-              style={{ color: 'rgba(45,79,30,0.8)', fontSize: '12px' }}>
+            <p className="tracking-[0.3em] uppercase font-semibold text-center mb-8"
+              style={{ color: 'rgba(45,79,30,0.8)', fontSize: '14px' }}>
               VEDA CARE &nbsp;｜&nbsp; 妳的發現旅程
             </p>
 
@@ -244,7 +244,7 @@ export default function Home() {
                 const inner = (
                   <>
                     <div
-                      className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold mb-2 transition-all duration-300"
+                      className="w-11 h-11 rounded-full flex items-center justify-center text-sm font-bold mb-2 transition-all duration-300"
                       style={{
                         background: s.active ? '#2D4F1E' : '#ffffff',
                         border: s.active ? '2px solid #2D4F1E' : '2px solid rgba(45,79,30,0.18)',
@@ -255,11 +255,11 @@ export default function Home() {
                     >
                       {s.step}
                     </div>
-                    <p className="text-xs font-bold mb-0.5"
-                      style={{ color: s.active ? '#2D4F1E' : 'rgba(45,79,30,0.75)', fontSize: '13px' }}>
+                    <p className="font-bold mb-0.5"
+                      style={{ color: s.active ? '#2D4F1E' : 'rgba(45,79,30,0.75)', fontSize: '15px' }}>
                       {s.label}
                     </p>
-                    <p style={{ fontSize: '11px', color: 'rgba(45,79,30,0.6)' }}>
+                    <p style={{ fontSize: '13px', color: 'rgba(45,79,30,0.6)' }}>
                       {s.sub}
                     </p>
                   </>
