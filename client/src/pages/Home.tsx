@@ -104,7 +104,7 @@ export default function Home() {
             <div className="text-center mb-10 md:mb-16">
               <div style={{ width: 40, height: 1, background: '#B59A6D', margin: '0 auto 28px' }} />
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png"
+                src="/logo-new.png"
                 alt="VEDA CARE"
                 className="h-12 w-auto mx-auto mb-6"
                 style={{ filter: 'brightness(0) invert(1)', opacity: 0.82 }}

@@ -29,7 +29,7 @@ export default function Footer() {
             {/* Brand identity */}
             <div>
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663324990872/DdR9WuCya5pW9tctiweeFH/HealthPromotionManager_4e5e8b0f.png"
+                src="/logo-new.png"
                 alt="VEDA CARE"
                 className="h-12 w-auto mb-5"
               />
