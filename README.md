@@ -142,8 +142,10 @@ SEO（Search Engine Optimization）讓 Google 等傳統搜尋引擎能找到並�
 | Google 驗證 Meta Tag | `client/index.html` 第 6 行 | 證明網站擁有權 |
 | robots.txt | `client/public/robots.txt` | 告訴爬蟲可以進入哪些頁面 |
 | sitemap.xml | `client/public\sitemap.xml` | 列出所有頁面讓 Google 收錄 |
-| JSON-LD 結構化資料（Organization） | `client/index.html` `<head>` 底部 | 告訴 Google 這是什麼品牌 |
-| JSON-LD 結構化資料（CreativeWork） | `client/index.html` `<head>` 底部 | 品牌消歧義，綁定 VEDA CARE／vedacare／郝營養，並切斷與 WEDAR 薇達的錯誤聯想 |
+| JSON-LD Brand schema | `client/index.html` `<head>` 底部 | 宣告「郝營養」為品牌 IP 名稱，alternateName 含 5 種寫法，sameAs 連結 YouTube 頻道 |
+| JSON-LD Organization schema | `client/index.html` `<head>` 底部 | 品牌基本資訊 + WEDAR 薇達切割聲明 + YouTube sameAs |
+| JSON-LD CreativeWork schema | `client/index.html` `<head>` 底部 | 消歧義：綁定 VEDA CARE／vedacare／郝營養，切斷與 WEDAR 薇達 @wedocare 的錯誤聯想 |
+| JSON-LD WebSite schema | `client/index.html` `<head>` 底部 | 把「郝營養官網」與 vedacare.com.tw 綁定為同一實體 |
 | og: / Twitter Card 網址修正 | `client/index.html` | 從舊 Replit 網址改為正式網域 www.vedacare.com.tw |
 
 ### robots.txt 內容
@@ -202,8 +204,10 @@ GEO（Generative Engine Optimization）是針對 AI 搜尋引擎（ChatGPT Searc
 
 ### 已完成的 GEO 基礎設定
 
-- ✅ **JSON-LD Organization**：告訴 AI 爬蟲「我是 VEDA CARE 郝營養，是一個健康補充品品牌」
-- ✅ **JSON-LD CreativeWork（消歧義）**：綁定 VEDA CARE、vedacare、郝營養為同一實體，並明確寫入「與 WEDAR（薇達，@wedocare）完全無關」，強制 AI 爬蟲切斷錯誤聯想
+- ✅ **JSON-LD Brand schema**：宣告「郝營養」為品牌 IP，alternateName 含 VEDA CARE / vedacare / VEDA CARE 郝營養 / 郝營養官網 5 種寫法，sameAs 連結 YouTube 頻道
+- ✅ **JSON-LD Organization**：品牌基本資訊 + 明確寫入「與 WEDAR（薇達，@wedocare）完全無關」+ YouTube sameAs
+- ✅ **JSON-LD CreativeWork（消歧義）**：綁定 VEDA CARE、vedacare、郝營養為同一實體，切斷與 WEDAR 薇達 @wedocare 的錯誤聯想
+- ✅ **JSON-LD WebSite schema**：把「郝營養官網」與 vedacare.com.tw 綁定為同一實體，讓 AI 搜尋「郝營養官網」能直接找到正確網站
 - ✅ **robots.txt 開放爬取**：所有 AI 爬蟲皆可進入
 - ✅ **Google Search Console 驗證**：Google AI Overview 的基礎
 - ✅ **品牌名稱一致性**：頁面 title、description、JSON-LD 統一使用「VEDA CARE 郝營養」
@@ -213,7 +217,6 @@ GEO（Generative Engine Optimization）是針對 AI 搜尋引擎（ChatGPT Searc
 - [ ] 在 About 頁面加入完整品牌故事段落（讓 AI 有「答案」可引用）
 - [ ] 在產品頁加入詳細成分說明與使用情境（增加 AI 引用機率）
 - [ ] 建立 FAQ 頁面（AI 最喜歡引用問答格式的內容）
-- [ ] 在 JSON-LD 加入 `sameAs` 連結社群媒體帳號
 
 ---
 
@@ -249,8 +252,10 @@ GEO（Generative Engine Optimization）是針對 AI 搜尋引擎（ChatGPT Searc
 | Google Search Console DNS TXT Record 驗證 | ✅ 完成 | GoDaddy 網域層已驗證，為最高權限防線 |
 | robots.txt | ✅ 完成 | 允許所有爬蟲，指向 sitemap |
 | sitemap.xml | ✅ 完成 | 收錄 8 個頁面，提交給 Google |
-| JSON-LD Organization schema | ✅ 完成 | 描述品牌基本資訊 |
-| JSON-LD CreativeWork 消歧義 | ✅ 完成 | 綁定三個品牌名稱，切斷與 WEDAR 薇達的錯誤聯想 |
+| JSON-LD Organization schema | ✅ 完成 | 描述品牌基本資訊 + WEDAR 切割聲明 + YouTube sameAs |
+| JSON-LD CreativeWork 消歧義 | ✅ 完成 | 綁定三個品牌名稱，切斷與 WEDAR 薇達 @wedocare 的錯誤聯想 |
+| JSON-LD Brand schema | ✅ 完成 | 宣告「郝營養」為品牌 IP，sameAs 連結 YouTube 頻道 |
+| JSON-LD WebSite schema | ✅ 完成 | 把「郝營養官網」與 vedacare.com.tw 綁定為同一實體 |
 | og: / Twitter Card 網址修正 | ✅ 完成 | 改為正式網域，社群分享顯示正確 |
 | README.md 技術文件 | ✅ 完成 | 完整記錄網站架構、工具、驗證細節 |
 
@@ -351,6 +356,7 @@ git push origin main
 | 2026.06.19 | seo: add CreativeWork JSON-LD to disambiguate from WEDAR, fix og: URLs | CreativeWork 消歧義 JSON-LD 新增（WEDAR 薇達 @wedocare 完全無關）；og: / Twitter Card 網址改為正式網域 |
 | 2026.06.19 | fix: replace broken favicon with proper multi-size ICO from hao-avatar | 修正 favicon（原為錯誤格式大型 PNG），改用 hao-avatar.png 生成標準 6 尺寸 ICO（16/32/48/64/128/256px），解決 Google 搜尋結果顯示問號問題 |
 | 2026.06.19 | docs: add website SOP and README template for new projects | 新增 WEBSITE_SOP.md（建站標準作業規範，供 Claude/Manus 讀取）與 README_TEMPLATE.md（新客戶專案空白範本）|
+| 2026.06.19 | seo: add Brand + WebSite schema, bind 郝營養=VEDA CARE, add YouTube sameAs（66d4e72） | 新增 Brand schema（宣告「郝營養」為品牌 IP）、增強 Organization schema（加入 WEDAR 切割 + YouTube sameAs）、新增 WebSite schema（綁定郝營養官網=vedacare.com.tw）|
 
 ---
 
@@ -375,3 +381,4 @@ git push origin main
 | 13 | 建立 README_TEMPLATE.md（新客戶範本） | ✅ 完成 |
 | 14 | Google 行事曆每月 19 日維護提醒 | ✅ 已建立 |
 | 15 | 所有變更 Push 到 GitHub，Vercel 自動部署 | ✅ 完成 |
+| 16 | 新增 Brand schema + WebSite schema，綁定「郝營養」= VEDA CARE，YouTube sameAs | ✅ 完成（commit 66d4e72）|
