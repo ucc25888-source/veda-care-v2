@@ -46,14 +46,21 @@
 | 說明 | 路徑 |
 |------|------|
 | **Git 工作目錄（最新版，唯一可推送）** | `C:\git\` |
-| 舊版備份（ZIP 解壓，勿使用） | `C:\VEDA CARE官網\veda-care-v2-main\` |
-| 主要 HTML 進入點 | `C:\git\client\index.html` |
+| 參考用備份（看懂結構用，不需修改） | `C:\VEDA CARE官網\veda-care-v2-main\` |
+| 主要 HTML 進入點（Meta Tag、JSON-LD） | `C:\git\client\index.html` |
 | 爬蟲設定 | `C:\git\client\public\robots.txt` |
 | 網站地圖 | `C:\git\client\public\sitemap.xml` |
 | 前端頁面元件 | `C:\git\client\src\pages\` |
-| 共用常數／產品資料 | `C:\git\shared\const.ts` |
+| 共用常數／**產品名稱、文案、效益** | `C:\git\shared\const.ts` |
+| Header（導覽列 Logo） | `C:\git\client\src\components\Header.tsx` |
+| Footer（頁尾 Logo、連結） | `C:\git\client\src\components\Footer.tsx` |
+| 首頁 | `C:\git\client\src\pages\Home.tsx` |
+| 產品詳情頁 | `C:\git\client\src\pages\ProductDetail.tsx` |
+| 圖片、favicon、sitemap | `C:\git\client\public\` |
 
-> ⚠️ **重要**：`C:\VEDA CARE官網\` 是舊的 ZIP 解壓版本，沒有 git，**任何修改請只在 `C:\git\` 操作**。
+> ✅ **唯一規則：所有修改只在 `C:\git\` 操作，改完推 git，Vercel 自動上線。**
+>
+> `C:\VEDA CARE官網\veda-care-v2-main\` 只是參考用，看懂檔案結構用，不需要動它，也不影響網站。
 
 ---
 
