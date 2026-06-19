@@ -41,7 +41,7 @@ export default function Footer() {
               </p>
               <p
                 className="text-sm italic whitespace-nowrap"
-                style={{ color: '#888', lineHeight: '1.8', letterSpacing: '0.04em' }}
+                style={{ color: '#555', lineHeight: '1.8', letterSpacing: '0.04em' }}
               >
                 在繁忙的時光裡，預留一份愛給身體。
               </p>
@@ -109,7 +109,7 @@ export default function Footer() {
                   <li key={key}>
                     <Link
                       href={`/policies/${key}`}
-                      style={{ fontSize: 13, color: '#777', letterSpacing: '0.06em', textDecoration: 'none', transition: 'color 0.2s' }}
+                      style={{ fontSize: 13, color: '#444', letterSpacing: '0.06em', textDecoration: 'none', transition: 'color 0.2s' }}
                       className="hover:text-[#2D4F1E]"
                     >
                       {POLICIES[key].title}
@@ -136,7 +136,7 @@ export default function Footer() {
                       href={href}
                       target={href.startsWith('mailto') ? undefined : '_blank'}
                       rel="noopener noreferrer"
-                      style={{ fontSize: 13, color: '#777', letterSpacing: '0.06em', textDecoration: 'none', transition: 'color 0.2s' }}
+                      style={{ fontSize: 13, color: '#444', letterSpacing: '0.06em', textDecoration: 'none', transition: 'color 0.2s' }}
                       className="hover:text-[#2D4F1E]"
                     >
                       {label}
@@ -151,7 +151,7 @@ export default function Footer() {
               <p className="text-xs uppercase tracking-[0.28em] font-semibold mb-5" style={{ color: '#2D4F1E' }}>
                 品牌理念
               </p>
-              <p style={{ fontSize: 13, color: '#888', lineHeight: '2.0', letterSpacing: '0.06em', maxWidth: 320 }}>
+              <p style={{ fontSize: 13, color: '#555', lineHeight: '2.0', letterSpacing: '0.06em', maxWidth: 320 }}>
                 VEDA CARE 以「減法」為核心——<br />
                 精準補充、去除負擔，<br />
                 讓身體回到最自在的狀態。
@@ -198,7 +198,7 @@ export default function Footer() {
                 <summary
                   style={{ listStyle: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '9px 0', cursor: 'pointer' }}
                 >
-                  <span style={{ fontSize: 12, fontWeight: 400, color: '#999', letterSpacing: '0.08em' }}>{q}</span>
+                  <span style={{ fontSize: 12, fontWeight: 400, color: '#555', letterSpacing: '0.08em' }}>{q}</span>
                   <svg
                     className="group-open:rotate-180 transition-transform duration-200"
                     width="11"
@@ -214,7 +214,7 @@ export default function Footer() {
                     <polyline points="2,4 7,10 12,4" />
                   </svg>
                 </summary>
-                <p style={{ fontSize: 11, fontWeight: 300, color: '#999', lineHeight: '1.8', letterSpacing: '0.05em', paddingBottom: 8 }}>
+                <p style={{ fontSize: 11, fontWeight: 300, color: '#555', lineHeight: '1.8', letterSpacing: '0.05em', paddingBottom: 8 }}>
                   {a}
                 </p>
               </details>
@@ -226,10 +226,10 @@ export default function Footer() {
       {/* ── Bottom strip ── */}
       <div style={{ borderTop: '1px solid rgba(45,79,30,0.1)', padding: '32px 0 40px', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: 600 }}>
-          <p style={{ fontSize: 11, color: '#aaa', letterSpacing: '0.18em', marginBottom: 10, textTransform: 'uppercase' }}>
+          <p style={{ fontSize: 11, color: '#666', letterSpacing: '0.18em', marginBottom: 10, textTransform: 'uppercase' }}>
             © 2026 VEDA CARE Holistic Wellness
           </p>
-          <p style={{ fontSize: 11, color: '#bbb', lineHeight: '1.7', letterSpacing: '0.04em' }}>
+          <p style={{ fontSize: 11, color: '#777', lineHeight: '1.7', letterSpacing: '0.04em' }}>
             本網站內容僅供參考，不替代醫師診斷或治療建議。本產品為一般食品，非藥品，不具療效。如有疾病或特殊生理狀況，請諮詢醫療專業人員。
           </p>
         </div>
